@@ -14,6 +14,7 @@ const Home = () => {
                 </a>
                 <Link to="/">Home</Link>
                 <Link to="/team">Team</Link>
+                <Link to="/services">Services</Link>
             </header>
         </div>
     );

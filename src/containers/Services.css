@@ -1,0 +1,121 @@
+
+.Services {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+
+.Services {
+    color: #61dafb;
+}
+
+.service-title{
+    font-size: calc(30px + 2vmin);
+    margin: 20px;
+}
+.main-card{
+    width: 80%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor:pointer;
+}
+.service{
+    background-color: rgb(255, 255, 255,0);
+    
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+}
+.service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin:-90px auto 0;
+    background: rgb(70, 70, 70);
+    border: 18px solid #282c34;
+    transition: transform 1s;
+}
+.service-logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.service h4{
+    height: 35px;
+    width: 80%;
+    background: #fff;
+    margin:30px auto;
+    position: relative;
+}
+.service h4::after{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#fff,#007bff);
+    position: absolute;
+    right:-5px;
+    top: -5px;
+    z-index: -1;
+}
+.service h4::before{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#007bff,#fff);
+    position: absolute;
+    left:-5px;
+    bottom: -5px;
+    z-index: -1;
+    
+}
+
+.shadowOne{
+    height:200px;
+    width: 80%;
+    background: rgb(255, 255, 255,0);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: 0;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+}
+.shadowTwo{
+    height:200px;
+    width: 64%;
+    background: rgb(255, 255, 255,0);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: 0;
+}
+.main-card:hover .service{
+    transform: translateY(-50px);
+    background: rgb(78, 78, 78);
+    border: 1px solid white;
+    
+}
+.main-card:hover .shadowOne{
+    transform: translateY(-25px);
+    background: rgb(78, 78, 78);
+   
+}
+.main-card:hover .shadowTwo{
+    background: rgb(78, 78, 78);
+opacity: 1;
+}
+.main-card:hover .service-logo{
+    transform: rotate(360deg);
+}
+.opaque{
+    opacity: 1;
+}
