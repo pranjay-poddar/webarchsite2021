@@ -13,9 +13,9 @@ const Services = () => {
         <div className="Services">
             <div className="container">
              
-                <h1 className="text-center service-title"> Services</h1>
-                <div className="row ">
-                    <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-center">
+                <h1 className="text-center service-title "> Services</h1>
+                <div className="row d-flex justify-content-center">
+                    <div className="col-md-4 col-xs-6 col-lg-4 col-sm-6  d-flex justify-content-center">
                         <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
@@ -30,7 +30,7 @@ const Services = () => {
                             <div className="shadowTwo"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-center">
+                    <div className="col-md-4 col-xs-6 col-lg-4 col-sm-6  d-flex justify-content-center">
                     <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
@@ -45,7 +45,7 @@ const Services = () => {
                             <div className="shadowTwo"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-center">
+                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
                     <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
@@ -60,15 +60,14 @@ const Services = () => {
                             <div className="shadowTwo"></div>
                         </div>
                     </div>
-                </div>
-                <div className="row d-flex justify-content-center">
-                    <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-center">
+            
+                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
                     <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
                                     <img src={graphic}  alt="graphic-design logo"></img>
                                 </div>
-                                <h4 className="opaque">Graphic Design</h4>
+                                <h4 className="opaque">Graphics</h4>
                                 <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
                                 lorem lorem lorem lorem lorem 
                                 </p>
@@ -77,7 +76,7 @@ const Services = () => {
                             <div className="shadowTwo"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 col-lg-4 col-sm-12 col-xs-12 d-flex justify-content-center">
+                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
                     <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
