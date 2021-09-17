@@ -11,9 +11,13 @@
     color: #61dafb;
 }
 
+.Services p{
+    color: white;
+}
 .service-title{
     font-size: calc(30px + 2vmin);
     margin: 20px;
+    
 }
 .main-card{
     width: 80%;
@@ -29,7 +33,7 @@
     border-radius: 10px;
     position: absolute;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform 0.8s;
 }
@@ -50,7 +54,8 @@
 .service h4{
     height: 35px;
     width: 80%;
-    background: #fff;
+    background: rgb(95, 95, 95);
+    color: white;
     margin:30px auto;
     position: relative;
 }
@@ -58,7 +63,7 @@
     content: "";
     width: 40px;
     height: 30px;
-    background: linear-gradient(to right,#fff,#007bff);
+    background: linear-gradient(to right,#fff,#61dafb);
     position: absolute;
     right:-5px;
     top: -5px;
@@ -68,7 +73,7 @@
     content: "";
     width: 40px;
     height: 30px;
-    background: linear-gradient(to right,#007bff,#fff);
+    background: linear-gradient(to right,#61dafb,#fff);
     position: absolute;
     left:-5px;
     bottom: -5px;
@@ -84,7 +89,7 @@
     border-radius: 10px;
     bottom: 0;
     left: 10%;
-    z-index: 0;
+    z-index: 1;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform 0.8s;
 }
@@ -107,10 +112,12 @@
 .main-card:hover .shadowOne{
     transform: translateY(-25px);
     background: rgb(78, 78, 78);
+    border: 1px solid white;
    
 }
 .main-card:hover .shadowTwo{
     background: rgb(78, 78, 78);
+    border: 1px solid white;
 opacity: 1;
 }
 .main-card:hover .service-logo{
