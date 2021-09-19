@@ -23,9 +23,17 @@
 	font-size: calc(10px + 2vmin);
 	color: white;
 }
+.Home-header p{
+	font-size: var(--font-size-lg);
+}
 
-.Home-link {
+.Home a{
+	font-size: var(--font-size-small);
+}
+
+.Home a.Home-link {
 	color: #61dafb;
+	font-size: var(--font-size-default);
 }
 
 @keyframes App-logo-spin {
