@@ -10,7 +10,7 @@
   --light-theme-blue: #007bff;
   --bg-plain: #161625;
   --bg-grad: linear-gradient(to left, #2C3551, #161625);
-  --font: 'Source Code Pro', monospace;
+  --font: 'Source Code Pro';
   --section-font: 'Teko', sans-serif;
 }
 

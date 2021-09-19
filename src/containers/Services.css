@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: column;
 	color: white;
+    padding-bottom: 10vh;
 }
 .Services {
     color: #61dafb;
@@ -11,13 +12,14 @@
 
 .Services p{
     color: white;
+    font-size: 1.7rem;
 }
 .service-title{
     font-size: calc(30px + 2vmin);
     margin: 20px;
 }
 .main-card{
-    width: 18rem;
+    width: 30rem;
     min-height: 380px;
     text-align: center;
     position: relative;
@@ -25,7 +27,6 @@
 }
 .service{
     background-color: rgb(255, 255, 255,0);
-    
     padding: 30px;
     border-radius: 10px;
     position: absolute;
@@ -33,6 +34,10 @@
     z-index: 2;
     box-shadow: 0 0 20px -15px #030380;
     transition: transform 0.8s;
+}
+
+.service h4 {
+    font-size: 2.2rem;
 }
 .service-logo{
     width: 130px;
@@ -76,6 +81,7 @@
     bottom: -5px;
     z-index: -1;
 }
+
 .shadowOne{
     height:200px;
     width: 80%;
@@ -120,69 +126,24 @@
     opacity: 1;
 }
 @media (max-width:576px){
-   
-    .service-title{
-        font-size: calc(30px + 2vmin);
-        margin: 20px;
-    }
     .main-card{
-        width: 13rem;
-        margin: 50px 0;
-        min-height: 300px;
-        text-align: center;
-        position: relative;
-        cursor:pointer;
+        width: 26rem;
+       
     }
     .service{
-        background-color: rgb(255, 255, 255,0);
         padding: 20px;
         border-radius: 10px;
-        position: absolute;
-        bottom: 0;
         z-index: 2;
-        box-shadow: 0 0 20px -15px #030380;
-        transition: transform 0.8s;
     }
+  
     .service-logo{
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        margin:-90px auto 0;
-        background: rgb(70, 70, 70);
-        border: 18px solid #282c34;
-        transition: transform 1s;
     }
     .service-logo img{
         width: 35px;
         height: 35px;
         margin-top: 15px;
-    }
-    .service h4{
-        height: 35px;
-        width: 80%;
-        background: rgb(95, 95, 95);
-        color: white;
-        margin:20px auto;
-        position: relative;
-    }
-    .service h4::after{
-        content: "";
-        width: 40px;
-        height: 30px;
-        background: linear-gradient(to right,#fff,#61dafb);
-        position: absolute;
-        right:-5px;
-        top: -5px;
-        z-index: -1;
-    }
-    .service h4::before{
-        content: "";
-        width: 40px;
-        height: 30px;
-        background: linear-gradient(to right,#61dafb,#fff);
-        position: absolute;
-        left:-5px;
-        bottom: -5px;
-        z-index: -1;
     }
 }
