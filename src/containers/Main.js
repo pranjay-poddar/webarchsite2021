@@ -2,7 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import "./Main.css";
 import Home from "./Home";
 import Team from "./Team";
-import Projects from "./Projects/Projects";
+import Projects from "./projects/Projects";
 
 function Main() {
   return (

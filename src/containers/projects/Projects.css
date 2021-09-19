@@ -1,0 +1,14 @@
+@import "../../index.css";
+
+.projects-section {
+  height: 100vh;
+  width: 100vw;
+  padding: 100px;
+  background: var(--bg-grad);
+}
+
+.projects-section .projects-title {
+  color: var(--webarch-blue);
+  font-family: var(--section-font);
+  font-size: 40px;
+}
