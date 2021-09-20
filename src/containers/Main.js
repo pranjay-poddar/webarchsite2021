@@ -2,6 +2,7 @@ import { Switch, Route } from 'react-router-dom';
 import './Main.css';
 import Home from './Home';
 import Team from './Team';
+import Clients from './Clients';
 
 function Main() {
 	return (
@@ -13,9 +14,13 @@ function Main() {
                 <Route exact path='/team'>
                     <Team />
                 </Route>
+				<Route exact path='/clients'>
+                    <Clients />
+                </Route>
 			</Switch>
 		</div>
 	);
 }
 
 export default Main;
+
