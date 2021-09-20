@@ -1,0 +1,102 @@
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-plain);
+    color: white;
+    font-size: var(--font-size-small);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 2rem;
+}
+
+.exploreContainer {
+    display: flex;
+    justify-content:flex-end;
+    border-bottom: 2px solid #aaaaaa;
+    padding-right: 18rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.explore {
+    margin-right: 7rem;
+}
+
+.explore li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.contact li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact li a i {
+    margin-right: 1rem;
+    color: #ff6347;
+}
+
+.socialContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.orgContainer {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.orgContainer h5{
+    margin-left: 1rem;
+}
+
+.iconsContainer {
+    padding: 0;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content:center;
+    margin: 30.492px 0;
+    padding-left: 0px;
+}
+
+.socialLinks li {
+    list-style: none;
+    margin: 0 1rem;
+    padding: 0 1rem;
+}
+
+.socialLinks li a i {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.licenseContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+}
+
+.socialLinks .insta:hover i{
+    color: #DD2A7B;
+    transform: scale(1.5);
+}
+.socialLinks .linkedin:hover i{
+    color: #0077b5;
+    transform: scale(1.5);
+}
+.socialLinks .discord:hover i{
+    color: #5865F2;
+    transform: scale(1.5);
+}
+.socialLinks .github:hover i{
+    color: #6e5494;
+    transform: scale(1.5);
+}
