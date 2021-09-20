@@ -1,13 +1,54 @@
 import React from "react";
 import "./Projects.css";
 import { Container } from "react-bootstrap";
+import ProjectItem from "./ProjectItem";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Project 1",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur iusto officiis, corrupti fugiat deleniti!",
+      image: "",
+      tech: ["React", "CSS", "Node.js", "MongoDB"],
+      githubLink: "https://github.com/",
+      liveDemo: "",
+      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+    },
+    {
+      id: 2,
+      title: "Project 2",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur iusto officiis, corrupti fugiat deleniti!",
+      image: "",
+      tech: ["React", "CSS", "Node.js", "MongoDB"],
+      githubLink: "https://github.com/",
+      liveDemo: "",
+      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+    },
+    {
+      id: 3,
+      title: "Project 3",
+      description:
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur iusto officiis, corrupti fugiat deleniti!",
+      image: "",
+      tech: ["React", "CSS", "Node.js", "MongoDB"],
+      githubLink: "https://github.com/",
+      liveDemo: "",
+      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+    },
+  ];
   return (
     <section className="projects-section">
       <Container>
-        <h2 className="projects-title">Projects</h2>
+        <h2 className="projects-title">PROJECTS</h2>
+        <div className="projects-list">
+          {projects.map((project) => (
+            <ProjectItem id={project.id} project={project} />
+          ))}
+        </div>
       </Container>
     </section>
   );

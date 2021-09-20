@@ -1,14 +1,114 @@
+/* Importing global variables */
 @import "../../index.css";
 
+/* Declaring local variables */
+:root {
+  /* --image-hover-color: rgba(0, 0, 0, 0.6); */
+  --image-hover-color: rgba(0, 81, 255, 0.39);
+
+  --project-description-color: #314362;
+  --text-color: #fff;
+}
+
+/* Utility Classes */
+.web-blue {
+  color: var(--webarch-blue);
+}
+.text-left {
+  text-align: left;
+}
+.flex-start {
+  justify-content: flex-start;
+}
+.flex-end {
+  justify-content: flex-end;
+}
+
+/* Projects Section */
 .projects-section {
-  height: 100vh;
-  width: 100vw;
-  padding: 100px;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 100px 0;
   background: var(--bg-grad);
 }
 
 .projects-section .projects-title {
   color: var(--webarch-blue);
   font-family: var(--section-font);
-  font-size: 40px;
+  font-size: var(--font-size-lg);
+}
+
+/* Project Item */
+.project-item {
+  margin: 4rem 0;
+  text-align: right;
+  color: var(--text-color);
+}
+.project-image {
+  object-fit: cover;
+  height: 400px;
+  width: 600px;
+}
+.project-link {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+}
+.project-link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+
+  height: 400px;
+  width: 600px;
+  z-index: 3;
+  background-color: var(--image-hover-color);
+}
+.project-link:hover {
+  opacity: 0;
+}
+
+.project-item .col {
+  display: flex;
+  align-items: center;
+}
+.project-item .project-details {
+  height: 70;
+}
+.project-item .project-details .title {
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  color: #fff;
+}
+.project-item .project-details .description {
+  background: var(--project-description-color);
+  padding: 2rem;
+  /* text-align: right; */
+  color: var(--webarch-blue);
+  font-size: 1.8rem;
+  border-radius: 5px;
+}
+.project-item .project-details .tech-stack {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.project-item .project-details .tech-stack .tech-item {
+  margin-left: 1.5rem;
+}
+.project-item .project-details .tech-stack .tech-item:first-child {
+  margin-left: 0;
+}
+.project-item .project-details .contributors {
+  margin: 1.5rem 0;
+  display: flex;
+  font-size: 1.8rem;
+}
+.project-item .project-details .contributors .contributor-item {
+  margin-left: 1.5rem;
+}
+.project-item .project-details .contributors .contributor-item:first-child {
+  margin-left: 0;
 }
