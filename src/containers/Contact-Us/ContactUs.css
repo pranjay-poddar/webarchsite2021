@@ -1,0 +1,134 @@
+.contact{
+    background-color: var(--bg-plain); 
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+    padding: 5vh 10vh 10vh 10vh;
+    overflow-x: hidden;
+}
+
+.contact h1{
+    font-size: var(--font-size-lg);
+    font-family: var(--section-font);
+    display: inline-block;
+    margin: 0;
+}
+
+.contact h1 span{
+    color: var(--webarch-blue);
+}
+
+.contact .vertical{
+        border-left: 6px solid var(--webarch-blue);
+        height: 320px;
+        position:absolute;
+        left: 100px;
+        top: 180px;
+        border-radius: 15px;
+        position: absolute;
+        display: inline-block;       
+}
+
+.contact .contact-address{
+    position: relative;
+    left: 80px;
+    top: 60px;
+}
+
+.contact .contact-details{
+    position: relative;
+    left: 80px;
+    top: 90px;
+}
+
+.contact .contact-address .contact-address-title, .contact .contact-details .contact-details-title{
+    color: var(--webarch-blue);
+    font-size: var(--font-size-small);
+}
+
+.contact .contact-address div p{
+    margin: 10px;
+} 
+
+.contact .contact-details .contact-detail-effect{
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-details .contact-detail-effect:hover{
+    cursor: pointer;
+    color: var(--webarch-blue);
+    transform: scale(1.5);
+}
+
+.contact .contact-details p span{
+    padding: 20px;
+
+}
+
+.contact .icons{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 30px;
+    position: absolute;
+    left: 75px;
+    bottom: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .icons .icon-styles:hover{
+    cursor: pointer;
+    color: var(--webarch-blue);
+    transform: scale(1.5);
+}
+
+.contact .form{
+    display: flex;
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    border: 4px solid var(--webarch-blue);
+}
+
+.contact .form .form-title{
+    font-family: var(source-code-pro);
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    left: 110px;
+}
+
+.contact .form .form-content{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background-color:#292929;
+}
+
+input[type=text], input[type=email]{
+    display: block;
+    margin-bottom: 10px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+}
+
+.no-outline:focus {
+    outline: none;
+  }
+
+label{
+    display: block;
+    margin-bottom: 10px;
+}
