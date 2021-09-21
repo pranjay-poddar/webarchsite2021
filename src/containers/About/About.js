@@ -6,9 +6,14 @@ const About = () => {
     return (
         <div className="About">
             <h1>About Us</h1>
-            <Link to="/">Home</Link>
-            <br />
-            <Link to="/About">About</Link>
+            <div >
+            <div className="card">Lorem Ipsum is simply dummy text </div>
+           
+          
+            </div>
+           
+             <Link to="/">Home</Link>
+            <Link to="/Team">Team</Link>
         </div>
     );
 }

@@ -13,7 +13,8 @@ const Home = () => {
                     Main Branch
                 </a>
                 <Link to="/">Home</Link>
-                <Link to="/team">Team</Link>
+                 <Link to="/team">Team</Link>
+                <Link to="/About">About Us</Link>
             </header>
         </div>
     );
