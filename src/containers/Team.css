@@ -5,7 +5,8 @@
 body {
   font-family: 'Lato', sans-serif;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 20px;
+  background-color: #282C34;
 }
 h2 {
   font-size: 50px;
@@ -31,14 +32,30 @@ p {
 
 
 /* --------- FIVE --------- */ 
+.team-page-heading{
+    color: white;
+    text-decoration: underline;
+    
+}
 
+@media screen and (min-width: 601px) {
+    .team-page-heading {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .team-page-heading {
+      font-size: 30px;
+    }
+  }
 
 
 
 .five {
   list-style: none;
   padding: 0;
-  margin: 100px 0;
+  margin: 70px 0;
 }
 .five > li {
   background: #FFFFFF;
@@ -48,7 +65,7 @@ p {
   width: 250px;
   height: 350px;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 30px;
   text-align: center;
   margin-bottom: 32px;
 }
@@ -78,10 +95,10 @@ p {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   top: -300px;
-  background: #2f7abe;
+  background: #00E8FF;
 }
 .five > li:hover span p {
-  color: white;
+  color: black;
   font-size: 14px;
 }
 .five > li span .text-wrapper {
@@ -119,7 +136,7 @@ p {
   position: absolute;
   top: -490px;
   width: 500px;
-  background: #579CDB;
+  background: #00E8FF;
 }
 .five .mamber-img {
   width: 100px;
@@ -129,9 +146,12 @@ p {
   font-style: normal;
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 13px;
  margin-top: 5px  ;
  color: #2F7ABE;
+}
+.five > li h3{
+    font-size: 15px;
 }
 .five .social {
   list-style: none;
