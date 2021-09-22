@@ -15,7 +15,15 @@ const Projects = () => {
       tech: ["React", "CSS", "Node.js", "MongoDB"],
       githubLink: "https://github.com/",
       liveDemo: "",
-      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+      contributors: [
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+      ],
     },
     {
       id: 2,
@@ -26,7 +34,15 @@ const Projects = () => {
       tech: ["React", "CSS", "Node.js", "MongoDB"],
       githubLink: "https://github.com/",
       liveDemo: "",
-      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+      contributors: [
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+        "Tanishq Kumar",
+        "Soumik Chaudhuri",
+      ],
     },
     {
       id: 3,

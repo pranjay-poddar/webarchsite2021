@@ -37,8 +37,9 @@ const ProjectItem = ({ project }) => {
               </div>
               <div className="contributors flex-end">
                 <span className="web-blue">Contributors: </span>
+
                 {contributors.map((item) => (
-                  <p className="contributor-item">{item}</p>
+                  <p className="contributor-item ml-1">{item}</p>
                 ))}
               </div>
             </div>
@@ -58,9 +59,10 @@ const ProjectItem = ({ project }) => {
                 ))}
               </div>
               <div className="contributors flex-start">
-                <span className="web-blue">Contributors: </span>
+                <span className="web-blue mr-1">Contributors: </span>
+
                 {contributors.map((item) => (
-                  <p className="contributor-item">{item}</p>
+                  <p className="contributor-item mr-1">{item}</p>
                 ))}
               </div>
             </div>
