@@ -6,8 +6,16 @@ body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   padding-top: 20px;
-  background-color: #282C34;
+  background-image: linear-gradient(to left, #2C3551, #161625);
 }
+
+.responsive-img{
+  width: 60%;
+  height: auto;
+  /* 44% */
+border-radius: 50%;
+}
+
 h2 {
   font-size: 50px;
   margin-bottom: 0px;
@@ -34,19 +42,43 @@ p {
 /* --------- FIVE --------- */ 
 .team-page-heading{
     color: white;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    font-weight: 1000;
+    line-height: 54px;
+    margin-bottom: 0%;
     
+}
+.best-team{
+  color: grey;
+}
+
+.hero {
+  position: relative;
+  max-width: 50rem;
+  margin: 0 auto;
+  top: 40%;
+}
+
+.tagline {
+  margin: 0;  /* h1 default margins cause vertical scrollbar */
+  font-family: 'Roboto Light', sans-serif;
+  font-weight: 100;
+  color: #263238  ;
+  font-size: 1.75em;
+  line-height: 2em;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(38, 50, 56, 0.45);  background: linear-gradient(to right, rgba(150, 200, 180, 0), rgba(150, 200, 180, 1) 20%, rgba(150, 200, 180, 1) 80%, rgba(150, 200, 180, 0));
 }
 
 @media screen and (min-width: 601px) {
     .team-page-heading {
-      font-size: 40px;
+      font-size: 30px;
     }
   }
   
   @media screen and (max-width: 600px) {
     .team-page-heading {
-      font-size: 30px;
+      font-size: 25px;
     }
   }
 
@@ -55,7 +87,7 @@ p {
 .five {
   list-style: none;
   padding: 0;
-  margin: 70px 0;
+  margin: 50px 0;
 }
 .five > li {
   background: #FFFFFF;
@@ -70,7 +102,7 @@ p {
   margin-bottom: 32px;
 }
 .five > li img {
-  margin-top: -5px;
+  margin-top: 60px;
 }
 .five > li:hover img {
   margin-top: 30px;
@@ -95,7 +127,7 @@ p {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   top: -300px;
-  background: #00E8FF;
+  background: #889EAF;
 }
 .five > li:hover span p {
   color: black;
@@ -120,8 +152,8 @@ p {
   display: none;
 }
 .five > li:hover h3 {
-  color: #2F7ABE;
-  margin-top: -105px;
+  color: #889EAF;
+  margin-top: 270px;
 }
 .five > li .wrapper {
   overflow: hidden;
@@ -136,7 +168,7 @@ p {
   position: absolute;
   top: -490px;
   width: 500px;
-  background: #00E8FF;
+  background: #889EAF;
 }
 .five .mamber-img {
   width: 100px;
@@ -145,13 +177,13 @@ p {
   display: block;
   font-style: normal;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 600;
   font-size: 13px;
  margin-top: 5px  ;
- color: #2F7ABE;
+ color: #889EAF;
 }
 .five > li h3{
-    font-size: 15px;
+    font-size: 17px;
 }
 .five .social {
   list-style: none;
@@ -162,7 +194,7 @@ p {
 .five .social li {
   opacity: 0;
   display: inline-block;
-  padding: 5px;
+  padding: 6px;
 }
 .five > li:hover .social li {
   opacity: 1;
@@ -175,7 +207,7 @@ p {
   opacity: 0.5;
 }
 .five .social li img {
-  width: 24px;
+  width: 28px;
 }
 .five > li:hover .social li a {
   -webkit-animation: social-show 0.5s 1;
@@ -187,9 +219,9 @@ p {
   -o-animation-delay: 0s;
   animation-delay: 0s;
 }
-.five .social li img {
+/* .five .social li img {
   width: 24px;
-}
+} */
  @-webkit-keyframes social-show {
  from {
 margin-top: 140px;
