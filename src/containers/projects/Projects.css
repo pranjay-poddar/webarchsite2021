@@ -36,6 +36,7 @@
   min-width: 100vw;
   padding: 100px 0;
   background: var(--bg-grad);
+  font-family: var(--font);
 }
 
 .projects-section .projects-title {
@@ -81,9 +82,7 @@
   display: flex;
   align-items: center;
 }
-.project-item .project-details {
-  height: 70;
-}
+
 .project-item .project-details .title {
   font-size: var(--font-size-small);
   font-weight: bold;
@@ -92,7 +91,6 @@
 .project-item .project-details .description {
   background: var(--project-description-color);
   padding: 2rem;
-  /* text-align: right; */
   color: var(--webarch-blue);
   font-size: 1.8rem;
   border-radius: 5px;
@@ -121,3 +119,60 @@
 }
 
 /* Media queries */
+
+/* For phones and tablets */
+@media screen and (max-width: 1200px) {
+  .projects-section .projects-title {
+    text-align: center;
+  }
+  .project-image {
+    height: 300px;
+    width: 400px;
+  }
+  .project-link::before {
+    display: none;
+  }
+  .project-item {
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 1rem;
+  }
+  .project-details .title {
+    margin: 1rem 0;
+  }
+  .project-item .col {
+    justify-content: center;
+  }
+  .project-item .project-details .description {
+    font-size: 1.5rem;
+  }
+  .project-item .project-details .contributors,
+  .project-item .project-details .tech-stack {
+    justify-content: center;
+  }
+  .project-item .contributors .contributor-item {
+    font-size: 1.6rem;
+  }
+
+  .project-item .col:nth-child(2) {
+    justify-content: center;
+  }
+  .project-item .project-details {
+    text-align: center;
+  }
+}
+
+/* Ipad */
+@media screen and (max-width: 768px) {
+  .project-image {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 500px) {
+  .project-item:nth-child(even) .row {
+    flex-direction: column-reverse;
+  }
+}

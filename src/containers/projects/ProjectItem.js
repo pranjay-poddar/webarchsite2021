@@ -19,7 +19,7 @@ const ProjectItem = ({ project }) => {
       return (
         <>
           <Col>
-            <a href={liveDemo} className="project-link"></a>
+            {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg"
               className="project-image"
@@ -68,7 +68,7 @@ const ProjectItem = ({ project }) => {
             </div>
           </Col>
           <Col>
-            <a href={liveDemo} className="project-link"></a>
+            {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src="https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png"
               className="project-image"
