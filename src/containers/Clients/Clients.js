@@ -30,7 +30,7 @@ function Clients(){
   const settings = {
     infinite:true,
     lazyload:true,
-    speed:300,
+    speed:700,
     slidesToShow:3,
     centerMode:true,
     centerPadding:0,
@@ -41,6 +41,7 @@ function Clients(){
 
   return(
     <div className="clients">
+      <div className="center">
      <Slider {...settings}>
        {images.map((img, idx)=>(
          <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'}>
@@ -48,6 +49,7 @@ function Clients(){
            </div>
        ))}
      </Slider>
+     </div>
     </div>
   );
 }
