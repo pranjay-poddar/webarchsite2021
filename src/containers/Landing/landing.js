@@ -1,14 +1,17 @@
 import React from 'react'
 import '../Landing/landing.css'
 import logo from '../../files/logo.png'
+import { Container, Col, Row } from 'react-bootstrap'
 
 const Landing = () => {
   return (
-    <div className='container'>
-      <img src={logo} className='Home-logo' alt='logo' />
-      <div className='moving-clouds'></div>
-      <h1 className='logo-text'>Webarch</h1>
-    </div>
+    <Container>
+      <Row className='content'>
+        <Col className='img-container'>
+          <img src='./logo.png' alt='logo' />
+        </Col>
+      </Row>
+    </Container>
   )
 }
 

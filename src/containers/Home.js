@@ -1,14 +1,16 @@
 import logo from '../files/logo.png'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Landing from '../containers/Landing/landing'
 import './Home.css'
 
 const Home = () => {
   return (
-    <div className='Home'>
-      <header className='Home-header'>
+    <div>
+      <header>
         {/* <img src={logo} className='Home-logo' alt='logo' /> */}
-        <p>Webarch Site 2021</p>
+        <Landing />
+        {/* <p>Webarch Site 2021</p>
         <a
           className='Home-link'
           href='https://webarchsrm.com'
@@ -17,9 +19,8 @@ const Home = () => {
         >
           Main Branch
         </a>
-        <Landing />
         <Link to='/'>Home</Link>
-        <Link to='/team'>Team</Link>
+        <Link to='/team'>Team</Link> */}
       </header>
     </div>
   )
