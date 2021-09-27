@@ -33,6 +33,7 @@ function Clients(){
     speed:700,
     slidesToShow:3,
     centerMode:true,
+    autoplay:true,
     centerPadding:0,
     nextArrow:<NextArrow/>,
     prevArrow:<PrevArrow/>,
