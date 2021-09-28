@@ -8,12 +8,14 @@ import { Container, Col, Row } from 'react-bootstrap'
 const Landing = () => {
   function nameReveal() {
     if (
-      document.querySelector('.left-content') != undefined &&
-      document.querySelector('.right-content') != undefined
+      document.querySelector('.landing-left-content') !== undefined &&
+      document.querySelector('.landing-right-content') !== undefined
     ) {
       setTimeout(function () {
-        document.querySelector('.left-content').style.visibility = 'visible'
-        document.querySelector('.right-content').style.visibility = 'visible'
+        document.querySelector('.landing-left-content').style.visibility =
+          'visible'
+        document.querySelector('.landing-right-content').style.visibility =
+          'visible'
       }, 4000)
     }
   }
@@ -23,25 +25,21 @@ const Landing = () => {
   }, [])
 
   return (
-    <Container className='container'>
-      <Col className='img-container'>
+    <Container className='landing'>
+      <Col className='landing-logo'>
         <img src={logo} alt='logo' />
       </Col>
-      <Row className='content'>
-        <Col className='left-content'>
-          <img
-            style={{ position: 'relative', right: '-50px' }}
-            src={web}
-            alt='web'
-          />
+      <Row className='landing-content'>
+        <Col className='landing-left-content'>
+          <img src={web} alt='web' />
         </Col>
-        <Col className='right-content'>
+        <Col className='landing-right-content'>
           <img src={arch} alt='arch' />
         </Col>
       </Row>
       <Row>
         <Col>
-          <h1 className='tag'>Architects of the Web.</h1>
+          <h1 className='landing-tag'>Architects of the Web.</h1>
         </Col>
       </Row>
     </Container>
