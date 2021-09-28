@@ -7,75 +7,98 @@ import { GrFacebook } from "react-icons/gr";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 
-import './ContactUs.css'
+import './ContactUs.css';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 const ContactUs = () => {
 
     return (
-        <div className="contact">
-            <h1>Contact Us<span>.</span></h1>
-            <div className="vertical"></div>
-            <div className="contact-address">
-                <div className="contact-address-title">
-                    Webarch
-                </div>
-                <div>
-                    <p>Architects of the Web<br />
-                        SRMIST - KTR<br />
-                        Chennai - 603203
-                    </p>
-                </div>
-            </div>
-            <div className="contact-details">
-                <div className="contact-details-title">
-                    Contact
-                </div>
-                <div>
-
-                    <p>
-                        <div className="contact-detail-effect">
-                            <span>
-                                <FaPhoneAlt />
-                            </span>
-                            +91 9560768621 <br /><br />
+        <div className="contact-us d-flex flex-row align-items-center">
+            <div className="contact w-100 row m-0 justify-content-center align-items-center">
+                <div className="c-info c-height col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-2 order-md-1">
+                    <div className="vertical"></div>
+                    <div className="contact-details-container">
+                        <div className="contact-address">
+                            <div className="contact-address-title">
+                                Webarch
+                            </div>
+                            <div>
+                                <p>Architects of the Web<br />
+                                    SRMIST - KTR<br />
+                                    Chennai - 603203
+                                </p>
+                            </div>
                         </div>
-                        <br />
-                        <div className="contact-detail-effect">
-                            <span>
-                                <GrMail />
-                            </span>
-                            contactwebarch<br />
+                        <div className="contact-details">
+                            <div className="contact-details-title">
+                                Contact
+                            </div>
+                            <br />
+                            <p>
+                                <div className="contact-detail-effect">
+                                    <a href="tel:+91-956-076-8621">
+                                        <span>
+                                            <FaPhoneAlt />
+                                        </span>
+                                        +91 9560768621 <br />
+                                    </a>
+                                </div>
+                                <br />
+                                <div className="contact-detail-effect">
+                                    <a href="mailto:contactwebarch@gmail.com">
+                                        <span>
+                                            <GrMail />
+                                        </span>
+                                        contactwebarch<br />
+                                    </a>
+                                </div>
+                            </p>
                         </div>
-                    </p>
+                    </div>
+                    <div className="icons">
+                        <div className="icon-styles">
+                            <a href="https://www.instagram.com/webarchclub/" target="_blank">
+                                <GrInstagram />
+                            </a>
+                        </div>
+                        <div className="icon-styles">
+                            <a href="https://github.com/WebarchClub" target="_blank">
+                                <GrGithub />
+                            </a>
+                        </div>
+                        <div className="icon-styles">
+                            <a href="https://www.linkedin.com/company/webarchclub/mycompany/" target="_blank">
+                                <GrLinkedin />
+                            </a>
+                        </div>
+                        <div className="icon-styles">
+                            <a href="https://www.facebook.com/webarchclub/" target="_blank">
+                                <GrFacebook />
+                            </a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className="icons">
-                <div className="icon-styles">
-                    <GrInstagram />
-                </div>
-                <div className="icon-styles">
-                    <GrGithub />
-                </div>
-                <div className="icon-styles">
-                    <GrLinkedin />
-                </div>
-                <div className="icon-styles">
-                    <GrFacebook />
-                </div>
-            </div>
-            <div className="form">
-                <div className="form-title">
-                    <span>Ping Us</span>
-                </div>
-                <div className="form-content">
-                    <form>
-                        <label>NAME</label>
-                        <input type="text" className="no-outline"></input>
-                        <label>EMAIL</label>
-                        <input type="email"></input>
-                        <label>MESSAGE</label>
-                        <input type="text"></input>
-                    </form>
+                <div className="form-layout c-height-1 col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1 order-md-2">
+                    <div className="form-border d-flex justify-content-center" id="form-border-style">
+                        <div class="corner-borders corner-borders--left"></div>
+                        <div class="corner-borders corner-borders--right"></div>
+                        <div className="form-container">
+                            <div className="form-title">
+                                <span>Ping Us</span>
+                            </div>
+                            <div className="form-content">
+                                <form>
+                                    <label for="name">NAME</label>
+                                    <input type="text" className="no-outline" id="name"></input>
+                                    <label for="email">EMAIL</label>
+                                    <input type="email" id="email"></input>
+                                    <label for="message">MESSAGE</label>
+                                    <input type="text" id="message"></input>
+                                    <button type="submit" id="submit-btn">SEND MESSAGE</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

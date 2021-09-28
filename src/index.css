@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Teko&display=swap');
 
 :root{
-  //font-size: 62.5%;
+  font-size: 62.5%;
   --font-size-small: 2.2rem;
   --font-size-default: 3.8rem;
   --font-size-lg: 4.5rem;
