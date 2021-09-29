@@ -177,10 +177,10 @@ label{
 }
 
 .contact-us .contact .contact-form-layout .contact-form-border{
-    max-height: 440px;
-    height: 66vh;
+    max-height: 430px;
+    height: 65vh;
     width: 65vh;
-    max-width: 850px;
+    max-width: 420px;
     padding: 15px 20px;
     position: relative;
     display: flex;
@@ -226,14 +226,54 @@ label{
     bottom: 0;
   }
 
- @media (max-width: 480px){
+  @media (max-width: 768px){
 
     .contact-us .contact .contact-height{
-        height: 80vh;
+        height: 62vh;
     }
     
     .contact-us .contact .contact-height-1{
-        height: 60vh;
+        height: 65vh;
+        max-height: 450px;
+    }
+
+    .contact .contact-form-layout .contact-form-content{
+        width: 280px;
+        height: 280px;
+    }
+    
+    input[type=text], input[type=email],textarea{
+        width: 240px;
+    }
+    
+    #submit-btn{
+        top: 2px;
+    }
+    
+    label{
+        padding-left: 15px;
+    }
+
+    .contact-us .contact .contact-form-layout .contact-form-border{
+        max-height: 410px;
+        min-height: 380px;
+        height: 52vh;
+        width: 65vh;
+        max-width: 380px;
+        padding: 15px 20px;
+        margin: 10px;
+        margin-top: 100px;
+    }
+  }
+
+ @media (max-width: 480px){
+
+    .contact-us .contact .contact-height{
+        height: 65vh;
+    }
+    
+    .contact-us .contact .contact-height-1{
+        height: 55vh;
         max-height: 450px;
     }
     
@@ -259,8 +299,9 @@ label{
         min-height: 380px;
         height: 52vh;
         width: 65vh;
-        max-width: 850px;
+        max-width: 380px;
         padding: 15px 20px;
         margin: 10px;
+        margin-top: 100px;
     }    
  }
