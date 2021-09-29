@@ -15,34 +15,30 @@ const Footer = () => {
           <h3>Reach Us</h3>
           <li>
             <a href="mailto:">
-            <i class="fas fa-envelope"></i>
-            webarchsrm@gmail.com
+              <i class="fas fa-envelope"></i>
+              webarchsrm@gmail.com
             </a>
           </li>
           <li>
             <a href="tele:1234567891">
-            <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-phone-alt"></i>
+              Nicola Tesla
             </a>
-            Nicola Tesla
           </li>
           <li>
             <a href="tele:1234567891">
-            <i class="fas fa-phone-alt"></i>
+              <i class="fas fa-phone-alt"></i>
+              Ed Snowden
             </a>
-            Ed Snowden
           </li>
         </ul>
-      </div>
-      <div className={classes.socialContainer}>
-        <div className={classes.orgContainer}>
-          <h5>By Webarch</h5>
-        </div>
         <div className={classes.iconsContainer}>
+          <h3>Follow Us</h3>
           <ul className={classes.socialLinks}>
             <li>
               <a
                 className={classes.insta}
-                href="https://www.instagram.com/codificacion_circulo/"
+                href="https://github.com/WebarchClub"
               >
                 <i className={"fab fa-instagram"}></i>
               </a>
@@ -50,7 +46,7 @@ const Footer = () => {
             <li>
               <a
                 className={classes.linkedin}
-                href="https://www.linkedin.com/company/codificacion-circulo/"
+                href="https://github.com/WebarchClub"
               >
                 <i className={"fab fa-linkedin"}></i>
               </a>
@@ -58,7 +54,7 @@ const Footer = () => {
             <li>
               <a
                 className={classes.discord}
-                href="https://discord.gg/6rqXhXrYYc"
+                href="www.google.com"
               >
                 <i className={"fab fa-discord"}></i>
               </a>
@@ -66,16 +62,18 @@ const Footer = () => {
             <li>
               <a
                 className={classes.github}
-                href="https://github.com/Codificacion-Circulo"
+                href="https://github.com/WebarchClub"
               >
                 <i className={"fab fa-github"}></i>
               </a>
             </li>
           </ul>
         </div>
-        <div className={classes.licenseContainer}>
-          <h5>Copyright© 2021 webarchsrm.com</h5>
-        </div>
+      </div>
+      <div className={classes.msgContainer}>
+        <p>
+          Developed With <i class="fas fa-heart"></i> By Team Webarch{" "}
+        </p>
       </div>
     </div>
   );

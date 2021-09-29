@@ -12,7 +12,7 @@
     display: flex;
     justify-content:flex-end;
     border-bottom: 2px solid #aaaaaa;
-    padding-right: 18rem;
+    padding-right: 10rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
 }
@@ -41,47 +41,46 @@
     color: #ff6347;
 }
 
-.socialContainer {
+.msgContainer {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.orgContainer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-.orgContainer h5{
-    margin-left: 1rem;
+.msgContainer p {
+    font-size: 1.8rem;
+}
+
+.msgContainer p i {
+    color: red;
 }
 
 .iconsContainer {
-    padding: 0;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.iconsContainer h3 {
+    text-align: center;
 }
 
 .socialLinks {
     display: flex;
-    justify-content:center;
-    margin: 30.492px 0;
-    padding-left: 0px;
+    justify-content: center;
 }
 
 .socialLinks li {
     list-style: none;
-    margin: 0 1rem;
-    padding: 0 1rem;
+    margin-right:2.5rem ;
+}
+
+.socialLinks li a {
+    text-decoration: none;
 }
 
 .socialLinks li a i {
     color: #fff;
     transition: all .5s ease;
-}
-
-.licenseContainer {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 1rem;
 }
 
 .socialLinks .insta:hover i{
@@ -100,3 +99,67 @@
     color: #6e5494;
     transform: scale(1.5);
 }
+
+@media (max-width:1200px) {
+    .exploreContainer {
+        padding-right: 5rem;
+    }
+}
+
+@media (max-width:850px) {
+    .iconsContainer {
+        margin-left: 3rem;
+    }
+    .socialLinks{
+        flex-direction: column;
+    }
+    .socialLinks li {
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width:760px) {
+    /* .footerContainer {
+        font-size: 2rem;
+        padding-right: 0;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    .explore {
+        margin-right: 3rem;
+    }
+    .contact li a {
+        font-size: 2rem;
+    } */
+    .explore {
+        display: none;
+    }
+    .exploreContainer {
+        justify-content: center;
+    }
+}
+
+@media (max-width:550px) {
+    h3 {
+        font-size: 2rem;
+    }
+    .contact li a {
+        font-size: 1.7rem;
+    }
+    .exploreContainer {
+        padding-right: 0;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .msgContainer p {
+        font-size: 1.8rem;
+    }
+} 
+
+@media (max-width:450px) {
+    .exploreContainer {
+        display: none;
+    }
+} 
