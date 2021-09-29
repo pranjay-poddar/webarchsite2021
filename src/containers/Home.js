@@ -2,10 +2,12 @@ import logo from "../files/logo.png";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import SectionHead from "./SectionHeader/SectionHead";
+import NavBar from "./Navbar/NavBar";
 
 const Home = () => {
   return (
     <div className="Home">
+      <NavBar />
       <header className="Home-header">
         <SectionHead value="header" />
         <img src={logo} className="Home-logo" alt="logo" />
@@ -19,18 +21,7 @@ const Home = () => {
           Main Branch
         </a>
         <Link to="/">Home</Link>
-        <SectionHead value="header" />
 
-        <SectionHead value="header" />
-        <SectionHead value="header" />
-
-        <SectionHead value="header" />
-        <SectionHead value="header" />
-        <SectionHead value="header" />
-        <SectionHead value="header" />
-
-        <SectionHead value="header" />
-        <SectionHead value="header" />
         <Link to="/team">Team</Link>
       </header>
     </div>
