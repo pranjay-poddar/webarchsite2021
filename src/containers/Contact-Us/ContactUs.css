@@ -11,15 +11,15 @@
     padding: 0px;
 }
 
-.contact-us .contact .c-height{
+.contact-us .contact .contact-height{
     height: 80vh;
 }
 
-.contact-us .contact .c-height-1{
+.contact-us .contact .contact-height-1{
     height: 75vh;
 }
 
-.contact .vertical{
+.contact .contact-vertical{
     border-left: 6px solid var(--webarch-blue);
     height: 300px;
     position:absolute;
@@ -76,12 +76,12 @@
     padding: 20px;
 }
 
-.contact .c-info{
+.contact .contact-info{
     position: relative;
     padding-bottom: 100px;
 }
 
-.contact .c-info .icons{
+.contact .contact-info .contact-icons{
     height: 50px;
     width: 270px;
     display: flex;
@@ -94,19 +94,19 @@
     transition: all 0.3s ease-in-out;
 }
 
-.contact-us .contact .c-info .icons .icon-styles a{
+.contact-us .contact .contact-info .contact-icons .contact-icon-styles a{
     color: white;
     transition: all 0.3s ease-in-out;
 }
 
 
-.contact-us .contact .c-info .icons .icon-styles a:hover{
+.contact-us .contact .contact-info .contact-icons .contact-icon-styles a:hover{
     cursor: pointer;
     color: var(--webarch-blue);
     transform: scale(1.5);
 }
 
-.contact .form-layout{
+.contact .contact-form-layout{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,13 +114,13 @@
     position: relative;
 }
 
-.contact .form-layout .form-title{
+.contact .contact-form-layout .contact-form-title{
     font-family: var(source-code-pro);
     font-size: 25px;
     text-align: center;
 }
 
-.contact .form-layout .form-content{
+.contact .contact-form-layout .contact-form-content{
     width: 320px;
     height: 320px;
     display: flex;
@@ -176,7 +176,7 @@ label{
     margin-bottom: 10px;
 }
 
-.contact-us .contact .form-layout .form-border{
+.contact-us .contact .contact-form-layout .contact-form-border{
     max-height: 440px;
     height: 66vh;
     width: 65vh;
@@ -188,7 +188,7 @@ label{
     margin: 10px;
 }
 
-.corner-borders::before, .corner-borders::after {
+.contact-corner-borders::before, .contact-corner-borders::after {
     border-color: var(--webarch-blue);
     border-width: 5px;
     content: "";
@@ -199,28 +199,28 @@ label{
     width: 100px;
   }
 
-  .corner-borders--left::before, .corner-borders--left::after {
+  .contact-corner-borders--left::before, .contact-corner-borders--left::after {
     left: 0;
   }
-  .corner-borders--left::before {
+  .contact-corner-borders--left::before {
     border-left-style: solid;
     border-top-style: solid;
     top: 0;
   }
-  .corner-borders--left::after {
+  .contact-corner-borders--left::after {
     border-bottom-style: solid;
     border-left-style: solid;
     bottom: 0;
   }
-  .corner-borders--right::before, .corner-borders--right::after {
+  .contact-corner-borders--right::before, .contact-corner-borders--right::after {
     right: 0;
   }
-  .corner-borders--right::before {
+  .contact-corner-borders--right::before {
     border-right-style: solid;
     border-top-style: solid;
     top: 0;
   }
-  .corner-borders--right::after {
+  .contact-corner-borders--right::after {
     border-bottom-style: solid;
     border-right-style: solid;
     bottom: 0;
@@ -228,16 +228,16 @@ label{
 
  @media (max-width: 480px){
 
-    .contact-us .contact .c-height{
+    .contact-us .contact .contact-height{
         height: 80vh;
     }
     
-    .contact-us .contact .c-height-1{
+    .contact-us .contact .contact-height-1{
         height: 60vh;
         max-height: 450px;
     }
     
-    .contact .form-layout .form-content{
+    .contact .contact-form-layout .contact-form-content{
         width: 280px;
         height: 280px;
     }
@@ -254,7 +254,7 @@ label{
         padding-left: 15px;
     }
     
-    .contact-us .contact .form-layout .form-border{
+    .contact-us .contact .contact-form-layout .contact-form-border{
         max-height: 410px;
         min-height: 380px;
         height: 52vh;

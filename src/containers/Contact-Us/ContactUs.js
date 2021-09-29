@@ -15,8 +15,8 @@ const ContactUs = () => {
     return (
         <div className="contact-us d-flex flex-row align-items-center">
             <div className="contact w-100 row m-0 justify-content-center align-items-center">
-                <div className="c-info c-height col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-2 order-md-1">
-                    <div className="vertical"></div>
+                <div className="contact-info contact-height col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-2 order-md-1">
+                    <div className="contact-vertical"></div>
                     <div className="contact-details-container">
                         <div className="contact-address">
                             <div className="contact-address-title">
@@ -55,38 +55,38 @@ const ContactUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="icons">
-                        <div className="icon-styles">
+                    <div className="contact-icons">
+                        <div className="contact-icon-styles">
                             <a href="https://www.instagram.com/webarchclub/" target="_blank">
                                 <GrInstagram />
                             </a>
                         </div>
-                        <div className="icon-styles">
+                        <div className="contact-icon-styles">
                             <a href="https://github.com/WebarchClub" target="_blank">
                                 <GrGithub />
                             </a>
                         </div>
-                        <div className="icon-styles">
+                        <div className="contact-icon-styles">
                             <a href="https://www.linkedin.com/company/webarchclub/mycompany/" target="_blank">
                                 <GrLinkedin />
                             </a>
                         </div>
-                        <div className="icon-styles">
+                        <div className="contact-icon-styles">
                             <a href="https://www.facebook.com/webarchclub/" target="_blank">
                                 <GrFacebook />
                             </a>
                         </div>
                     </div>
                 </div>
-                <div className="form-layout c-height-1 col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1 order-md-2">
-                    <div className="form-border d-flex justify-content-center" id="form-border-style">
-                        <div class="corner-borders corner-borders--left"></div>
-                        <div class="corner-borders corner-borders--right"></div>
-                        <div className="form-container">
-                            <div className="form-title">
+                <div className="contact-form-layout contact-height-1 col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1 order-md-2">
+                    <div className="contact-form-border d-flex justify-content-center">
+                        <div class="contact-corner-borders contact-corner-borders--left"></div>
+                        <div class="contact-corner-borders contact-corner-borders--right"></div>
+                        <div className="contact-form-container">
+                            <div className="contact-form-title">
                                 <span>Ping Us</span>
                             </div>
-                            <div className="form-content">
+                            <div className="contact-form-content">
                                 <form>
                                     <label for="name">NAME</label>
                                     <input type="text" className="no-outline" id="name"></input>
