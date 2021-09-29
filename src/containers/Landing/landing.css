@@ -6,6 +6,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
   background: var(--bg-plain);
 }
 
@@ -31,6 +33,47 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+.landing-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../files/background2.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+.landing-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-plain);
+  z-index: 1;
+  animation: 3s linear 3500ms 1 forwards layerAnim;
+}
+
+.landing-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@keyframes layerAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 

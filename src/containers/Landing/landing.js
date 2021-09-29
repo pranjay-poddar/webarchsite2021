@@ -26,22 +26,26 @@ const Landing = () => {
 
   return (
     <Container className='landing'>
-      <Col className='landing-logo'>
-        <img src={logo} alt='logo' />
+      <Col className='landing-gif'></Col>
+      <Col className='landing-layer'></Col>
+      <Col className='landing-main'>
+        <Col className='landing-logo'>
+          <img src={logo} alt='logo' />
+        </Col>
+        <Row className='landing-content'>
+          <Col className='landing-left-content'>
+            <img src={web} alt='web' />
+          </Col>
+          <Col className='landing-right-content'>
+            <img src={arch} alt='arch' />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <h1 className='landing-tag'>Architects of the Web.</h1>
+          </Col>
+        </Row>
       </Col>
-      <Row className='landing-content'>
-        <Col className='landing-left-content'>
-          <img src={web} alt='web' />
-        </Col>
-        <Col className='landing-right-content'>
-          <img src={arch} alt='arch' />
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <h1 className='landing-tag'>Architects of the Web.</h1>
-        </Col>
-      </Row>
     </Container>
   )
 }
