@@ -34,7 +34,7 @@ const ContactUs = () => {
                                 Contact
                             </div>
                             <br />
-                            <p>
+                            <div>
                                 <div className="contact-detail-effect">
                                     <a href="tel:+91-956-076-8621">
                                         <span>
@@ -52,7 +52,7 @@ const ContactUs = () => {
                                         contactwebarch<br />
                                     </a>
                                 </div>
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div className="contact-icons">
@@ -80,19 +80,19 @@ const ContactUs = () => {
                 </div>
                 <div className="contact-form-layout contact-height-1 col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1 order-md-2">
                     <div className="contact-form-border d-flex justify-content-center">
-                        <div class="contact-corner-borders contact-corner-borders--left"></div>
-                        <div class="contact-corner-borders contact-corner-borders--right"></div>
+                        <div className="contact-corner-borders contact-corner-borders--left"></div>
+                        <div className="contact-corner-borders contact-corner-borders--right"></div>
                         <div className="contact-form-container">
                             <div className="contact-form-title">
                                 <span>Ping Us</span>
                             </div>
                             <div className="contact-form-content">
                                 <form>
-                                    <label for="name">NAME</label>
+                                    <label htmlFor="name">NAME</label>
                                     <input type="text" className="no-outline" id="name"></input>
-                                    <label for="email">EMAIL</label>
+                                    <label htmlFor="email">EMAIL</label>
                                     <input type="email" id="email"></input>
-                                    <label for="message">MESSAGE</label>
+                                    <label htmlFor="message">MESSAGE</label>
                                     <input type="text" id="message"></input>
                                     <button type="submit" id="submit-btn">SEND MESSAGE</button>
                                 </form>
