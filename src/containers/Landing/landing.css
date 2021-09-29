@@ -230,4 +230,20 @@ body {
     margin-top: 100px;
     font-size: var(--font-size-small);
   }
+  @-webkit-keyframes reveal {
+    80% {
+      letter-spacing: 3.8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
+  @keyframes reveal {
+    80% {
+      letter-spacing: 3.8px;
+    }
+    100% {
+      background-size: 300% 300%;
+    }
+  }
 }
