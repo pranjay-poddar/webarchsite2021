@@ -25,7 +25,7 @@
     position:absolute;
     border-radius: 15px;
     position: relative;
-    display: inline-block;       
+    display: inline-block;    
 }
 
 .contact .contact-details-container{
@@ -302,6 +302,7 @@ label{
         max-width: 380px;
         padding: 15px 20px;
         margin: 10px;
-        margin-top: 100px;
+        margin-top: 150px;
+        margin-bottom: 100px;
     }    
  }
