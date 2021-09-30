@@ -3,8 +3,10 @@
   /* display: flex;
   justify-content: center;
   align-items: center; */
-  margin-top: 200px;
-  padding: 50px;
+  /* margin-top: 200px; */
+  padding-top: 100px;
+  background: var(--bg-grad);
+  overflow-x: hidden;
 }
 .card-container {
   max-width: 80%;
@@ -18,11 +20,11 @@
   text-align: center;
   height: 250px;
   width: 300px;
-  background-color: white;
+  background-color: #3e4b72;
   border-radius: 78% 22% 81% 19% / 21% 80% 20% 79%;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   padding: 10px 20px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 .card::before {
   content: "";
@@ -30,7 +32,9 @@
   height: 280px;
   width: 300px;
   top: -12px;
-  background-color: #6b3294;
+  /* background-color: #6b3294; */
+  background-color: var(--webarch-blue);
+
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
   border-radius: 73% 27% 87% 13% / 15% 75% 25% 85%;
   z-index: -2;
@@ -64,7 +68,8 @@
   height: 75px;
   width: 75px;
   border-radius: 100%;
-  background-color: #6b3294;
+  /* background-color: #6b3294; */
+  background-color: var(--webarch-blue);
   left: -5px;
   top: -5px;
   z-index: -1;
@@ -73,21 +78,19 @@
   font-size: 1.7rem;
   line-height: 1rem;
   font-weight: 600;
+  color: white;
 }
 .card .card-body .name p {
   font-size: 1.3rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .card .card-body .quote {
   font-size: 1.2rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 .flickity-button {
   width: 10px;
 }
-/*! Flickity v2.1.2
-https://flickity.metafizzy.co
----------------------------------------------- */
 
 .flickity-enabled {
   position: relative;
@@ -157,7 +160,6 @@ https://flickity.metafizzy.co
 .flickity-button:disabled {
   opacity: 0.3;
   cursor: auto;
-  /* prevent disabled button from capturing pointer up event. #716 */
   pointer-events: none;
 }
 
@@ -222,7 +224,7 @@ https://flickity.metafizzy.co
   width: 10px;
   height: 10px;
   margin: 0 8px;
-  background: #333;
+  background: rgb(190, 190, 190);
   border-radius: 50%;
   opacity: 0.25;
   cursor: pointer;
@@ -230,4 +232,6 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+  width: 12px;
+  height: 12px;
 }
