@@ -150,6 +150,13 @@ body {
   width: 90%;
 }
 
+.landing-left-mob-content {
+  display: none;
+}
+.landing-right-mob-content {
+  display: none;
+}
+
 @keyframes reveal-left {
   0% {
     transform: translate(-1500px);
@@ -220,11 +227,53 @@ body {
     margin-top: 330px;
   }
   .landing-left-content img {
-    width: 100%;
+    display: none;
   }
   .landing-right-content img {
+    display: none;
+  }
+  .landing-left-mob-content {
+    animation: 0.8s reveal-left 3500ms;
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .landing-left-mob-content img {
+    position: relative;
+    transform: translateX(12%);
     object-fit: cover;
     width: 100%;
+  }
+  .landing-right-mob-content {
+    animation: 0.8s reveal-right 3500ms;
+    visibility: hidden;
+    display: flex;
+  }
+  .landing-right-mob-content img {
+    object-fit: cover;
+    transform: translateX(0%);
+    width: 100%;
+  }
+
+  @keyframes reveal-left {
+    0% {
+      transform: translate(-1500px);
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(0px);
+      visibility: visible;
+    }
+  }
+  @keyframes reveal-right {
+    0% {
+      transform: translate(1500px);
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(0px);
+      visibility: visible;
+    }
   }
   .landing-tag {
     margin-top: 100px;
@@ -232,7 +281,7 @@ body {
   }
   @-webkit-keyframes reveal {
     80% {
-      letter-spacing: 3.8px;
+      letter-spacing: 3.1px;
     }
     100% {
       background-size: 300% 300%;
@@ -240,7 +289,7 @@ body {
   }
   @keyframes reveal {
     80% {
-      letter-spacing: 3.8px;
+      letter-spacing: 3.1px;
     }
     100% {
       background-size: 300% 300%;

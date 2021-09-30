@@ -3,18 +3,26 @@ import '../Landing/landing.css'
 import logo from '../../files/logo.png'
 import web from '../../files/web.png'
 import arch from '../../files/arch.png'
+import mobWeb from '../../files/mob-web.png'
+import mobArch from '../../files/mob-arch.png'
 import { Container, Col, Row } from 'react-bootstrap'
 
 const Landing = () => {
   function nameReveal() {
     if (
       document.querySelector('.landing-left-content') !== undefined &&
-      document.querySelector('.landing-right-content') !== undefined
+      document.querySelector('.landing-right-content') !== undefined &&
+      document.querySelector('.landing-left-mmob-content') !== undefined &&
+      document.querySelector('.landing-right-mob-content') !== undefined
     ) {
       setTimeout(function () {
         document.querySelector('.landing-left-content').style.visibility =
           'visible'
         document.querySelector('.landing-right-content').style.visibility =
+          'visible'
+        document.querySelector('.landing-left-mob-content').style.visibility =
+          'visible'
+        document.querySelector('.landing-right-mob-content').style.visibility =
           'visible'
       }, 4000)
     }
@@ -38,6 +46,12 @@ const Landing = () => {
           </Col>
           <Col className='landing-right-content'>
             <img src={arch} alt='arch' />
+          </Col>
+          <Col className='landing-left-mob-content'>
+            <img src={mobWeb} alt='web' />
+          </Col>
+          <Col className='landing-right-mob-content'>
+            <img src={mobArch} alt='arch' />
           </Col>
         </Row>
         <Row>
