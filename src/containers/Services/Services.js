@@ -1,6 +1,6 @@
 import "./Services.css";
 
-import web from "../../files/web.png";
+import web from "../../files/webDomain.png";
 import app from "../../files/app.png";
 import rnd from "../../files/rnd.png";
 import hr from "../../files/hr.png";

@@ -3,12 +3,12 @@ import "./Home.css";
 import SectionHead from "./SectionHeader/SectionHead";
 import Testimonials from "./Testimonials/Testimonials";
 import Services from "./Services/Services"
-import Navbar from "./Navbar/NavBar"
+import Landing from "./Landing/landing"
 
 const Home = () => {
   return (
     <div className="Home">
-      <Navbar />
+      <Landing />
       <SectionHead value="Testimonials" />
       <Testimonials />
       <SectionHead value="Services" />
@@ -17,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home
