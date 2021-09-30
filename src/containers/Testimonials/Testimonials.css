@@ -1,5 +1,6 @@
 .container-testimonials {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 50vh;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -8,14 +9,14 @@
   background: var(--bg-grad);
   overflow-x: hidden;
 }
-.card-container {
+.container-testimonials .card-container {
   max-width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   gap: 30px;
 }
-.card {
+.container-testimonials .card {
   position: relative;
   text-align: center;
   height: 250px;
@@ -26,7 +27,7 @@
   padding: 10px 20px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
-.card::before {
+.container-testimonials .card::before {
   content: "";
   position: absolute;
   height: 280px;
@@ -39,15 +40,15 @@
   border-radius: 73% 27% 87% 13% / 15% 75% 25% 85%;
   z-index: -2;
 }
-.card:nth-child(2n)::before {
+.container-testimonials .card:nth-child(2n)::before {
   transform: rotate(5deg);
   right: -15px;
 }
-.card:nth-child(2n + 1)::before {
+.container-testimonials .card:nth-child(2n + 1)::before {
   transform: rotate(-5deg);
   right: -5px;
 }
-.card .card-image {
+.container-testimonials .card .card-image {
   position: relative;
   height: 70px;
   width: 70px;
@@ -55,14 +56,14 @@
   margin: 10px auto;
   z-index: 3;
 }
-.card img {
+.container-testimonials .card img {
   height: 70px;
   width: 70px;
   border-radius: 100%;
   object-fit: cover;
   z-index: 10;
 }
-.card .card-image::before {
+.container-testimonials .card .card-image::before {
   content: "";
   position: absolute;
   height: 75px;
@@ -74,39 +75,39 @@
   top: -5px;
   z-index: -1;
 }
-.card .card-body .name h2 {
+.container-testimonials .card .card-body .name h2 {
   font-size: 1.7rem;
   line-height: 1rem;
   font-weight: 600;
   color: white;
 }
-.card .card-body .name p {
+.container-testimonials .card .card-body .name p {
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.card .card-body .quote {
+.container-testimonials .card .card-body .quote {
   font-size: 1.2rem;
   color: rgba(255, 255, 255, 0.5);
 }
-.flickity-button {
+.container-testimonials .flickity-button {
   width: 10px;
 }
 
-.flickity-enabled {
+.container-testimonials .flickity-enabled {
   position: relative;
 }
 
-.flickity-enabled:focus {
+.container-testimonials .flickity-enabled:focus {
   outline: none;
 }
 
-.flickity-viewport {
+.container-testimonials .flickity-viewport {
   /* overflow: hidden; */
   position: relative;
   height: 100%;
 }
 
-.flickity-slider {
+.container-testimonials .flickity-slider {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -114,7 +115,7 @@
 
 /* draggable */
 
-.flickity-enabled.is-draggable {
+.container-testimonials .flickity-enabled.is-draggable {
   -webkit-tap-highlight-color: transparent;
   tap-highlight-color: transparent;
   -webkit-user-select: none;
@@ -123,53 +124,53 @@
   user-select: none;
 }
 
-.flickity-enabled.is-draggable .flickity-viewport {
+.container-testimonials .flickity-enabled.is-draggable .flickity-viewport {
   cursor: move;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+.container-testimonials .flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
   cursor: -webkit-grabbing;
   cursor: grabbing;
 }
 
 /* ---- flickity-button ---- */
 
-.flickity-button {
+.container-testimonials .flickity-button {
   position: absolute;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
 }
 
-.flickity-button:hover {
+.container-testimonials .flickity-button:hover {
   background: white;
   cursor: pointer;
 }
 
-.flickity-button:focus {
+.container-testimonials .flickity-button:focus {
   outline: none;
   box-shadow: 0 0 0 5px #19f;
 }
 
-.flickity-button:active {
+.container-testimonials .flickity-button:active {
   opacity: 0.6;
 }
 
-.flickity-button:disabled {
+.container-testimonials .flickity-button:disabled {
   opacity: 0.3;
   cursor: auto;
   pointer-events: none;
 }
 
-.flickity-button-icon {
+.container-testimonials .flickity-button-icon {
   fill: #333;
 }
 
 /* ---- previous/next buttons ---- */
 
-.flickity-prev-next-button {
+.container-testimonials .flickity-prev-next-button {
   top: 50%;
   width: 44px;
   height: 44px;
@@ -178,23 +179,23 @@
   transform: translateY(-50%);
 }
 
-.flickity-prev-next-button.previous {
+.container-testimonials .flickity-prev-next-button.previous {
   left: 10px;
 }
-.flickity-prev-next-button.next {
+.container-testimonials .flickity-prev-next-button.next {
   right: 10px;
 }
 /* right to left */
-.flickity-rtl .flickity-prev-next-button.previous {
+.container-testimonials .flickity-rtl .flickity-prev-next-button.previous {
   left: auto;
   right: 10px;
 }
-.flickity-rtl .flickity-prev-next-button.next {
+.container-testimonials .flickity-rtl .flickity-prev-next-button.next {
   right: auto;
   left: 10px;
 }
 
-.flickity-prev-next-button .flickity-button-icon {
+.container-testimonials .flickity-prev-next-button .flickity-button-icon {
   position: absolute;
   left: 20%;
   top: 20%;
@@ -204,7 +205,7 @@
 
 /* ---- page dots ---- */
 
-.flickity-page-dots {
+.container-testimonials .flickity-page-dots {
   position: absolute;
   width: 100%;
   bottom: -25px;
@@ -215,11 +216,11 @@
   line-height: 1;
 }
 
-.flickity-rtl .flickity-page-dots {
+.container-testimonials .flickity-rtl .flickity-page-dots {
   direction: rtl;
 }
 
-.flickity-page-dots .dot {
+.container-testimonials .flickity-page-dots .dot {
   display: inline-block;
   width: 10px;
   height: 10px;
@@ -230,7 +231,7 @@
   cursor: pointer;
 }
 
-.flickity-page-dots .dot.is-selected {
+.container-testimonials .flickity-page-dots .dot.is-selected {
   opacity: 1;
   width: 12px;
   height: 12px;
