@@ -90,16 +90,19 @@ p {
   margin: 50px 0;
 }
 .five > li {
-  background: #FFFFFF;
+  /* background: #FFFFFF; */
+  background: #4669a5;
   border: 1px solid rgba(150,150,150,0.29);
   -moz-box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
   box-shadow: 0px 0px 18px 0px rgba(103,85,85,0.39);
   width: 250px;
-  height: 350px;
+  /* height: 350px; */  
+  height: 340px;
   display: inline-block;
   margin: 0 30px;
   text-align: center;
   margin-bottom: 32px;
+  border-radius: 0 0 15px 15px;
 }
 .five > li img {
   margin-top: 60px;
@@ -127,7 +130,8 @@ p {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   top: -300px;
-  background: #889EAF;
+  /* background: #889EAF; */
+  background: #aed6dc;
 }
 .five > li:hover span p {
   color: black;
@@ -152,8 +156,10 @@ p {
   display: none;
 }
 .five > li:hover h3 {
-  color: #889EAF;
-  margin-top: 270px;
+  /* color: #889EAF; */
+  color: #aed6dc;
+  /* margin-top: 270px; */
+  margin-top: 250px;
 }
 .five > li .wrapper {
   overflow: hidden;
@@ -168,7 +174,8 @@ p {
   position: absolute;
   top: -490px;
   width: 500px;
-  background: #889EAF;
+  /* background: #889EAF; */
+  background: #aed6dc;
 }
 .five .mamber-img {
   width: 100px;
@@ -180,7 +187,8 @@ p {
   font-weight: 600;
   font-size: 13px;
  margin-top: 5px  ;
- color: #889EAF;
+ /* color: #889EAF; */
+ color: #fff;
 }
 .five > li h3{
     font-size: 17px;
