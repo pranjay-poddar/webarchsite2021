@@ -1,0 +1,30 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap"); */
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+}
+.Navbar {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.Navbar .appbar {
+  font-family: "Roboto Mono", monospace;
+}
+.Navbar .p-tag {
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+}
+.Navbar .hoverable {
+  text-transform: capitalize;
+  color: #8892b0;
+}
+.Navbar .hoverable:hover {
+  color: #64ffda;
+}
+.Navbar .btn-head:active {
+  border: 1px dashed #64ffda;
+}
+.Navbar .btn-head:focus {
+  border: 1px dashed #64ffda;
+}
