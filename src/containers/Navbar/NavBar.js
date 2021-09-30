@@ -120,14 +120,14 @@ export default function PrimarySearchAppBar() {
         className="appbar"
         position="static"
         sx={{
-          backgroundColor: "#0A192F",
+          backgroundColor: "rgba(22,22,37, 0.3)",
           padding: "5px",
         }}
       >
         <Toolbar>
-          <Box sx={{ marginRight: "20px" }}>
+          {/* <Box sx={{ marginRight: "20px" }}>
             <img src={logo} alt="logo" style={{ width: "50px" }}></img>
-          </Box>
+          </Box> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box
             sx={{ display: { xs: "none", md: "flex" } }}
@@ -148,7 +148,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#64ffda" }}>01. </span>About us
+                  <span style={{ color: "#00E8FF" }}>01. </span>About us
                 </p>
               </Typography>
             </Button>
@@ -166,7 +166,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#64ffda" }}>02. </span>Content
+                  <span style={{ color: "#00E8FF" }}>02. </span>Content
                 </p>
               </Typography>
             </Button>
@@ -184,7 +184,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#64ffda" }}>03. </span>Project
+                  <span style={{ color: "#00E8FF" }}>03. </span>Project
                 </p>
               </Typography>
             </Button>
@@ -202,7 +202,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#64ffda" }}>04. </span>Team
+                  <span style={{ color: "#00E8FF" }}>04. </span>Team
                 </p>
               </Typography>
             </Button>
