@@ -5,7 +5,7 @@ import web from '../../files/web.png'
 import arch from '../../files/arch.png'
 import mobWeb from '../../files/mob-web.png'
 import mobArch from '../../files/mob-arch.png'
-import { Container, Col, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import Navbar from '../Navbar/NavBar'
 
 const Landing = () => {
@@ -38,7 +38,7 @@ const Landing = () => {
       <Col className='landing-gif'></Col>
       <Col className='landing-layer'></Col>
       <Col className='landing-main'>
-        <Navbar />
+        <Navbar isHome={true} />
         <Col className='landing-logo'>
           <img src={logo} alt='logo' />
         </Col>

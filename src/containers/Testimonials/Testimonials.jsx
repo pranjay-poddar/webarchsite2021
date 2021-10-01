@@ -71,6 +71,7 @@ const Testimonials = (props) => {
         handleChange(index);
       });
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [carouselIndex]);
 
   return (

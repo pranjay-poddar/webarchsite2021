@@ -10,7 +10,7 @@
   padding: 0;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 5;
   opacity: 0;
   animation: 3s linear 3500ms forwards navAppear;
 }

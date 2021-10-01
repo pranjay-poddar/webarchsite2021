@@ -12,7 +12,7 @@ import logo from "./logo.png";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import "./NavBar.css";
 
-export default function PrimarySearchAppBar() {
+export default function PrimarySearchAppBar({ isHome }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -88,7 +88,17 @@ export default function PrimarySearchAppBar() {
           aria-label="show 4 new mails"
           color="inherit"
         >
-          Content
+          Services
+        </Button>
+      </MenuItem>
+      <MenuItem>
+        <Button
+          className="btn-head"
+          size="large"
+          aria-label="show 4 new mails"
+          color="inherit"
+        >
+          Clients
         </Button>
       </MenuItem>
       <MenuItem>
@@ -125,9 +135,11 @@ export default function PrimarySearchAppBar() {
         }}
       >
         <Toolbar>
-          {/* <Box sx={{ marginRight: "20px" }}>
-            <img src={logo} alt="logo" style={{ width: "50px" }}></img>
-          </Box> */}
+          {!isHome && (
+            <Box sx={{ marginRight: "20px" }}>
+              <img src={logo} alt="logo" style={{ width: "50px" }}></img>
+            </Box>
+          )}
           <Box sx={{ flexGrow: 1 }} />
           <Box
             sx={{ display: { xs: "none", md: "flex" } }}
@@ -166,7 +178,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>02. </span>Content
+                  <span style={{ color: "#00E8FF" }}>02. </span>Services
                 </p>
               </Typography>
             </Button>
@@ -184,7 +196,7 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>03. </span>Project
+                  <span style={{ color: "#00E8FF" }}>03. </span>Clients
                 </p>
               </Typography>
             </Button>
@@ -202,7 +214,25 @@ export default function PrimarySearchAppBar() {
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
                 <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>04. </span>Team
+                  <span style={{ color: "#00E8FF" }}>04. </span>Project
+                </p>
+              </Typography>
+            </Button>
+            <Button
+              className="btn-head"
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Typography
+                variant="h6"
+                noWrap
+                className="hoverable"
+                component="div"
+                sx={{ display: { xs: "none", sm: "block" } }}
+              >
+                <p className="p-tag">
+                  <span style={{ color: "#00E8FF" }}>05. </span>Team
                 </p>
               </Typography>
             </Button>
