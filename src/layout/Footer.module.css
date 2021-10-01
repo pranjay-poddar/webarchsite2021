@@ -1,11 +1,20 @@
 .footerContainer {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
     background: var(--bg-plain);
     color: white;
     font-size: var(--font-size-small);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0 2rem;
+}
+
+.illustration {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.illustration img{
+    width: 96.5%;
 }
 
 .exploreContainer {
@@ -38,7 +47,8 @@
 
 .contact li a i {
     margin-right: 1rem;
-    color: #ff6347;
+    /* color: #ff6347; */
+    color: #6C63FF;
 }
 
 .msgContainer {
@@ -119,19 +129,6 @@
 }
 
 @media (max-width:760px) {
-    /* .footerContainer {
-        font-size: 2rem;
-        padding-right: 0;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    .explore {
-        margin-right: 3rem;
-    }
-    .contact li a {
-        font-size: 2rem;
-    } */
     .explore {
         display: none;
     }
