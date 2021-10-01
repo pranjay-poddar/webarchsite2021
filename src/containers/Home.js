@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Home.css";
 import SectionHead from "./SectionHeader/SectionHead";
 import Testimonials from "./Testimonials/Testimonials";

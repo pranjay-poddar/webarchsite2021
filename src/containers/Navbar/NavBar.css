@@ -10,7 +10,9 @@
   padding: 0;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 9999;
+  opacity: 0;
+  animation: 3s linear 3500ms forwards navAppear;
 }
 .Navbar .appbar {
   font-family: "Roboto Mono", monospace;
@@ -31,4 +33,13 @@
 }
 .Navbar .btn-head:focus {
   border: 1px dashed #00E8FF;
+}
+
+@keyframes navAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

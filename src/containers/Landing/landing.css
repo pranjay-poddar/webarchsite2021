@@ -5,6 +5,7 @@
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 
 @keyframes background-fade {
@@ -95,7 +96,7 @@
 
 @keyframes contAnim {
   100% {
-    top: 5%;
+    top: 3px;
     left: 5%;
     transform: translate(0, 0);
     padding: 10px;

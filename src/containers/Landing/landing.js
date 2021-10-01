@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import '../Landing/landing.css'
+import './landing.css';
 import logo from '../../files/logo.png'
 import web from '../../files/web.png'
 import arch from '../../files/arch.png'
@@ -35,11 +35,10 @@ const Landing = () => {
 
   return (
     <Container className='landing'>
-      <Col className='landing-gif'>
-        <Navbar />
-      </Col>
+      <Col className='landing-gif'></Col>
       <Col className='landing-layer'></Col>
       <Col className='landing-main'>
+        <Navbar />
         <Col className='landing-logo'>
           <img src={logo} alt='logo' />
         </Col>
