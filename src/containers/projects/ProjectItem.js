@@ -1,6 +1,8 @@
 import React from "react";
 import "./Projects.css";
 import { Row, Col } from "react-bootstrap";
+import GithubIcon from "../../files/githubicon.svg";
+import LinkIcon from "../../files/linkicon.svg";
 
 const ProjectItem = ({ project }) => {
   const {
@@ -18,7 +20,7 @@ const ProjectItem = ({ project }) => {
     if (idx % 2 === 1) {
       return (
         <>
-          <Col>
+          <Col className="project-item-left">
             {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src="https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg"
@@ -26,7 +28,7 @@ const ProjectItem = ({ project }) => {
               alt="project"
             />
           </Col>
-          <Col>
+          <Col className="project-item-right">
             <div className="project-details">
               <p className="title">{title}</p>
               <div className="description">{description}</div>
@@ -42,6 +44,14 @@ const ProjectItem = ({ project }) => {
                   <p className="contributor-item ml-1">{item}</p>
                 ))}
               </div>
+              <div className="project-item-icons flex-end">
+                <a href={githubLink} target="__blank">
+                  <img src={GithubIcon} className="mr-1" />
+                </a>
+                <a href={liveDemo} target="__blank">
+                  <img src={LinkIcon} />
+                </a>
+              </div>
             </div>
           </Col>
         </>
@@ -49,7 +59,7 @@ const ProjectItem = ({ project }) => {
     } else {
       return (
         <>
-          <Col>
+          <Col className="project-item-left">
             <div className="project-details text-left">
               <p className="title">{title}</p>
               <div className="description">{description}</div>
@@ -65,13 +75,22 @@ const ProjectItem = ({ project }) => {
                   <p className="contributor-item mr-1">{item}</p>
                 ))}
               </div>
+              <div className="project-item-icons">
+                <a href={githubLink} target="__blank">
+                  <img src={GithubIcon} className="mr-1" />
+                </a>
+                <a href={liveDemo} target="__blank">
+                  <img src={LinkIcon} />
+                </a>
+              </div>
             </div>
           </Col>
-          <Col>
+          <Col className="project-item-right">
             {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src="https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png"
               className="project-image"
+              link
               alt="project"
             />
           </Col>
