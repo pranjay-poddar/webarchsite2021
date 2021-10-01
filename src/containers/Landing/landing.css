@@ -120,7 +120,7 @@
 }
 .landing-left-content img {
   position: relative;
-  transform: translateX(8%);
+  transform: translateX(10%);
   object-fit: cover;
   width: 90%;
 }
@@ -210,10 +210,10 @@
   .landing-content {
     margin-top: 330px;
   }
-  .landing-left-content img {
+  .landing-left-content {
     display: none;
   }
-  .landing-right-content img {
+  .landing-right-content {
     display: none;
   }
   .landing-left-mob-content {
@@ -224,7 +224,7 @@
   }
   .landing-left-mob-content img {
     position: relative;
-    transform: translateX(12%);
+    transform: translateX(10%);
     object-fit: cover;
     width: 100%;
   }
@@ -235,7 +235,7 @@
   }
   .landing-right-mob-content img {
     object-fit: cover;
-    transform: translateX(0%);
+    transform: translateX(-9%);
     width: 100%;
   }
 
