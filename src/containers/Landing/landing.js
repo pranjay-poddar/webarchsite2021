@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
-import './landing.css';
+import './landing.css'
 import logo from '../../files/logo.png'
 import web from '../../files/web.png'
 import arch from '../../files/arch.png'
 import mobWeb from '../../files/mob-web.png'
 import mobArch from '../../files/mob-arch.png'
 import { Container, Col, Row } from 'react-bootstrap'
-import Navbar from "../Navbar/NavBar"
+import Navbar from '../Navbar/NavBar'
 
 const Landing = () => {
   function nameReveal() {
@@ -34,7 +34,7 @@ const Landing = () => {
   }, [])
 
   return (
-    <Container className='landing'>
+    <Col className='landing'>
       <Col className='landing-gif'></Col>
       <Col className='landing-layer'></Col>
       <Col className='landing-main'>
@@ -62,7 +62,7 @@ const Landing = () => {
           </Col>
         </Row>
       </Col>
-    </Container>
+    </Col>
   )
 }
 
