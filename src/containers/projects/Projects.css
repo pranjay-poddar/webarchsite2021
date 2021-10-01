@@ -199,6 +199,9 @@
   .project-item .project-details {
     text-align: center;
   }
+  .project-item-icons {
+    justify-content: center;
+  }
 }
 
 /* Ipad */
@@ -206,6 +209,9 @@
   .project-image {
     height: 200px;
     width: 300px;
+  }
+  .project-item:nth-child(even) .row {
+    flex-direction: column-reverse;
   }
 }
 
