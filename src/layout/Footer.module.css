@@ -1,11 +1,13 @@
+.footerDiv {
+    background: var(--bg-plain);
+    color: white;
+    font-size: 2rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 2rem;
+}
 .footerContainer {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    background: var(--bg-plain);
-    color: white;
-    font-size: var(--font-size-small);
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0 2rem;
 }
 
 .illustration {
@@ -14,20 +16,19 @@
 }
 
 .illustration img{
-    width: 96.5%;
+    width: 100%;
 }
 
 .exploreContainer {
     display: flex;
     justify-content:flex-end;
-    border-bottom: 2px solid #aaaaaa;
     padding-right: 10rem;
     padding-top: 8rem;
     padding-bottom: 5rem;
 }
 
 .explore {
-    margin-right: 7rem;
+    margin-right: 5rem;
 }
 
 .explore li {
@@ -47,7 +48,6 @@
 
 .contact li a i {
     margin-right: 1rem;
-    /* color: #ff6347; */
     color: #6C63FF;
 }
 
@@ -110,13 +110,39 @@
     transform: scale(1.5);
 }
 
-@media (max-width:1200px) {
-    .exploreContainer {
-        padding-right: 5rem;
+
+
+@media (max-width:1370px) {
+    .footerContainer {
+        grid-template-columns: 1fr 2fr;
+    }
+    .illustration {
+        margin-top: 8rem;
     }
 }
 
-@media (max-width:850px) {
+@media (max-width:1230px) {
+    .exploreContainer {
+        padding-right: 5rem;
+    }
+    .illustration {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width:1155px){
+    .footerDiv {
+        font-size: 1.7rem;
+    }
+    .contact {
+        padding: 0;
+    }
+}
+
+@media (max-width:1005px) {
+    .footerDiv {
+        font-size: 2rem;
+    }
     .iconsContainer {
         margin-left: 3rem;
     }
@@ -126,14 +152,26 @@
     .socialLinks li {
         margin-top: 0.5rem;
     }
+    .illustration {
+        margin-top: 10rem;
+    }
+    .explore {
+        display: none;
+    }
+    .footerContainer {
+        grid-template-columns: 1fr 1.5fr;
+    }
 }
 
-@media (max-width:760px) {
-    .explore {
+@media (max-width:780px) {
+    .illustration {
         display: none;
     }
     .exploreContainer {
         justify-content: center;
+    }
+    .footerContainer {
+        grid-template-columns: 1fr;
     }
 }
 
