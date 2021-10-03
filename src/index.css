@@ -1,17 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Teko&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Teko&display=swap");
 
-:root{
+:root {
   font-size: 62.5%;
   --font-size-small: 2.2rem;
   --font-size-default: 3.8rem;
   --font-size-lg: 4.5rem;
   --font-size-xl: 6rem;
-  --webarch-blue: #00E8FF;
+  --webarch-blue: #00e8ff;
   --light-theme-blue: #007bff;
   --bg-plain: #161625;
-  --bg-grad: linear-gradient(to left, #2C3551, #161625);
-  --font: 'Source Code Pro', monospace;
-  --section-font: 'Teko', sans-serif;
+  --bg-grad: linear-gradient(to left, #2c3551, #161625);
+  --font: "Source Code Pro", monospace;
+  --section-font: "Teko", sans-serif;
+}
+
+html, body, #root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
 }
 
 body {
@@ -19,9 +28,10 @@ body {
   font-family: var(--font);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

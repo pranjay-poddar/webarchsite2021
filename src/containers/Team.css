@@ -2,12 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-body {
+.team-body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   padding-top: 20px;
   background-image: linear-gradient(to left, #2C3551, #161625);
 }
+
 
 .responsive-img{
   width: 45%;
@@ -154,6 +155,9 @@ p {
 .five > li:hover .social {
   margin-top: 250px;
 }
+body{
+    height: auto;
+}
 .five > li:hover .wrapper > img {
   display: none;
 }
@@ -194,7 +198,9 @@ p {
  color: #fff;
 }
 .five > li h3{
-    font-size: 17px;
+    padding-top: 13px;
+    font-size: 16px;
+    color: black;
 }
 .five .social {
   list-style: none;
