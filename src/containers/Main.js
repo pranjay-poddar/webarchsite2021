@@ -1,7 +1,7 @@
 import { Switch, Route } from "react-router-dom";
 import "./Main.css";
 import Home from "./Home";
-import Team from "./Team";
+import Team from "./Team/Team";
 import Projects from "./projects/Projects";
 
 function Main() {

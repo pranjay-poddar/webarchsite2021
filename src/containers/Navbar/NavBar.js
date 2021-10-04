@@ -125,7 +125,7 @@ export default function PrimarySearchAppBar({ isHome }) {
   );
 
   return (
-    <Box className="Navbar" sx={{ flexGrow: 1 }}>
+    <Box className={isHome ? "Navbar Navbar-Home" : "Navbar"} sx={{ flexGrow: 1 }}>
       <AppBar
         className="appbar"
         position="static"
