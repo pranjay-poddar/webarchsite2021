@@ -1,5 +1,5 @@
 .footerDiv {
-    background: var(--bg-plain);
+    background: #000;
     color: white;
     font-size: 2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,12 +11,12 @@
 }
 
 .illustration {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
     text-align: center;
 }
 
 .illustration img{
-    width: 100%;
+    width: 75%;
 }
 
 .exploreContainer {
@@ -48,7 +48,7 @@
 
 .contact li a i {
     margin-right: 1rem;
-    color: #6C63FF;
+    color: var(--webarch-blue);
 }
 
 .msgContainer {
@@ -126,7 +126,7 @@
         padding-right: 5rem;
     }
     .illustration {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
 }
 
@@ -153,7 +153,7 @@
         margin-top: 0.5rem;
     }
     .illustration {
-        margin-top: 10rem;
+        margin-top: 8rem;
     }
     .explore {
         display: none;
