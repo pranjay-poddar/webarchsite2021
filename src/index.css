@@ -31,6 +31,10 @@ body {
   overflow-x: hidden !important;
 }
 
+a{
+  text-decoration: none !important;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -34,7 +34,7 @@
 .projects-section {
   min-height: 100vh;
   min-width: 100vw;
-  padding: 100px 0;
+  /* padding: 100px 0; */
   background: var(--bg-grad);
   font-family: var(--font);
 }
@@ -43,6 +43,7 @@
   color: var(--webarch-blue);
   font-family: var(--section-font);
   font-size: var(--font-size-lg);
+  margin-top: 4rem;
   margin-bottom: 4rem;
 }
 

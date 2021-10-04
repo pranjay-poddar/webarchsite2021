@@ -3,6 +3,8 @@ import "./Projects.css";
 import { Container } from "react-bootstrap";
 import ProjectItem from "./ProjectItem";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Navbar from "../Navbar/NavBar";
+import Footer from "../Footer/Footer";
 
 const Projects = () => {
   const projects = [
@@ -58,14 +60,16 @@ const Projects = () => {
   ];
   return (
     <section className="projects-section">
+      <Navbar isHome={false}/>
       <Container>
         <h2 className="projects-title">PROJECTS</h2>
         <div className="projects-list">
-          {projects.map((project) => (
-            <ProjectItem id={project.id} project={project} />
+          {projects.map((project, idx) => (
+            <ProjectItem id={project.id} project={project} key={idx}/>
           ))}
         </div>
       </Container>
+      <Footer />
     </section>
   );
 };

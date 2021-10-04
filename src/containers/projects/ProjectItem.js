@@ -33,15 +33,15 @@ const ProjectItem = ({ project }) => {
               <p className="title">{title}</p>
               <div className="description">{description}</div>
               <div className="tech-stack flex-end">
-                {tech.map((item) => (
-                  <p className="tech-item">{item}</p>
+                {tech.map((item, idx) => (
+                  <p className="tech-item" key={idx}>{item}</p>
                 ))}
               </div>
               <div className="contributors flex-end">
                 <span className="web-blue">Contributors: </span>
 
-                {contributors.map((item) => (
-                  <p className="contributor-item ml-1">{item}</p>
+                {contributors.map((item, idx) => (
+                  <p className="contributor-item ml-1" key={idx}>{item}</p>
                 ))}
               </div>
               <div className="project-item-icons flex-end">
@@ -64,15 +64,15 @@ const ProjectItem = ({ project }) => {
               <p className="title">{title}</p>
               <div className="description">{description}</div>
               <div className="tech-stack flex-start">
-                {tech.map((item) => (
-                  <p className="tech-item">{item}</p>
+                {tech.map((item,idx) => (
+                  <p className="tech-item" key={idx}>{item}</p>
                 ))}
               </div>
               <div className="contributors flex-start">
                 <span className="web-blue mr-1">Contributors: </span>
 
-                {contributors.map((item) => (
-                  <p className="contributor-item mr-1">{item}</p>
+                {contributors.map((item,idx) => (
+                  <p className="contributor-item mr-1" key={idx}>{item}</p>
                 ))}
               </div>
               <div className="project-item-icons">
@@ -90,7 +90,7 @@ const ProjectItem = ({ project }) => {
             <img
               src="https://www.publichealthnotes.com/wp-content/uploads/2020/03/project-planning-header@2x.png"
               className="project-image"
-              link
+              link="true"
               alt="project"
             />
           </Col>

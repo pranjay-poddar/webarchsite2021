@@ -5,17 +5,20 @@ import Landing from "./Landing/landing";
 import Clients from "./Clients/Clients";
 import Footer from "./Footer/Footer";
 import Header from "./Header/Header";
+import ContactUs from "./Contact-Us/ContactUs";
 
 const Home = () => {
   return (
     <div className="Home">
       <Landing />
-      <Header title="Services" />
+      <Header id="Services" title="Services" />
       <Services />
-      <Header title="Clients" />
+      <Header id="Clients" title="Clients" />
       <Clients />
-      <Header title="Testimonials" />
+      <Header id="Testimonials" title="Testimonials" />
       <Testimonials />
+      <Header id="Contact" title="Contact Us" />
+      <ContactUs />
       <Footer />
     </div>
   );

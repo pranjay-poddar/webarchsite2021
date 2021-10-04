@@ -11,6 +11,7 @@ import Menu from "@mui/material/Menu";
 import logo from "./logo.png";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 export default function PrimarySearchAppBar({ isHome }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -72,54 +73,76 @@ export default function PrimarySearchAppBar({ isHome }) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Button
-          className="btn-head"
-          size="large"
-          aria-label="show 4 new mails"
-          color="inherit"
-        >
-          About us
-        </Button>
+        <Link to="/#About">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            About us
+          </Button>
+        </Link>
       </MenuItem>
       <MenuItem>
-        <Button
-          className="btn-head"
-          size="large"
-          aria-label="show 4 new mails"
-          color="inherit"
-        >
-          Services
-        </Button>
+        <Link to="/#Services">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            Services
+          </Button>
+        </Link>
       </MenuItem>
       <MenuItem>
-        <Button
-          className="btn-head"
-          size="large"
-          aria-label="show 4 new mails"
-          color="inherit"
-        >
-          Clients
-        </Button>
+        <Link to="/#Clients">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            Clients
+          </Button>
+        </Link>
       </MenuItem>
       <MenuItem>
-        <Button
-          className="btn-head"
-          size="large"
-          aria-label="show 4 new mails"
-          color="inherit"
-        >
-          Projects
-        </Button>
+        <Link to="/projects">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            Projects
+          </Button>
+        </Link>
       </MenuItem>
       <MenuItem>
-        <Button
-          className="btn-head"
-          size="large"
-          aria-label="show 4 new mails"
-          color="inherit"
-        >
-          Team
-        </Button>
+        <Link to="/team">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            Team
+          </Button>
+        </Link>
+      </MenuItem>
+      <MenuItem>
+        <Link to="/#Contact">
+          <Button
+            className="btn-head"
+            size="large"
+            aria-label="show 4 new mails"
+            color="inherit"
+          >
+            Contact
+          </Button>
+        </Link>
       </MenuItem>
     </Menu>
   );
@@ -159,9 +182,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>01. </span>About us
-                </p>
+                <Link to="/#About">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>01. </span>About us
+                  </p>
+                </Link>
               </Typography>
             </Button>
             <Button
@@ -177,9 +202,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>02. </span>Services
-                </p>
+                <Link to="/#Services">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>02. </span>Services
+                  </p>
+                </Link>
               </Typography>
             </Button>
             <Button
@@ -195,9 +222,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>03. </span>Clients
-                </p>
+                <Link to="/#Clients">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>03. </span>Clients
+                  </p>
+                </Link>
               </Typography>
             </Button>
             <Button
@@ -213,9 +242,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>04. </span>Project
-                </p>
+                <Link to="/projects">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>04. </span>Projects
+                  </p>
+                </Link>
               </Typography>
             </Button>
             <Button
@@ -231,9 +262,31 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <p className="p-tag">
-                  <span style={{ color: "#00E8FF" }}>05. </span>Team
-                </p>
+                <Link to="/team">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>05. </span>Team
+                  </p>
+                </Link>
+              </Typography>
+            </Button>
+            <Button
+              className="btn-head"
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Typography
+                variant="h6"
+                noWrap
+                className="hoverable"
+                component="div"
+                sx={{ display: { xs: "none", sm: "block" } }}
+              >
+                <Link to="/#Contact">
+                  <p className="p-tag">
+                    <span style={{ color: "#00E8FF" }}>06. </span>Contact
+                  </p>
+                </Link>
               </Typography>
             </Button>
           </Box>
