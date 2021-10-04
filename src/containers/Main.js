@@ -5,6 +5,7 @@ import Team from "./Team/Team";
 import Projects from "./projects/Projects";
 
 function Main() {
+
   return (
     <div className="Main">
       <Switch>
