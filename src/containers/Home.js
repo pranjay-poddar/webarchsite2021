@@ -3,6 +3,7 @@ import SectionHead from "./SectionHeader/SectionHead";
 import Testimonials from "./Testimonials/Testimonials";
 import Services from "./Services/Services"
 import Landing from "./Landing/landing"
+import Footer from "./Footer/Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Services />
       <SectionHead value="Testimonials" />
       <Testimonials />
+      <Footer />
     </div>
   );
 };

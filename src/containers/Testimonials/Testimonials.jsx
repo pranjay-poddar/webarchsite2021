@@ -71,14 +71,14 @@ const Testimonials = (props) => {
         handleChange(index);
       });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps 
   }, [carouselIndex]);
 
   return (
     <div className="container-testimonials">
       <Flickity flickityRef={(c) => (flkty = c)} options={{ initialIndex: 1 }}>
-        {slideData.map((card) => {
-          return <Card card={card} />;
+        {slideData.map((card, i) => {
+          return <Card card={card} key={i} />;
         })}
       </Flickity>
     </div>
