@@ -15,7 +15,7 @@ const Services = () => {
              
                 {/* <h1 className="text-center service-title "> Services</h1> */}
                 <div className="row d-flex justify-content-center">
-                    <div className="col-md-4 col-xs-6 col-lg-4 col-sm-6  d-flex justify-content-center">
+                    <div className="col-md-4  col-lg-4 col-sm-6 col-xs-3  d-flex justify-content-center">
                         <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">
@@ -30,7 +30,7 @@ const Services = () => {
                             <div className="shadowTwo"></div>
                         </div>
                     </div>
-                    <div className="col-md-4 col-xs-6 col-lg-4 col-sm-6  d-flex justify-content-center">
+                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-3 d-flex justify-content-center">
                     <div className="main-card">
                             <div className="service">
                                 <div className="service-logo">

@@ -46,7 +46,7 @@
     height: 130px;
     border-radius: 50%;
     margin:-90px auto 0;
-    background: rgb(70, 70, 70);
+    background: #3e4b72;
     border: 18px solid #282c34;
     transition: transform 1s;
 }
@@ -58,7 +58,7 @@
 .Services .service h4{
     height: 35px;
     width: 80%;
-    background: rgb(95, 95, 95);
+    background: #3e4b72;
     color: white;
     margin:20px auto;
     position: relative;
@@ -108,16 +108,16 @@
 }
 .Services .main-card:hover .service{
     transform: translateY(-50px);
-    background: rgb(78, 78, 78);
+    background: #3e4b72;
     border: 1px solid white;
 }
 .Services .main-card:hover .shadowOne{
     transform: translateY(-25px);
-    background: #61dafb;
+    background: #00E8FF;
     border: 1px solid white;
 }
 .Services .main-card:hover .shadowTwo{
-    background: rgb(78, 78, 78);
+    background: #3e4b72;
     border: 1px solid white;
     opacity: 1;
 }
@@ -130,22 +130,42 @@
 @media (max-width:576px){
     .Services .main-card{
         width: 26rem;
-       
+        align-items: center;
+        min-height: 330px;
+    }
+    .Services .service h4{
+        height: 35px;
+        width: 80%;
+        background: #3e4b72;
+        color: white;
+        margin:20px auto;
+        position: relative;
+    }
+    .Services p{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .Services .row>* {
+        width: 45% !important;
+        padding: 0%;
     }
     .Services .service{
-        padding: 20px;
-        border-radius: 10px;
+        padding: 5px;
+        border-radius: 5px;
         z-index: 2;
+    }
+    .Services .service h4 {
+        font-size: 2.1rem;
     }
   
     .Services .service-logo{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         border-radius: 50%;
     }
     .Services .service-logo img{
-        width: 35px;
-        height: 35px;
-        margin-top: 15px;
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
     }
 }
