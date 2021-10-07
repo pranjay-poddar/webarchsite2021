@@ -1,13 +1,18 @@
 .footerDiv {
     background: #000;
     color: white;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     padding: 0 2rem;
 }
 .footerContainer {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
+}
+
+h3 {
+    font-weight: bold;
 }
 
 .illustration {
@@ -77,6 +82,7 @@
 .socialLinks {
     display: flex;
     justify-content: center;
+    margin-top: 1.1rem;
 }
 
 .socialLinks li {
