@@ -13,12 +13,12 @@ const Home = () => {
       <Landing />
       <Header id="Services" title="Services" />
       <Services />
-      <Header id="Clients" title="Clients" />
-      <Clients />
+      <Header id="Clients" title="Clients" alt />
+      <Clients alt />
       <Header id="Testimonials" title="Testimonials" />
       <Testimonials />
-      <Header id="Contact" title="Contact Us" />
-      <ContactUs />
+      <Header id="Contact" title="Contact Us" alt />
+      <ContactUs alt />
       <Footer />
     </div>
   );

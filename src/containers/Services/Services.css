@@ -7,6 +7,7 @@
 	flex-direction: column;
 	color: white;
     padding-bottom: 10vh;
+    padding-top: 5.4rem;
 }
 .Services {
     color: #61dafb;
@@ -15,7 +16,7 @@
 .Services p{
     color: white;
     font-size: 1.7rem;
-    font-family:--font;
+    font-family: var(--font);
 }
 .Services .service-title{
     font-size: calc(30px + 2vmin);
@@ -41,7 +42,7 @@
 
 .Services .service h4 {
     font-size: 2.2rem;
-    font-family: --font;
+    font-family: var(--font);
 }
 .Services .service-logo{
     width: 130px;

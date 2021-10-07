@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Teko&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Noto+Serif&display=swap');
 
 :root {
   font-size: 62.5%;
@@ -9,8 +10,11 @@
   --webarch-blue: #00e8ff;
   --light-theme-blue: #007bff;
   --bg-plain: #161625;
+  --bg-plain-light: #1e2539;
   --bg-grad: linear-gradient(to left, #2c3551, #161625);
-  --font: "Source Code Pro", monospace;
+  /* --font: "Source Code Pro", monospace; */
+  --font: 'IBM Plex Sans', sans-serif;
+  /* --font: 'Noto Serif', serif; */
   --section-font: "Teko", sans-serif;
 }
 
@@ -23,9 +27,13 @@ html, body, #root{
   position: relative;
 }
 
+.alt{
+  background: var(--bg-plain-light) !important;
+}
+
 body {
   margin: 0;
-  font-family: var(--font);
+  font-family: var(--font) !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden !important;

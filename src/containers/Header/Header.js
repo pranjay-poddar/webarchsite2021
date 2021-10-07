@@ -1,7 +1,7 @@
 import "./Header.css";
 import $ from "jquery";
 
-const Header = ({ title, id }) => {
+const Header = ({ title, id, alt }) => {
 
     $(".Header-hr").each(function (index) {
         if (
@@ -27,7 +27,7 @@ const Header = ({ title, id }) => {
     });
 
     return (
-        <div id={id} className="Header">
+        <div id={id} className={alt ? "Header alt" : "Header"}>
             <p className="Header-text">/ {title}</p>
             <hr className="Header-hr" />
         </div>

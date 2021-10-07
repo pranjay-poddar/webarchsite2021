@@ -10,10 +10,10 @@ import { GrMail } from "react-icons/gr";
 import './ContactUs.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const ContactUs = () => {
+const ContactUs = ({alt}) => {
 
     return (
-        <div className="contact-us d-flex flex-row align-items-center">
+        <div className={alt ? "contact-us d-flex flex-row align-items-center alt" : "contact-us d-flex flex-row align-items-center"}>
             <div className="contact w-100 row m-0 justify-content-center align-items-center">
                 <div className="contact-info contact-height col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1">
                     <div className="contact-vertical"></div>
