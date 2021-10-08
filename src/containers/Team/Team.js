@@ -14,9 +14,7 @@ const Team = () => {
         const q = query(collection(db, "team"), where("order", "in", teamIds));
         var members = [];
         getDocs(q).then(data => {
-            console.log(data.length);
             data.forEach(m => {
-                console.log(m.data())
                 members.push(m.data())
             });
         })
