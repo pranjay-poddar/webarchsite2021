@@ -115,31 +115,38 @@ const ContactUs = ({ alt }) => {
                                     autoComplete="off"
                                 >
                                     <TextField
-                                        style={{ width: '90%', backgroundColor: 'none' }}
+                                        sx={{
+                                            '&:focus': { backgroundColor: 'red' },
+                                        }}
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
-                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                        InputLabelProps={{
+                                            style: {
+                                                fontSize: 15, color: "#c2c2c2", letterSpacing: '1px'
+                                            }
+                                        }}
                                         id="standard-basic"
-                                        label="NAME"
+                                        label="Name"
                                         variant="standard"
                                         margin="normal" />
                                     <TextField
-                                        style={{ width: '90%' }}
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
-                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
                                         id="standard-basic"
-                                        label="EMAIL"
+                                        label="Email"
                                         variant="standard"
                                         margin="normal" />
                                     <TextField
-                                        style={{ width: '90%' }}
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
                                         id="standard-textarea"
-                                        label="TELL US SOMETHING"
+                                        label="Tell Us Something"
                                         multiline
                                         variant="standard"
                                         maxRows={2}
                                         margin="normal"
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff", lineHeight: '20px' } }}
-                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
                                     />
                                     <Button className={classes.button}
                                         style={{
@@ -151,7 +158,7 @@ const ContactUs = ({ alt }) => {
                                         size="large"
                                         type="submit"
                                         variant="contained"
-                                    >SUBMIT
+                                    >SEND
                                     </Button>
                                 </Box>
                             </div>

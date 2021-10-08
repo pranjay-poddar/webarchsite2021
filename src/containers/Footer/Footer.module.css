@@ -199,11 +199,6 @@ h3 {
     .msgContainer p {
         font-size: 1.6rem;
     }
-
-    .footerDiv{
-        position: absolute;
-    bottom: 0;
-    }
 } 
 
 @media (max-width:450px) {
