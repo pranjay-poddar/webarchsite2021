@@ -1,4 +1,8 @@
 import React from "react";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
 
 import { GrInstagram } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
@@ -9,6 +13,7 @@ import { GrMail } from "react-icons/gr";
 
 import './ContactUs.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { borderRadius } from "@mui/system";
 
 const ContactUs = () => {
 
@@ -87,21 +92,55 @@ const ContactUs = () => {
                                 <span>Ping Us</span>
                             </div>
                             <div className="contact-form-content">
-                                <form>
-                                    <label htmlFor="name">NAME</label>
-                                    <input type="text" className="no-outline" id="name"></input>
-                                    <label htmlFor="email">EMAIL</label>
-                                    <input type="email" id="email"></input>
-                                    <label htmlFor="message">MESSAGE</label>
-                                    <input type="text" id="message"></input>
-                                    <button type="submit" id="submit-btn">SEND MESSAGE</button>
-                                </form>
+                                <Box
+                                    component="form"
+                                    sx={{
+                                        '& > :not(style)': { m: 2, width: '30ch' },
+                                    }}
+                                    noValidate
+                                    autoComplete="off"
+                                >
+                                    <TextField
+                                        style={{ width: '85%', backgroundColor: 'none' }}
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                        id="standard-basic"
+                                        label="NAME"
+                                        variant="standard"
+                                        margin="normal" />
+                                    <TextField
+                                        style={{ width: '85%' }}
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                        id="standard-basic"
+                                        label="EMAIL"
+                                        variant="standard"
+                                        margin="normal" />
+                                    <TextField
+                                        style={{ width: '85%' }}
+                                        id="standard-textarea"
+                                        label="TELL US SOMETHING"
+                                        multiline
+                                        variant="standard"
+                                        maxRows={4}
+                                        margin="normal"
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
+                                    />
+                                    <Button
+                                        style={{ width: '90%', backgroundColor: '#00e8ff', color: '#000000', fontWeight: 'bold', fontSize: '10px' }}
+                                        size="large"
+                                        type="submit"
+                                        variant="contained"
+                                    >SUBMIT
+                                    </Button>
+                                </Box>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
