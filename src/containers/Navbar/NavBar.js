@@ -12,6 +12,7 @@ import logo from "./logo.png";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import "./NavBar.css";
 import { Link } from "react-router-dom";
+import { Link as NavLink } from "react-scroll";
 
 export default function PrimarySearchAppBar({ isHome }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -73,7 +74,7 @@ export default function PrimarySearchAppBar({ isHome }) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <Link to="/#About">
+        <NavLink activeClass='active' to='About' duration={0} smooth={true}>
           <Button
             className="btn-head"
             size="large"
@@ -82,10 +83,10 @@ export default function PrimarySearchAppBar({ isHome }) {
           >
             About us
           </Button>
-        </Link>
+        </NavLink>
       </MenuItem>
       <MenuItem>
-        <Link to="/#Services">
+        <NavLink activeClass='active' to='Services' duration={0} smooth={true}>
           <Button
             className="btn-head"
             size="large"
@@ -94,10 +95,10 @@ export default function PrimarySearchAppBar({ isHome }) {
           >
             Services
           </Button>
-        </Link>
+        </NavLink>
       </MenuItem>
       <MenuItem>
-        <Link to="/#Clients">
+        <NavLink activeClass='active' to='Clients' duration={0} smooth={true}>
           <Button
             className="btn-head"
             size="large"
@@ -106,7 +107,7 @@ export default function PrimarySearchAppBar({ isHome }) {
           >
             Clients
           </Button>
-        </Link>
+        </NavLink>
       </MenuItem>
       <MenuItem>
         <Link to="/projects">
@@ -133,7 +134,7 @@ export default function PrimarySearchAppBar({ isHome }) {
         </Link>
       </MenuItem>
       <MenuItem>
-        <Link to="/#Contact">
+        <NavLink activeClass='active' to='Contact' duration={0} smooth={true}>
           <Button
             className="btn-head"
             size="large"
@@ -142,7 +143,7 @@ export default function PrimarySearchAppBar({ isHome }) {
           >
             Contact
           </Button>
-        </Link>
+        </NavLink>
       </MenuItem>
     </Menu>
   );
@@ -182,11 +183,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link to="/#About">
+                <NavLink activeClass='active' to='About' duration={0} smooth={true}>
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>01. </span>About us
                   </p>
-                </Link>
+                </NavLink>
               </Typography>
             </Button>
             <Button
@@ -202,11 +203,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link to="/#Services">
+                <NavLink activeClass='active' to='Services' duration={0} smooth={true}>
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>02. </span>Services
                   </p>
-                </Link>
+                </NavLink>
               </Typography>
             </Button>
             <Button
@@ -222,11 +223,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link to="/#Clients">
+                <NavLink activeClass='active' to='Clients' duration={0} smooth={true}>
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>03. </span>Clients
                   </p>
-                </Link>
+                </NavLink>
               </Typography>
             </Button>
             <Button
@@ -282,11 +283,11 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link to="/#Contact">
+                <NavLink activeClass='active' to='Contact' duration={0} smooth={true}>
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>06. </span>Contact
                   </p>
-                </Link>
+                </NavLink>
               </Typography>
             </Button>
           </Box>

@@ -7,7 +7,7 @@ import { FaArrowRight, FaArrowLeft} from "react-icons/fa";
 
 const images = [image1, image1, image1, image1]
 
-function Clients(){
+function Clients({alt}){
 
   const NextArrow = ({onClick}) => {
     return(
@@ -41,7 +41,7 @@ function Clients(){
   };
 
   return(
-    <div className="clients">
+    <div className={alt ? "clients alt" : "clients"}>
       <div className="center">
      <Slider {...settings}>
        {images.map((img, idx)=>(
