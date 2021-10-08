@@ -2,6 +2,7 @@ import React from "react";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
 
 
 import { GrInstagram } from "react-icons/gr";
@@ -13,9 +14,22 @@ import { GrMail } from "react-icons/gr";
 
 import './ContactUs.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { borderRadius } from "@mui/system";
+
+const useStyles = makeStyles({
+
+    button: {
+        backgroundColor: '#00e8ff',
+        color: '#000',
+        '&:hover': {
+            backgroundColor: '#026ba3',
+            color: '#fff',
+        },
+    }
+})
 
 const ContactUs = ({ alt }) => {
+
+    const classes = useStyles()
 
     return (
         <div className={alt ? "contact-us d-flex flex-row align-items-center alt" : "contact-us d-flex flex-row align-items-center"}>
@@ -95,13 +109,13 @@ const ContactUs = ({ alt }) => {
                                 <Box
                                     component="form"
                                     sx={{
-                                        '& > :not(style)': { m: 2, width: '30ch' },
+                                        '& > :not(style)': { m: 1.2, width: '30ch' },
                                     }}
                                     noValidate
                                     autoComplete="off"
                                 >
                                     <TextField
-                                        style={{ width: '85%', backgroundColor: 'none' }}
+                                        style={{ width: '90%', backgroundColor: 'none' }}
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
                                         InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
                                         id="standard-basic"
@@ -109,7 +123,7 @@ const ContactUs = ({ alt }) => {
                                         variant="standard"
                                         margin="normal" />
                                     <TextField
-                                        style={{ width: '85%' }}
+                                        style={{ width: '90%' }}
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
                                         InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
                                         id="standard-basic"
@@ -117,18 +131,23 @@ const ContactUs = ({ alt }) => {
                                         variant="standard"
                                         margin="normal" />
                                     <TextField
-                                        style={{ width: '85%' }}
+                                        style={{ width: '90%' }}
                                         id="standard-textarea"
                                         label="TELL US SOMETHING"
                                         multiline
                                         variant="standard"
-                                        maxRows={4}
+                                        maxRows={2}
                                         margin="normal"
-                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff", lineHeight: '20px' } }}
                                         InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2" } }}
                                     />
-                                    <Button
-                                        style={{ width: '90%', backgroundColor: '#00e8ff', color: '#000000', fontWeight: 'bold', fontSize: '10px' }}
+                                    <Button className={classes.button}
+                                        style={{
+                                            width: '90%',
+                                            height: '35px',
+                                            fontSize: '15px',
+                                            marginTop: '30px'
+                                        }}
                                         size="large"
                                         type="submit"
                                         variant="contained"

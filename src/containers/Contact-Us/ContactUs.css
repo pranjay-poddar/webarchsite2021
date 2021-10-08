@@ -136,51 +136,6 @@
     padding: 20px;
 }
 
-/* input[type=text], input[type=email],textarea{
-    color: white;
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: var(--font);
-    width: 250px;
-    padding: 5px 10px;
-    display: block;
-    outline: none;
-    margin-bottom: 10px;
-    background: transparent;
-    border: none;
-    box-sizing: border-box;
-    box-shadow: 0 2px 1px #000;
-} */
-
-
-
-/* #submit-btn{
-    color: var(--bg-plain);
-    background-color: var(--webarch-blue);
-    border: none;
-    font-family: var(--font);
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin: 5px;
-    height: 30px;
-    width: 250px;
-    position: relative;
-    top: 15px;
-    border-radius: 20px;
-}
-
-#submit-btn:hover{
-    cursor: pointer;
-    background-color: rgb(0, 153, 224);
-} */
-
-/* label{
-    color: #c2c2c2;
-    font-size: 1.2rem;
-    display: block;
-    margin-bottom: 10px;
-} */
-
 .contact-us .contact .contact-form-layout .contact-form-border{
     max-height: 430px;
     height: 65vh;
@@ -246,18 +201,6 @@
         width: 280px;
         height: 280px;
     }
-    
-    /* input[type=text], input[type=email],textarea{
-        width: 240px;
-    } */
-    
-    /* #submit-btn{
-        top: 2px;
-    } */
-    
-    /* label{
-        padding-left: 15px;
-    } */
 
     .contact-us .contact .contact-form-layout .contact-form-border{
         max-height: 410px;
@@ -284,20 +227,8 @@
     
     .contact .contact-form-layout .contact-form-content{
         width: 280px;
-        height: 280px;
+        height: 300px;
     }
-    
-    /* input[type=text], input[type=email],textarea{
-        width: 240px;
-    } */
-    
-    /* #submit-btn{
-        top: 2px;
-    } */
-    
-    /* label{
-        padding-left: 15px;
-    } */
     
     .contact-us .contact .contact-form-layout .contact-form-border{
         max-height: 410px;
