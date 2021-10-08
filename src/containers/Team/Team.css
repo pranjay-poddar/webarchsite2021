@@ -20,6 +20,7 @@
 .responsive-img{
   width: 45%;
   height: auto;
+  max-height: 170px;
   /* 44% */
 border-radius: 50%;
 }
