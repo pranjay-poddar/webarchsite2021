@@ -14,7 +14,10 @@
     "bootstrap": "^5.1.0",
     "firebase": "^9.1.2",
     "flickity": "^2.2.2",
+<<<<<<< HEAD
     "framer-motion": "^4.1.17",
+=======
+>>>>>>> 19afd10600188c54e1483f7d8ba145bea44bc7ff
     "imports-loader": "^3.0.0",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
@@ -30,7 +33,10 @@
     "react-slick": "^0.28.1",
     "sass": "^1.41.1",
     "slick-carousel": "^1.8.1",
+<<<<<<< HEAD
     "styled-components": "^5.3.1",
+=======
+>>>>>>> 19afd10600188c54e1483f7d8ba145bea44bc7ff
     "swiper": "^7.0.6",
     "web-vitals": "^1.1.2"
   },

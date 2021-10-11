@@ -3,22 +3,36 @@ import Navbar from "../Navbar/NavBar";
 import Footer from "../Footer/Footer";
 import { db } from "../../firebase";
 import { useEffect, useState } from "react";
-import { collection, query, where, getDocs } from "@firebase/firestore";
+import { collection, query, getDocs } from "@firebase/firestore";
 
 const Team = () => {
 
+    const range = (start, end) => {
+        return Array(end - start + 1).fill().map((_, idx) => String(start + idx))
+    }
+
     const [teamMembers, setTeamMembers] = useState([]);
-    const teamIds = ["39", 46];
+    const teamIds = range(1,35);
 
     useEffect(() => {
-        const q = query(collection(db, "team"), where("order", "in", teamIds));
+        const q = query(collection(db, "team"));
         var members = [];
         getDocs(q).then(data => {
             data.forEach(m => {
-                members.push(m.data())
+                if(teamIds.includes(m.data().order)){
+                    members.push(m.data())
+                }
             });
         })
         .then(() => {
+            members.sort(function(a, b) {
+                var keyA = Number(a.order),
+                  keyB = Number(b.order);
+                // Compare the 2 dates
+                if (keyA < keyB) return -1;
+                if (keyA > keyB) return 1;
+                return 0;
+              });
             setTeamMembers(members);
         })
         .catch(err => console.log(err));
