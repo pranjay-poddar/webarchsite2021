@@ -43,19 +43,19 @@
   color: #00e8ff;
 }
 .btn-head:hover {
-  border: 1px dashed #00e8ff;
+  border: 0px dashed #00e8ff;
 }
 .btn-head:active {
-  border: 1px dashed #00e8ff;
+  border: 0px dashed #00e8ff;
 }
 .Navbar .btn-head:active {
-  border: 1px dashed #00e8ff;
+  border: 0px dashed #00e8ff;
 }
 .menu {
   width: "100%";
 }
 .Navbar .btn-head:focus {
-  border: 1px dashed #00e8ff;
+  border: 0px dashed #00e8ff;
 }
 
 @keyframes navAppear {
