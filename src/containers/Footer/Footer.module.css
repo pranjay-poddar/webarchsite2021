@@ -5,6 +5,8 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-family: var(--font);
     padding: 0 2rem;
+    position: relative;
+    bottom: 0;
 }
 .footerContainer {
     display: grid;

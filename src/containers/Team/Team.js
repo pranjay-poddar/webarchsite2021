@@ -1,6 +1,5 @@
 import "./Team.css"
 import Navbar from "../Navbar/NavBar";
-import Footer from "../Footer/Footer";
 import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 import { collection, query, getDocs } from "@firebase/firestore";
@@ -8,11 +7,11 @@ import { collection, query, getDocs } from "@firebase/firestore";
 const Team = () => {
 
     const range = (start, end) => {
-        return Array(end - start + 1).fill().map((_, idx) => String(start + idx))
+        return Array(Number(end) - Number(start) + 1).fill().map((_, idx) => String(Number(start) + idx))
     }
 
     const [teamMembers, setTeamMembers] = useState([]);
-    const teamIds = range(1,35);
+    const teamIds = range(process.env.REACT_APP_MEMBERS_START, process.env.REACT_APP_MEMBERS_END);
 
     useEffect(() => {
         const q = query(collection(db, "team"));
@@ -45,7 +44,9 @@ const Team = () => {
                 {" "}
                 
 
-                <img alt="team" className="responsive-img" src={m.photo} />
+                <div className="team-img">
+                    <img alt="team" className="responsive-img" src={m.photo} />
+                </div>
                 <h3 className="transition">
                     {m.name} <em>{m.role}</em>
                 </h3>
@@ -89,7 +90,6 @@ const Team = () => {
                     {lis}
                 </ul>
             </div>
-            <Footer />
         </div>
 
     );
