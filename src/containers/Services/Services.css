@@ -1,0 +1,174 @@
+.Services {
+    position: relative;
+    z-index: 0;
+	background-color: var(--bg-grad);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+    padding-bottom: 10vh;
+    padding-top: 5.4rem;
+}
+.Services {
+    color: #61dafb;
+}
+
+.Services p{
+    color: white;
+    font-size: 1.7rem;
+    font-family: var(--font);
+}
+.Services .service-title{
+    font-size: calc(30px + 2vmin);
+    margin: 20px;
+}
+.Services .main-card{
+    width: 30rem;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor:pointer;
+}
+.Services .service{
+    background-color: rgb(255, 255, 255,0);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    box-shadow: 0 0 20px -15px var(--webarch-blue);
+    transition: transform 0.8s;
+}
+
+.Services .service h4 {
+    font-size: 2.2rem;
+    font-family: var(--font);
+}
+.Services .service-logo{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin:-90px auto 0;
+    background: #3e4b72;
+    border: 18px solid #282c34;
+    transition: transform 1s;
+}
+.Services .service-logo img{
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+.Services .service h4{
+    height: 35px;
+    width: 80%;
+    background: #3e4b72;
+    color: white;
+    margin:20px auto;
+    position: relative;
+}
+.Services .service h4::after{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#fff,#61dafb);
+    position: absolute;
+    right:-5px;
+    top: -5px;
+    z-index: -1;
+}
+.Services .service h4::before{
+    content: "";
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right,#61dafb,#fff);
+    position: absolute;
+    left:-5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
+.Services .shadowOne{
+    height:200px;
+    width: 80%;
+    background: rgb(255, 255, 255,0);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform 0.8s;
+}
+.Services .shadowTwo{
+    height:200px;
+    width: 64%;
+    background: rgb(255, 255, 255,0);
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: 0;
+}
+.Services .main-card:hover .service{
+    transform: translateY(-50px);
+    background: #3e4b72;
+    border: 1px solid white;
+}
+.Services .main-card:hover .shadowOne{
+    transform: translateY(-25px);
+    background: #00E8FF;
+    border: 1px solid white;
+}
+.Services .main-card:hover .shadowTwo{
+    background: #3e4b72;
+    border: 1px solid white;
+    opacity: 1;
+}
+.Services .main-card:hover .service-logo{
+    transform: rotate(360deg);
+}
+.Services .opaque{
+    opacity: 1;
+}
+@media (max-width:576px){
+    .Services .main-card{
+        width: 26rem;
+        align-items: center;
+        min-height: 330px;
+    }
+    .Services .service h4{
+        height: 35px;
+        width: 80%;
+        background: #3e4b72;
+        color: white;
+        margin:20px auto;
+        position: relative;
+    }
+    .Services p{
+        color: white;
+        font-size: 1.4rem;
+    }
+    .Services .row>* {
+        width: 45% !important;
+        padding: 0%;
+    }
+    .Services .service{
+        padding: 5px;
+        border-radius: 5px;
+        z-index: 2;
+    }
+    .Services .service h4 {
+        font-size: 2.1rem;
+    }
+  
+    .Services .service-logo{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    .Services .service-logo img{
+        width: 25px;
+        height: 25px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,348 @@
+.landing {
+  animation: background-fade 13s forwards;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+@keyframes background-fade {
+  from {
+    background: var(--bg-plain);
+  }
+  to {
+    background: url('../../files/background.gif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.landing-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../files/background.gif');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+.landing-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bg-plain);
+  z-index: 1;
+  animation: 3s linear 3500ms 1 forwards layerAnim;
+}
+
+.landing-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@keyframes layerAnim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.landing-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: 3s cubic-bezier(0.7, 0, 0.84, 0) 1s 1 forwards contAnim;
+  z-index: 10;
+}
+
+.landing-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  animation: 3s cubic-bezier(0.7, 0, 0.84, 0) 1s 1 logoAnim;
+}
+
+@keyframes logoAnim {
+  0% {
+    padding: 2px;
+    filter: drop-shadow(0 0 30px cyan);
+    border: 5px solid cyan;
+  }
+
+  100% {
+    filter: none;
+    border: none;
+  }
+}
+
+@keyframes contAnim {
+  100% {
+    top: 3px;
+    left: 5%;
+    transform: translate(0, 0);
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.landing-box {
+  height: calc(100% - 70);
+}
+
+.landing-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
+  height: auto;
+}
+
+.landing-left-content {
+  animation: 0.8s reveal-left 3500ms;
+  visibility: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+.landing-left-content img {
+  position: relative;
+  transform: translateX(4%);
+  object-fit: cover;
+  width: 100%;
+}
+.landing-right-content {
+  animation: 0.8s reveal-right 3500ms;
+  visibility: hidden;
+}
+.landing-right-content img {
+  object-fit: cover;
+  transform: translateX(-4%);
+  width: 100%;
+}
+
+.landing-left-mob-content {
+  display: none;
+}
+.landing-right-mob-content {
+  display: none;
+}
+
+@keyframes reveal-left {
+  0% {
+    transform: translate(-1500px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(0px);
+    visibility: visible;
+  }
+}
+@keyframes reveal-right {
+  0% {
+    transform: translate(1500px);
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(0px);
+    visibility: visible;
+  }
+}
+
+.landing-tag {
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  background: 50% 100%/50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+
+@-webkit-keyframes reveal {
+  0% {
+    margin-top: 150px;
+  }
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+    margin-top: 10px;
+  }
+}
+@keyframes reveal {
+  0% {
+    margin-top: 150px;
+  }
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+    margin-top: 10px;
+  }
+}
+@-webkit-keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+
+.landing-down-arrow {
+  transform: translate(50%);
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.landing-down-arrow span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 5px solid cyan;
+  border-right: 5px solid cyan;
+  animation: downAnimate 2s infinite;
+}
+
+.landing-down-arrow span:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.landing-down-arrow span:nth-child(3) {
+  animation-delay: -0.4s;
+}
+
+@keyframes downAnimate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+/* Media Start */
+@media screen and (max-width: 767px) {
+  .landing-content {
+    margin-top: 330px;
+  }
+  .landing-left-content {
+    display: none;
+  }
+  .landing-right-content {
+    display: none;
+  }
+  .landing-left-mob-content {
+    animation: 0.8s reveal-left 3500ms;
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .landing-left-mob-content img {
+    position: relative;
+    transform: translateX(5%);
+    object-fit: cover;
+    width: 100%;
+  }
+  .landing-right-mob-content {
+    animation: 0.8s reveal-right 3500ms;
+    visibility: hidden;
+    display: flex;
+  }
+  .landing-right-mob-content img {
+    object-fit: cover;
+    transform: translateX(-6%);
+    width: 100%;
+  }
+
+  @keyframes reveal-left {
+    0% {
+      transform: translate(-1500px);
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(0px);
+      visibility: visible;
+    }
+  }
+  @keyframes reveal-right {
+    0% {
+      transform: translate(1500px);
+      visibility: hidden;
+    }
+    100% {
+      transform: translate(0px);
+      visibility: visible;
+    }
+  }
+  .landing-tag {
+    margin-top: 100px;
+    font-size: var(--font-size-small);
+  }
+  @-webkit-keyframes reveal {
+    0% {
+      margin-top: 150px;
+    }
+    80% {
+      letter-spacing: 3.1px;
+    }
+    100% {
+      background-size: 300% 300%;
+      margin-top: 20px;
+    }
+  }
+  @keyframes reveal {
+    0% {
+      margin-top: 150px;
+    }
+    80% {
+      letter-spacing: 3.1px;
+    }
+    100% {
+      background-size: 300% 300%;
+      margin-top: 20px;
+    }
+  }
+  .landing-down-arrow {
+    margin-top: 35px;
+  }
+  @media (min-width: 767px) and (max-width: 1024px) {
+    .landing-content {
+      margin-top: 600px;
+    }
+  }
+}

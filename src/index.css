@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&family=Teko&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Noto+Serif&display=swap');
+
+:root {
+  font-size: 62.5%;
+  --font-size-small: 2.2rem;
+  --font-size-default: 3.8rem;
+  --font-size-lg: 4.5rem;
+  --font-size-xl: 6rem;
+  --webarch-blue: #00e8ff;
+  --light-theme-blue: #007bff;
+  --bg-plain: #161625;
+  --bg-plain-light: #1e2539;
+  --bg-grad: linear-gradient(to left, #2c3551, #161625);
+  /* --font: "Source Code Pro", monospace; */
+  --font: 'IBM Plex Sans', sans-serif;
+  /* --font: 'Noto Serif', serif; */
+  --section-font: "Teko", sans-serif;
+}
+
+html, body, #root{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.alt{
+  background: var(--bg-plain-light) !important;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+/* scrollbar start  */
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 5px;
+}
+
+.middle {
+	position: relative;
+}
+
+.middle:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: rgb(255, 255, 255);
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.3s ease-in-out;
+}
+
+.middle:hover:before {
+	visibility: visible;
+	transform: scaleX(1);
+}
+/* Track */
+
+::-webkit-scrollbar-track {
+	background: #161625;
+}
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+	background: #00e8ff;
+}
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+	background: #bebebe;
+}
+/* scrollbar end  */
