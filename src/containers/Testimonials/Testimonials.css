@@ -76,17 +76,17 @@
   z-index: -1;
 }
 .container-testimonials .card .card-body .name h2 {
-  font-size: 1.7rem;
-  line-height: 1rem;
+  font-size: 1.8rem;
+  line-height: 1.3rem;
   font-weight: 600;
   color: white;
 }
 .container-testimonials .card .card-body .name p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.5);
 }
 .container-testimonials .card .card-body .quote {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: rgba(255, 255, 255, 0.5);
 }
 .container-testimonials .flickity-button {
