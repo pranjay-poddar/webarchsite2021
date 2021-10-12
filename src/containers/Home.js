@@ -19,7 +19,6 @@ const Home = () => {
       <Testimonials />
       <Header id="Contact" title="Contact Us" alt />
       <ContactUs alt />
-      <Footer />
     </div>
   );
 };
