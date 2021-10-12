@@ -32,9 +32,10 @@
 
 /* Projects Section */
 .projects-section {
+  width: 100%;
+  height: auto;
   min-height: 100vh;
-  min-width: 100vw;
-  /* padding: 100px 0; */
+  overflow-y: auto;
   background: var(--bg-grad);
   font-family: var(--font);
 }

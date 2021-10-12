@@ -3,7 +3,7 @@ import "./Main.css";
 import Home from "./Home";
 import Team from "./Team/Team";
 import Projects from "./projects/Projects";
-import Footer from './Footer/Footer'
+import Footer from "./Footer/Footer";
 
 function Main() {
 
@@ -21,7 +21,7 @@ function Main() {
         </Route>
       </Switch>
       <Footer />
-    </div >
+    </div>
   );
 }
 

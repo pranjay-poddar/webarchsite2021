@@ -4,7 +4,6 @@ import { Container } from "react-bootstrap";
 import ProjectItem from "./ProjectItem";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar/NavBar";
-import Footer from "../Footer/Footer";
 
 const Projects = () => {
   const projects = [
@@ -69,7 +68,6 @@ const Projects = () => {
           ))}
         </div>
       </Container>
-      <Footer />
     </section>
   );
 };

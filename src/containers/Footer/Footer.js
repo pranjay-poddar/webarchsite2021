@@ -26,15 +26,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="tele:1234567891">
+                <a href="tele:9549954599">
                   <i className="fas fa-phone-alt"></i>
-                  Nikola Tesla
-                </a>
-              </li>
-              <li>
-                <a href="tele:1234567891">
-                  <i className="fas fa-phone-alt"></i>
-                  Ed Snowden
+                  Divij Gupta
                 </a>
               </li>
             </ul>
@@ -44,7 +38,7 @@ const Footer = () => {
                 <li>
                   <a
                     className={classes.insta}
-                    href="https://github.com/WebarchClub"
+                    href="https://www.instagram.com/webarchclub"
                   >
                     <i className={"fab fa-instagram"}></i>
                   </a>
@@ -52,14 +46,9 @@ const Footer = () => {
                 <li>
                   <a
                     className={classes.linkedin}
-                    href="https://github.com/WebarchClub"
+                    href="https://www.linkedin.com/company/webarchclub/"
                   >
                     <i className={"fab fa-linkedin"}></i>
-                  </a>
-                </li>
-                <li>
-                  <a className={classes.discord} href="www.google.com">
-                    <i className={"fab fa-discord"}></i>
                   </a>
                 </li>
                 <li>

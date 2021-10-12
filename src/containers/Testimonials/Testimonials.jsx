@@ -46,7 +46,7 @@ const Card = ({ card }) => {
         <div className="name">
           <h2>{card.name}</h2> <p>lorem ipsum</p>
         </div>
-        <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet expedita iusto sequi sapiente</div>
+        <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet expedita iusto sequi sapiente Lorem ipsum dolor sit amet.</div>
       </div>
     </div>
   );
