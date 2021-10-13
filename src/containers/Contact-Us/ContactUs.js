@@ -148,7 +148,7 @@ const ContactUs = ({ alt }) => {
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff", lineHeight: '20px' } }}
                                         InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
                                     />
-                                    <Button className={classes.button}
+                                    <Button id="btn" className={classes.button}
                                         style={{
                                             width: '90%',
                                             height: '35px',

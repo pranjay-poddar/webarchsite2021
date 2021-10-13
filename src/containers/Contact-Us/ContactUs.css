@@ -5,51 +5,52 @@
 .contact-us{
     font-family: var(--font);
     color: white;
-    background-color: transparent;
-	min-height: 100%;
-    margin: 0px;
-    padding: 0px;
-    padding-bottom: 3rem;
+	height: 85vh;
     position: relative;
 }
 
+.contact{
+    height: 100%;
+}
+
 .contact-us .contact .contact-height{
-    height: 80vh;
-    margin-bottom: 50px;
+    height: 65%;
+    position: relative;
 }
 
 .contact-us .contact .contact-height-1{
-    height: 75vh;
+    height: 70%;
 }
 
 .contact .contact-vertical{
     border-left: 6px solid var(--webarch-blue);
-    height: 300px;
-    position:absolute;
+    height: 75%;
     border-radius: 15px;
     position: relative;
-    display: inline-block;    
+    top: -15px;
 }
 
 .contact .contact-details-container{
-    display: inline-block;
     position: relative;
-    height: 300px;
+    height: 65%;
     margin: 30px;
-    top: 25px;
+    top: -13px;
 }
 
 .contact .contact-address{
     position: relative;
+    height: 50%;
 }
 
 .contact .contact-details{
     position: relative;
+    height: 50%;
 }
 
 .contact .contact-address .contact-address-title, .contact .contact-details .contact-details-title{
     color: var(--webarch-blue);
     font-size: 2.4rem;
+    height: 25%;
 }
 
 .contact .contact-address div p{
@@ -79,23 +80,18 @@
     padding: 20px 20px 20px 0px;
 }
 
-.contact .contact-info{
-    position: relative;
-    padding-bottom: 100px;
-}
-
-.contact .contact-info .contact-icons{
+.contact .contact-height .contact-icons{
     height: 50px;
     width: 270px;
     display: flex;
     justify-content: space-around;
     font-size: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     margin: 0 auto;
-    margin-top: 3rem;
     transition: all 0.3s ease-in-out;
-    margin: 30px 0px 5px 0px;
+    margin: 30px 0px 0px 0px;
+    padding-top: 30px;
 }
 
 .contact-us .contact .contact-info .contact-icons .contact-icon-styles a{
@@ -128,7 +124,7 @@
 
 .contact .contact-form-layout .contact-form-content{
     width: 320px;
-    height: 320px;
+    height: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,18 +187,21 @@
 
   @media (max-width: 768px){
 
+    .contact-us{
+        height: 125vh;
+    }
+
     .contact-us .contact .contact-height{
-        height: 62vh;
+        height: 40%;
     }
     
     .contact-us .contact .contact-height-1{
-        height: 65vh;
-        max-height: 450px;
+        height: 60%;
     }
 
     .contact .contact-form-layout .contact-form-content{
         width: 280px;
-        height: 280px;
+        height: 90%;
     }
 
     .contact-us .contact .contact-form-layout .contact-form-border{
@@ -214,22 +213,33 @@
         margin: 10px;
         margin-top: 100px;
     }
+
+    #btn{
+        position: relative;
+        bottom: 10px;
+        height: 10rem
+    }
   }
 
  @media (max-width: 480px){
 
+    .contact-us{
+        height: 130vh;
+    }
+
     .contact-us .contact .contact-height{
-        height: 65vh;
+        height: 40%;
     }
     
     .contact-us .contact .contact-height-1{
-        height: 55vh;
+        height: 30%;
         max-height: 450px;
     }
     
+    
     .contact .contact-form-layout .contact-form-content{
         width: 280px;
-        height: 300px;
+        height: 80%;
     }
     
     .contact-us .contact .contact-form-layout .contact-form-border{
