@@ -1,58 +1,41 @@
-import React from "react";
-import {useState} from "react";
-import Slider from "react-slick";
-import image1 from "../../files/logo.png";
-import "./Clients.css"
-import { FaArrowRight, FaArrowLeft} from "react-icons/fa";
+import { Row, Col } from 'react-grid-system';
+import './Clients.css';
+import web from "../../files/webDomain.png";
+import app from "../../files/app.png";
 
-const images = [image1, image1, image1, image1]
-
-function Clients({alt}){
-
-  const NextArrow = ({onClick}) => {
-    return(
-      <div className="arrow next" onClick={onClick}>
-        <FaArrowRight/>
-      </div>
-    )
-  }
-
-  const PrevArrow = ({onClick}) => {
-    return(
-      <div className="arrow prev" onClick={onClick}>
-        <FaArrowLeft/>
-      </div>
-    )
-  }
-
-  const [imageIndex, setImageIndex] = useState(0)
-
-  const settings = {
-    infinite:true,
-    lazyload:true,
-    speed:700,
-    slidesToShow:3,
-    centerMode:true,
-    autoplay:true,
-    centerPadding:0,
-    nextArrow:<NextArrow/>,
-    prevArrow:<PrevArrow/>,
-    beforeChange: (current,next) => setImageIndex(next)
-  };
-
-  return(
-    <div className={alt ? "clients alt" : "clients"}>
-      <div className="center">
-     <Slider {...settings}>
-       {images.map((img, idx)=>(
-         <div className={idx === imageIndex ? 'slide activeSlide' : 'slide'} key={idx}>
-           <img src={img} alt={img}/>
-           </div>
-       ))}
-     </Slider>
-     </div>
+const Clients = ({alt}) => {
+	return (
+		<div className={alt ? "clients alt" : "clients"}>
+      <Row justify="center" align="center">
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={web} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+        <Col xs={5} sm={3} className="client-box" style={{ height: '130px', width: '140px', margin: '1.2rem' }}>
+          <img src={app} alt="logo" />
+        </Col>
+      </Row>
     </div>
-  );
-}
-
+	);
+};
 export default Clients;

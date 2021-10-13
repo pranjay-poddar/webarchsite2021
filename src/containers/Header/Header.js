@@ -26,7 +26,7 @@ const Header = ({ title, id, alt }) => {
 
   return (
     <div id={id} className={alt ? "Header alt" : "Header"}>
-      <p className="Header-text">/ {title}</p>
+      <p className="Header-text">/{title}</p>
       {title === "Testimonials" ? (
         <hr
           className="Header-hr"
@@ -35,7 +35,7 @@ const Header = ({ title, id, alt }) => {
       ) : title === "Contact Us" ? (
         <hr
           className="Header-hr"
-          style={{ maxWidth: `${title.length + 250}px` }}
+          style={{ maxWidth: `${title.length + 350}px` }}
         />
       ) : (
         <hr

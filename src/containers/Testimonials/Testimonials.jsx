@@ -76,7 +76,7 @@ const Testimonials = (props) => {
 
   return (
     <div className="container-testimonials">
-      <Flickity flickityRef={(c) => (flkty = c)} options={{ initialIndex: 1 }}>
+      <Flickity flickityRef={(c) => (flkty = c)} options={{ initialIndex: 2 }}>
         {slideData.map((card, i) => {
           return <Card card={card} key={i} />;
         })}

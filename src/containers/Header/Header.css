@@ -10,7 +10,7 @@
 }
 .Header-text {
   margin: 0;
-  margin-left: 20rem;
+  margin-left: 10rem;
   padding: 0;
   font-size: 65px;
   font-family: var(--section-font);
@@ -21,9 +21,10 @@
   height: 10px !important;
   color: #fff;
   opacity: 1;
+  border-radius: 15px;
   /* min-width: 250px; */
   margin: 0;
-  margin-left: 20rem;
+  margin-left: 10rem;
 }
 
 .hr-animation {
@@ -37,5 +38,16 @@
 
   100% {
     width: 60%;
+  }
+}
+
+@media (max-width: 768px){
+  .Header-text {
+    font-size: 54px;
+    margin: 0 auto;
+  }
+  
+  .Header-hr {
+    margin: 0 auto;
   }
 }

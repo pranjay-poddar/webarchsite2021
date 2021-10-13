@@ -1,57 +1,62 @@
-*, *::before, *::after {
+.contact-us *, .contact-us *::before, .contact-us *::after {
     box-sizing: border-box;
 }
 
 .contact-us{
     font-family: var(--font);
     color: white;
-	min-height: 100vh;
-    margin: 0px;
-    margin-bottom: 50px;
-    padding: 0px;
+	height: 85vh;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.contact{
+    height: 100%;
 }
 
 .contact-us .contact .contact-height{
-    height: 80vh;
+    height: 65%;
+    position: relative;
 }
 
 .contact-us .contact .contact-height-1{
-    height: 75vh;
+    height: 70%;
 }
 
 .contact .contact-vertical{
     border-left: 6px solid var(--webarch-blue);
-    height: 300px;
-    position:absolute;
+    height: 75%;
     border-radius: 15px;
     position: relative;
-    display: inline-block;    
+    top: -15px;
 }
 
 .contact .contact-details-container{
-    display: inline-block;
     position: relative;
-    height: 300px;
+    height: 65%;
     margin: 30px;
-    top: 25px;
+    top: -13px;
 }
 
 .contact .contact-address{
     position: relative;
+    height: 50%;
 }
 
 .contact .contact-details{
     position: relative;
+    height: 50%;
 }
 
 .contact .contact-address .contact-address-title, .contact .contact-details .contact-details-title{
     color: var(--webarch-blue);
     font-size: 2.4rem;
+    height: 25%;
 }
 
 .contact .contact-address div p{
     font-size: 1.7rem;
-    margin: 10px;
+    margin-top: 10px;
 } 
 
 .contact .contact-details .contact-detail-effect a{
@@ -73,25 +78,21 @@
 }
 
 .contact .contact-details span{
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
 }
 
-.contact .contact-info{
-    position: relative;
-    padding-bottom: 100px;
-}
-
-.contact .contact-info .contact-icons{
+.contact .contact-height .contact-icons{
     height: 50px;
     width: 270px;
     display: flex;
     justify-content: space-around;
     font-size: 30px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     margin: 0 auto;
-    margin-top: 3rem;
     transition: all 0.3s ease-in-out;
+    margin: 30px 0px 0px 0px;
+    padding-top: 30px;
 }
 
 .contact-us .contact .contact-info .contact-icons .contact-icon-styles a{
@@ -118,69 +119,28 @@
     font-family: var(source-code-pro);
     font-size: 25px;
     text-align: center;
+    position: relative;
+    bottom: 17px;
 }
 
 .contact .contact-form-layout .contact-form-content{
     width: 320px;
-    height: 320px;
+    height: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color:#292929;
     box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
     position: relative;
-}
-
-input[type=text], input[type=email],textarea{
-    color: white;
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-family: var(--font);
-    width: 250px;
-    padding: 5px 10px;
-    display: block;
-    outline: none;
-    margin-bottom: 10px;
-    background: transparent;
-    border: none;
-    box-sizing: border-box;
-    box-shadow: 0 2px 1px #000;
-}
-
-
-
-#submit-btn{
-    color: var(--bg-plain);
-    background-color: var(--webarch-blue);
-    border: none;
-    font-family: var(--font);
-    font-size: 1.7rem;
-    font-weight: bold;
-    margin: 5px;
-    height: 30px;
-    width: 250px;
-    position: relative;
-    top: 15px;
-    border-radius: 20px;
-}
-
-#submit-btn:hover{
-    cursor: pointer;
-    background-color: rgb(0, 153, 224);
-}
-
-label{
-    color: #c2c2c2;
-    font-size: 1.2rem;
-    display: block;
-    margin-bottom: 10px;
+    bottom: 17px;
+    padding: 20px;
 }
 
 .contact-us .contact .contact-form-layout .contact-form-border{
-    max-height: 430px;
-    height: 65vh;
-    width: 65vh;
-    max-width: 420px;
+    max-height: 390px;
+    height: 61vh;
+    width: 61vh;
+    max-width: 400px;
     padding: 15px 20px;
     position: relative;
     display: flex;
@@ -228,70 +188,59 @@ label{
 
   @media (max-width: 768px){
 
+    .contact-us{
+        height: 125vh;
+    }
+
     .contact-us .contact .contact-height{
-        height: 62vh;
+        height: 40%;
     }
     
     .contact-us .contact .contact-height-1{
-        height: 65vh;
-        max-height: 450px;
+        height: 60%;
     }
 
     .contact .contact-form-layout .contact-form-content{
         width: 280px;
-        height: 280px;
-    }
-    
-    input[type=text], input[type=email],textarea{
-        width: 240px;
-    }
-    
-    #submit-btn{
-        top: 2px;
-    }
-    
-    label{
-        padding-left: 15px;
+        height: 90%;
     }
 
     .contact-us .contact .contact-form-layout .contact-form-border{
-        max-height: 410px;
-        min-height: 380px;
+        max-height: 350px;
         height: 52vh;
         width: 65vh;
-        max-width: 380px;
+        max-width: 350px;
         padding: 15px 20px;
         margin: 10px;
         margin-top: 100px;
+    }
+
+    #btn{
+        position: relative;
+        bottom: 10px;
+        height: 10rem
     }
   }
 
  @media (max-width: 480px){
 
+    .contact-us{
+        height: 130vh;
+    }
+
     .contact-us .contact .contact-height{
-        height: 65vh;
+        height: 40%;
     }
     
     .contact-us .contact .contact-height-1{
-        height: 55vh;
+        height: 30%;
         max-height: 450px;
     }
     
+    
     .contact .contact-form-layout .contact-form-content{
         width: 280px;
-        height: 280px;
-    }
-    
-    input[type=text], input[type=email],textarea{
-        width: 240px;
-    }
-    
-    #submit-btn{
-        top: 2px;
-    }
-    
-    label{
-        padding-left: 15px;
+        height: 80%;
     }
     
     .contact-us .contact .contact-form-layout .contact-form-border{
@@ -305,4 +254,8 @@ label{
         margin-top: 150px;
         margin-bottom: 100px;
     }    
+
+    .contact-corner-borders::before, .contact-corner-borders::after {
+        display: none;
+    }
  }

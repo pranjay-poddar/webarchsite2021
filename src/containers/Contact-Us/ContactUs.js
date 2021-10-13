@@ -1,4 +1,8 @@
-import React from "react";
+import Box from '@mui/material/Box';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+import { makeStyles } from '@mui/styles';
+
 
 import { GrInstagram } from "react-icons/gr";
 import { GrGithub } from "react-icons/gr";
@@ -10,7 +14,21 @@ import { GrMail } from "react-icons/gr";
 import './ContactUs.css';
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
-const ContactUs = ({alt}) => {
+const useStyles = makeStyles({
+
+    button: {
+        backgroundColor: '#00e8ff',
+        color: '#000',
+        '&:hover': {
+            backgroundColor: '#026ba3',
+            color: '#fff',
+        },
+    }
+})
+
+const ContactUs = ({ alt }) => {
+
+    const classes = useStyles()
 
     return (
         <div className={alt ? "contact-us d-flex flex-row align-items-center alt" : "contact-us d-flex flex-row align-items-center"}>
@@ -40,7 +58,7 @@ const ContactUs = ({alt}) => {
                                         <span>
                                             <FaPhoneAlt />
                                         </span>
-                                        +91 9560768621 <br />
+                                        +91 9549954599 <br />
                                     </a>
                                 </div>
                                 <br />
@@ -87,21 +105,67 @@ const ContactUs = ({alt}) => {
                                 <span>Ping Us</span>
                             </div>
                             <div className="contact-form-content">
-                                <form>
-                                    <label htmlFor="name">NAME</label>
-                                    <input type="text" className="no-outline" id="name"></input>
-                                    <label htmlFor="email">EMAIL</label>
-                                    <input type="email" id="email"></input>
-                                    <label htmlFor="message">MESSAGE</label>
-                                    <input type="text" id="message"></input>
-                                    <button type="submit" id="submit-btn">SEND MESSAGE</button>
-                                </form>
+                                <Box
+                                    component="form"
+                                    sx={{
+                                        '& > :not(style)': { m: 1.2, width: '30ch' },
+                                    }}
+                                    noValidate
+                                    autoComplete="off"
+                                >
+                                    <TextField
+                                        sx={{
+                                            '&:focus': { backgroundColor: 'red' },
+                                        }}
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        InputLabelProps={{
+                                            style: {
+                                                fontSize: 15, color: "#c2c2c2", letterSpacing: '1px'
+                                            }
+                                        }}
+                                        id="standard-basic"
+                                        label="Name"
+                                        variant="standard"
+                                        margin="normal" />
+                                    <TextField
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
+                                        id="standard-basic"
+                                        label="Email"
+                                        variant="standard"
+                                        margin="normal" />
+                                    <TextField
+                                        style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
+                                        id="standard-textarea"
+                                        label="Tell Us Something"
+                                        multiline
+                                        variant="standard"
+                                        maxRows={2}
+                                        margin="normal"
+                                        inputProps={{ style: { fontSize: 15, color: "#ffffff", lineHeight: '20px' } }}
+                                        InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
+                                    />
+                                    <Button id="btn" className={classes.button}
+                                        style={{
+                                            width: '90%',
+                                            height: '35px',
+                                            fontSize: '15px',
+                                            marginTop: '30px'
+                                        }}
+                                        size="large"
+                                        type="submit"
+                                        variant="contained"
+                                    >SEND
+                                    </Button>
+                                </Box>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </div >
     );
 };
 
