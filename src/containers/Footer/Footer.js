@@ -1,10 +1,20 @@
 import classes from "./Footer.module.css";
 import footerImg from "../../files/footer.svg";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 const Footer = ({alt}) => {
+
+  $(document).on('focus', 'input, textarea', function() {
+    $("footer").hide();
+  });
+
+  $(document).on('blur', 'input, textarea', function() {
+    $("footer").show();
+  });
+
   return (
-    <div className={alt ? classes.footerDiv+" alt" : classes.footerDiv}>
+    <footer className={alt ? classes.footerDiv+" alt" : classes.footerDiv}>
       <div className={classes.footerContainer}>
         <div className={classes.illustration}>
           <img src={footerImg} alt="illustration" />
@@ -70,7 +80,7 @@ const Footer = ({alt}) => {
           Developed With <i className="fas fa-heart"></i> By Team Webarch{" "}
         </p>
       </div>
-    </div>
+    </footer>
   );
 };
 
