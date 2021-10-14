@@ -3,7 +3,6 @@ import "./Main.css";
 import Home from "./Home";
 import Team from "./Team/Team";
 import Projects from "./projects/Projects";
-import Footer from "./Footer/Footer";
 
 function Main() {
 
@@ -20,7 +19,6 @@ function Main() {
           <Projects />
         </Route>
       </Switch>
-      <Footer />
     </div>
   );
 }

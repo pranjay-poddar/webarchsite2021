@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import { Container } from "react-bootstrap";
 import ProjectItem from "./ProjectItem";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar/NavBar";
+import { useLocation } from "react-router";
 
 const Projects = () => {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if(location.hash){
+      let elem = document.getElementById(location.hash.slice(1))
+      if (elem) {
+          elem.scrollIntoView({behavior: "smooth"})
+      }
+    }else{
+      window.scrollTo({top:0,left:0, behavior: "smooth"})
+    }
+  }, [location])
+
   const projects = [
     {
       id: 1,

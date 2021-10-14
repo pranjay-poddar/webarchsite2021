@@ -26,7 +26,7 @@ const Header = ({ title, id, alt }) => {
 
   return (
     <div id={id} className={alt ? "Header alt" : "Header"}>
-      <p className="Header-text">/{title}</p>
+      <p className="Header-text"><span className="Header-slash">/</span> {title}</p>
       {title === "Testimonials" ? (
         <hr
           className="Header-hr"
@@ -35,12 +35,12 @@ const Header = ({ title, id, alt }) => {
       ) : title === "Contact Us" ? (
         <hr
           className="Header-hr"
-          style={{ maxWidth: `${title.length + 350}px` }}
+          style={{ maxWidth: `${title.length + 300}px` }}
         />
       ) : (
         <hr
           className="Header-hr"
-          style={{ maxWidth: `${title.length + 200}px` }}
+          style={{ maxWidth: `${title.length + 210}px` }}
         />
       )}
     </div>

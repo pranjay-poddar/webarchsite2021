@@ -54,7 +54,7 @@ const ContactUs = ({ alt }) => {
                             <br />
                             <div>
                                 <div className="contact-detail-effect">
-                                    <a href="tel:+91-956-076-8621">
+                                    <a href="tel:+91-954-995-4599">
                                         <span>
                                             <FaPhoneAlt />
                                         </span>

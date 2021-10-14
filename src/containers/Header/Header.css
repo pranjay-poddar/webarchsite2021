@@ -2,6 +2,7 @@
   width: 100%;
   height: 100px;
   margin: 0;
+  margin-top: 2rem;
   padding: 0;
   color: var(--webarch-blue);
   display: flex;
@@ -13,8 +14,11 @@
   margin-left: 10rem;
   padding: 0;
   font-size: 65px;
+  font-weight: 600;
+  letter-spacing: 0.5rem;
   font-family: var(--section-font);
   height: 70px;
+  font-variant: small-caps;
 }
 
 .Header-hr {
@@ -44,7 +48,11 @@
 @media (max-width: 768px){
   .Header-text {
     font-size: 54px;
+    letter-spacing: 0.2rem;
     margin: 0 auto;
+  }
+  .Header-slash{
+    display: none;
   }
   
   .Header-hr {

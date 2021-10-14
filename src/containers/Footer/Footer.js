@@ -1,5 +1,6 @@
 import classes from "./Footer.module.css";
 import footerImg from "../../files/footer.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -12,10 +13,10 @@ const Footer = () => {
           <div className={classes.exploreContainer}>
             <ul className={classes.explore}>
               <h3>Explore</h3>
-              <li>Home</li>
-              <li>AboutUs</li>
-              <li>Team</li>
-              <li>ContactUs</li>
+              <li><Link to="/" >Home</Link></li>
+              <li><Link to="/#About" >About Us</Link></li>
+              <li><Link to="/team" >Team</Link></li>
+              <li><Link to="/#Contact" >ContactUs</Link></li>
             </ul>
             <ul className={classes.contact}>
               <h3>Reach Us</h3>

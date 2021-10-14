@@ -11,7 +11,7 @@
 }
 
 .clients div.client-box{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 70px -15px #000;
     border-radius: 15px;
     padding: 10px auto;
     display: flex;
