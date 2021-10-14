@@ -63,7 +63,7 @@ const Landing = () => {
             </div>
           </div>
           <div>
-            <Link activeClass='active' to='Services' duration={0} smooth={true}>
+            <Link activeClass='active' to='About' duration={0} smooth={true}>
               <div className='landing-down-arrow'>
                 <span></span>
                 <span></span>

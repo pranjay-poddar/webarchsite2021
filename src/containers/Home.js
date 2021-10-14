@@ -1,5 +1,6 @@
 import "./Home.css";
 import Testimonials from "./Testimonials/Testimonials";
+import About from "./About/About";
 import Domains from "./Domains/Domains";
 import Landing from "./Landing/landing";
 import Clients from "./Clients/Clients";
@@ -26,14 +27,16 @@ const Home = () => {
   return (
     <div className="Home">
       <Landing />
-      <Header id="Domains" title="Domains" />
-      <Domains />
-      <Header id="Clients" title="Clients" alt />
-      <Clients alt />
-      <Header id="Testimonials" title="Testimonials" />
-      <Testimonials />
-      <Header id="Contact" title="Contact Us" alt />
-      <ContactUs alt />
+      <Header id="About" title="About" />
+      <About />
+      <Header id="Domains" title="Domains" alt/>
+      <Domains alt/>
+      <Header id="Clients" title="Clients" />
+      <Clients />
+      <Header id="Testimonials" title="Testimonials" alt/>
+      <Testimonials alt/>
+      <Header id="Contact" title="Contact Us" />
+      <ContactUs />
     </div>
   );
 };

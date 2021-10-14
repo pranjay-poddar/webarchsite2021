@@ -8,9 +8,9 @@ import graphic from "../../files/graphic.png";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
-const Domains = () => {
+const Domains = ({alt}) => {
     return (
-        <div className="Domains">
+        <div className={alt ? "Domains alt" : "Domains"}>
             <div className="container">
              
                 {/* <h1 className="text-center domain-title "> domains</h1> */}

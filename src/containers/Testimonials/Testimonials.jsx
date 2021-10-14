@@ -51,7 +51,7 @@ const Card = ({ card }) => {
     </div>
   );
 };
-const Testimonials = (props) => {
+const Testimonials = ({alt}) => {
   let flkty;
   let [carouselIndex, setCarouselIndex] = useState(null);
 
@@ -75,7 +75,7 @@ const Testimonials = (props) => {
   }, [carouselIndex]);
 
   return (
-    <div className="container-testimonials">
+    <div className={alt ? "container-testimonials alt" : "container-testimonials"}>
       <Flickity flickityRef={(c) => (flkty = c)} options={{ initialIndex: 2 }}>
         {slideData.map((card, i) => {
           return <Card card={card} key={i} />;

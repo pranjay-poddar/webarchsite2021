@@ -49,7 +49,7 @@
     height: 130px;
     border-radius: 50%;
     margin:-90px auto 0;
-    background: #3e4b72;
+    background: #161625;
     border: 18px solid #282c34;
     transition: transform 1s;
 }
@@ -61,7 +61,7 @@
 .Domains .domain h4{
     height: 35px;
     width: 80%;
-    background: #3e4b72;
+    background: #161625;
     color: white;
     margin:20px auto;
     position: relative;
@@ -111,7 +111,7 @@
 }
 .Domains .main-card:hover .domain{
     transform: translateY(-50px);
-    background: #3e4b72;
+    background: #161625;
     border: 1px solid white;
 }
 .Domains .main-card:hover .shadowOne{
@@ -120,7 +120,7 @@
     border: 1px solid white;
 }
 .Domains .main-card:hover .shadowTwo{
-    background: #3e4b72;
+    background: #161625;
     border: 1px solid white;
     opacity: 1;
 }
