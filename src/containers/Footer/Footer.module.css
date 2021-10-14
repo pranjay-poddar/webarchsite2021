@@ -41,6 +41,9 @@ h3 {
     list-style: none;
     margin: 1rem 0;
 }
+.explore li a{
+    color: #fff;
+}
 
 .contact li {
     list-style: none;
@@ -203,7 +206,13 @@ h3 {
 } 
 
 @media (max-width:450px) {
-    .exploreContainer {
-        display: none;
+    h3 {
+        font-size: 1.8rem;
+    }
+    .contact li a {
+        font-size: 1.5rem;
+    }
+    .msgContainer p {
+        font-size: 1.4rem;
     }
 } 

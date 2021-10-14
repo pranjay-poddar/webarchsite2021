@@ -8,15 +8,15 @@ const About = ({alt}) => {
         also providing a learning platform skills and also providing a learning
         platform in the university.
       </p>
-      <div class='about-container'>
-        <div class='about-box'>
-          <div class='about-box-container about-primary'>
-            <div class='about-box-icon'>
-              <i class='fa fa-question-circle'></i>
+      <div className='about-container'>
+        <div className='about-box'>
+          <div className='about-box-container about-primary'>
+            <div className='about-box-icon'>
+              <i className='fa fa-question-circle'></i>
             </div>
-            <div class='about-box-body'>
-              <h4 class='about-box-title'>
-                <span class='about-badge'>What we do?</span>
+            <div className='about-box-body'>
+              <h4 className='about-box-title'>
+                <span className='about-badge'>What we do?</span>
               </h4>
               <p className='about-box-p'>
                 You think of an idea we implement it! <br />
@@ -28,13 +28,13 @@ const About = ({alt}) => {
               </p>
             </div>
           </div>
-          <div class='about-box-container about-danger'>
-            <div class='about-box-icon'>
-              <i class='fa fa-question-circle'></i>
+          <div className='about-box-container about-danger'>
+            <div className='about-box-icon'>
+              <i className='fa fa-question-circle'></i>
             </div>
-            <div class='about-box-body'>
-              <h4 class='about-box-title'>
-                <span class='about-badge'>Who are we?</span>
+            <div className='about-box-body'>
+              <h4 className='about-box-title'>
+                <span className='about-badge'>Who are we?</span>
               </h4>
               <p className='about-box-p'>
                 We are a team of young, proficient and energetic minds who
@@ -43,13 +43,13 @@ const About = ({alt}) => {
               </p>
             </div>
           </div>
-          <div class='about-box-container about-success'>
-            <div class='about-box-icon'>
-              <i class='fa fa-question-circle'></i>
+          <div className='about-box-container about-success'>
+            <div className='about-box-icon'>
+              <i className='fa fa-question-circle'></i>
             </div>
-            <div class='about-box-body'>
-              <h4 class='about-box-title'>
-                <span class='about-badge'>Why us ?</span>
+            <div className='about-box-body'>
+              <h4 className='about-box-title'>
+                <span className='about-badge'>Why us ?</span>
               </h4>
               <p className='about-box-p'>
                 We know the industry, we know the game and we are here to help

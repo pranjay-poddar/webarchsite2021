@@ -2,9 +2,9 @@ import classes from "./Footer.module.css";
 import footerImg from "../../files/footer.svg";
 import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({alt}) => {
   return (
-    <div className={classes.footerDiv}>
+    <div className={alt ? classes.footerDiv+" alt" : classes.footerDiv}>
       <div className={classes.footerContainer}>
         <div className={classes.illustration}>
           <img src={footerImg} alt="illustration" />

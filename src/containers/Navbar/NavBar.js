@@ -70,7 +70,7 @@ export default function PrimarySearchAppBar({ isHome }) {
       onClose={handleMobileMenuClose}
     >
       <MenuItem className="menuItem">
-        <Link activeClass="active" to="/#About" duration={0} smooth={true}>
+        <Link to="/#About">
           <Button
             className="btn-head"
             size="large"
@@ -82,7 +82,7 @@ export default function PrimarySearchAppBar({ isHome }) {
         </Link>
       </MenuItem>
       <MenuItem className="menuItem">
-        <Link activeClass="active" to="/#Domains" duration={0} smooth={true}>
+        <Link to="/#Domains">
           <Button
             className="btn-head"
             size="large"
@@ -94,7 +94,7 @@ export default function PrimarySearchAppBar({ isHome }) {
         </Link>
       </MenuItem>
       <MenuItem className="menuItem">
-        <Link activeClass="active" to="/#Clients" duration={0} smooth={true}>
+        <Link to="/#Clients">
           <Button
             className="btn-head"
             size="large"
@@ -130,7 +130,7 @@ export default function PrimarySearchAppBar({ isHome }) {
         </Link>
       </MenuItem>
       <MenuItem className="menuItem">
-        <Link activeClass="active" to="/#Contact" duration={0} smooth={true}>
+        <Link to="/#Contact">
           <Button
             className="btn-head"
             size="large"
@@ -182,12 +182,7 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link
-                  activeClass="active"
-                  to="/#About"
-                  duration={0}
-                  smooth={true}
-                >
+                <Link to="/#About">
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>01. </span>About us
                   </p>
@@ -207,12 +202,7 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link
-                  activeClass="active"
-                  to="/#Domains"
-                  duration={0}
-                  smooth={true}
-                >
+                <Link to="/#Domains">
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>02. </span>Domains
                   </p>
@@ -232,12 +222,7 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link
-                  activeClass="active"
-                  to="/#Clients"
-                  duration={0}
-                  smooth={true}
-                >
+                <Link to="/#Clients">
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>03. </span>Clients
                   </p>
@@ -297,12 +282,7 @@ export default function PrimarySearchAppBar({ isHome }) {
                 component="div"
                 sx={{ display: { xs: "none", sm: "block" } }}
               >
-                <Link
-                  activeClass="active"
-                  to="/#Contact"
-                  duration={0}
-                  smooth={true}
-                >
+                <Link to="/#Contact">
                   <p className="p-tag">
                     <span style={{ color: "#00E8FF" }}>06. </span>Contact
                   </p>

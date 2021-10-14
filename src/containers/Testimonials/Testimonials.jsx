@@ -62,7 +62,6 @@ const Testimonials = ({alt}) => {
 
   useEffect(() => {
     if (flkty) {
-      console.log("this ran");
       flkty.on("settle", () => {
         console.log(`current index is ${flkty.selectedIndex}`);
       });
