@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
-.Team{
+.Team {
   width: 100%;
   height: auto;
   min-height: 100vh;
@@ -21,7 +21,7 @@
   scrollbar-width: none;  /* Firefox */
 }
 
-.team-body {
+.Team .team-body {
   font-family: 'Lato', sans-serif;
   text-align: center;
   padding-top: 20px;
@@ -29,7 +29,7 @@
   height: auto;
 }
 
-.team-img{
+.Team .team-img{
   width: 50%;
   height: 52%;
   margin: 21.5px auto;
@@ -38,7 +38,7 @@
   overflow: hidden;
 }
 
-.responsive-img{
+.Team .responsive-img{
   width: 100%;
   height: 100%;
 }
@@ -50,23 +50,23 @@
 border-radius: 50%;
 } */
 
-h2 {
+.Team h2 {
   font-size: 50px;
   margin-bottom: 0px;
   font-weight: 100;
 }
-p {
+.Team p {
   font-size: 18px;
 }
-.transition {
+.Team .transition {
   transition: .3s cubic-bezier(.3, 0, 0, 1.3);
  
 }
 
-.three .transition {
+.Team .three .transition {
   transition: .7s cubic-bezier(.3, 0, 0, 1.3)
 }
-.five .transition {
+.Team .five .transition {
   transition: .5s cubic-bezier(.3, 0, 0, 1.3);
   
 }
@@ -74,7 +74,7 @@ p {
 
 
 /* --------- FIVE --------- */ 
-.team-page-heading{
+.Team .team-page-heading{
     color: white;
     /* text-decoration: underline; */
     font-weight: 1000;
@@ -82,18 +82,18 @@ p {
     margin-bottom: 0%;
     
 }
-.best-team{
+.Team .best-team{
   color: grey;
 }
 
-.hero {
+.Team .hero {
   position: relative;
   max-width: 50rem;
   margin: 0 auto;
   top: 40%;
 }
 
-.tagline {
+.Team .tagline {
   margin: 0;  /* h1 default margins cause vertical scrollbar */
   font-family: 'Roboto Light', sans-serif;
   font-weight: 100;
@@ -105,25 +105,25 @@ p {
 }
 
 @media screen and (min-width: 601px) {
-    .team-page-heading {
+    .Team .team-page-heading {
       font-size: 30px;
     }
   }
   
   @media screen and (max-width: 600px) {
-    .team-page-heading {
+    .Team .team-page-heading {
       font-size: 25px;
     }
   }
 
 
 
-.five {
+.Team .five {
   list-style: none;
   padding: 0;
   margin: 50px 0;
 }
-.five > li {
+.Team .five > li {
   /* background: #FFFFFF; */
   background: #4669a5;
   border: 1px solid rgba(150,150,150,0.29);
@@ -143,10 +143,10 @@ p {
 /* .five > li img {
   margin-top: 43px;
 } */
-.five > li:hover img {
+.Team .five > li:hover img {
   margin-top: 30px;
 }
-.five > li img.more-about {
+.Team .five > li img.more-about {
   left: 103px;
   padding: 1px;
   position: absolute;
@@ -157,11 +157,11 @@ p {
   -moz-border-radius: 50%;
   bottom: 50px;
 }
-.five > li:hover {
+.Team .five > li:hover {
   -moz-box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
   box-shadow: 0px 0px 5px 0px rgba(103,85,85,0.25);
 }
-.five > li:hover span {
+.Team .five > li:hover span {
   border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -169,14 +169,14 @@ p {
   /* background: #889EAF; */
   background: #aed6dc;
 }
-.five > li:hover span p {
+.Team .five > li:hover span p {
   color: black;
   font-size: 14px;
 }
-.five > li span .text-wrapper {
+.Team .five > li span .text-wrapper {
   opacity: 0;
 }
-.five > li:hover span .text-wrapper {
+.Team .five > li:hover span .text-wrapper {
   bottom: 20px;
   left: 0;
   margin: 0 auto;
@@ -185,29 +185,26 @@ p {
   width: 200px;
   opacity: 1;
 }
-.five > li:hover .social {
+.Team .five > li:hover .social {
   margin-top: 250px;
 }
-body{
-    height: auto;
-}
-.five > li:hover .wrapper > .team-img {
+.Team .five > li:hover .wrapper > .team-img {
   display: none;
 }
-.five > li:hover h3 {
+.Team .five > li:hover h3 {
   /* color: #889EAF; */
   color: #aed6dc;
   /* margin-top: 270px; */
   margin-top: 175px;
 }
-.five > li .wrapper {
+.Team .five > li .wrapper {
   overflow: hidden;
   position: absolute;
   width: 280px;
   height: 290px;
   border-radius: 15px;
 }
-.five > li span {
+.Team .five > li span {
   display: block;
   height: 500px;
   left: -112px;
@@ -217,10 +214,10 @@ body{
   /* background: #889EAF; */
   background: #aed6dc;
 }
-.five .mamber-img {
+.Team .five .mamber-img {
   width: 100px;
 }
-.five > li h3 em {
+.Team .five > li h3 em {
   display: block;
   font-style: normal;
   text-transform: uppercase;
@@ -230,36 +227,36 @@ body{
  /* color: #889EAF; */
  color: #fff;
 }
-.five > li h3{
+.Team .five > li h3{
     padding-top: 13px;
     font-size: 16px;
     color: black;
 }
-.five .social {
+.Team .five .social {
   list-style: none;
   text-align: center;
   margin: 10px 0 0 0;
   padding: 10px;
 }
-.five .social li {
+.Team .five .social li {
   opacity: 0;
   display: inline-block;
   padding: 6px;
 }
-.five > li:hover .social li {
+.Team .five > li:hover .social li {
   opacity: 1;
 }
-.five .social li a {
+.Team .five .social li a {
   cursor: pointer;
   display: block;
 }
-.five .social li a:hover {
+.Team .five .social li a:hover {
   opacity: 0.5;
 }
-.five .social li img {
+.Team .five .social li img {
   width: 28px;
 }
-.five > li:hover .social li a {
+.Team .five > li:hover .social li a {
   -webkit-animation: social-show 0.5s 1;
   -moz-animation: social-show 0.5s 1;
   -o-animation: social-show 0.5s 1;

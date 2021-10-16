@@ -5,6 +5,7 @@
 	max-width: 80%;
 	margin-top: 40px;
 	font-weight: bolder;
+	font-size: 18px;
 }
 
 .About .about-container {
@@ -13,6 +14,7 @@
 }
 
 .About .about-box-p {
+	font-size: 18px;
 	font-family: var(--font);
 }
 
@@ -34,6 +36,8 @@
 .About .about-box .about-box-container {
 	position: relative;
 	margin-bottom: 2.5rem;
+	margin-left: 10px;
+	margin-right: 20px;
 }
 .About .about-box .about-box-container .about-box-icon {
 	position: absolute;
@@ -89,4 +93,10 @@
 .About .about-box .about-box-container.about-danger .about-badge,
 .About .about-box .about-box-container.about-danger .about-box-icon {
 	background: #fd5d93 !important;
+}
+
+@media (max-width: 480px){
+	.About .about-box-p {
+		font-size: 16px;
+	}
 }
