@@ -13,6 +13,7 @@
     background: var(--bg-plain);
   }
   to {
+    background: url('../../files/background.gif');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
