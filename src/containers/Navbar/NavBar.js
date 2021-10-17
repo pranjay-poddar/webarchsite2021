@@ -60,7 +60,6 @@ export default function PrimarySearchAppBar({ isHome }) {
     <Menu
       className="menu"
       anchorEl={mobileMoreAnchorEl}
-      style={{ position: "absolute", width: "100%" }}
       id={mobileMenuId}
       transformOrigin={{
         vertical: "top",
