@@ -1,11 +1,11 @@
 .container-testimonials {
-  /* min-height: 100vh; */
-  height: 70vh;
+  /* min-height: 80vh; */
+  height: 80vh;
   /* display: flex;
   justify-content: center;
   align-items: center; */
   /* margin-top: 200px; */
-  padding-top: 100px;
+  padding-top: calc(80vh / 4);
   background: transparent;
   overflow-x: hidden;
 }
