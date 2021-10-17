@@ -39,7 +39,7 @@ const Landing = () => {
       <div className="landing-gif"></div>
       <div className="landing-layer"></div>
       <div className="landing-main">
-        <Navbar />
+        <Navbar isHome={true} />
         <div className="landing-logo">
           <img src={logo} alt="logo" />
         </div>

@@ -6,10 +6,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link } from "react-router-dom";
 // import { Link as NavLink } from "react-scroll";
-const Navbar = () => {
+const Navbar = ({ isHome }) => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-    <div className="navra">
+    <div className={isHome ? "navra" : "navba"}>
       <nav className="main-nav">
         {/* 1st logo part  */}
         {/* <div className="logona">
@@ -22,7 +22,7 @@ const Navbar = () => {
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }
         >
-          <ul className="uline" style={{ width: "45vw" }}>
+          <ul className="uline">
             <li className={showMediaIcons ? "lina anim" : "lina"}>
               <Link to="/#About">
                 <span style={{ color: "#00E8FF" }}>01. </span>About us

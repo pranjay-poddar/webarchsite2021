@@ -11,11 +11,7 @@
 }
 .Header-text {
   margin: 0;
-<<<<<<< HEAD
   margin-left: 10rem;
-=======
-  /* margin-left: 20rem; */
->>>>>>> df3f29fe8074e0e3b8b397a53c647cbc02b8a6c3
   padding: 0;
   font-size: 65px;
   font-weight: 600;
@@ -32,11 +28,7 @@
   border-radius: 15px;
   /* min-width: 250px; */
   margin: 0;
-<<<<<<< HEAD
   margin-left: 10rem;
-=======
-  /* margin-left: 20rem; */
->>>>>>> df3f29fe8074e0e3b8b397a53c647cbc02b8a6c3
 }
 
 .hr-animation {
@@ -53,16 +45,16 @@
   }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .Header-text {
     font-size: 54px;
     letter-spacing: 0.2rem;
     margin: 0 auto;
   }
-  .Header-slash{
+  .Header-slash {
     display: none;
   }
-  
+
   .Header-hr {
     margin: 0 auto;
   }

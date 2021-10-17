@@ -10,6 +10,13 @@
 }
 .navra {
   /* position: absolute; */
+  opacity: 0;
+  animation: 3s linear 3500ms forwards navAppear;
+  /* z-index: 5; */
+}
+.navba {
+  /* position: absolute; */
+  /* opacity: 0; */
   animation: 3s linear 3500ms forwards navAppear;
   /* z-index: 5; */
 }
@@ -114,16 +121,25 @@
 .social-media .hamburger-menu {
   display: none;
 }
-
+.uline {
+  width: 50vw;
+}
 /* hero section   */
 
 /* responsive css style  */
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .uline {
+    width: 65vw;
+  }
+}
 @media (max-width: 1080px) {
   .main-nav {
     height: 8rem;
     grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
   }
-
+  .uline {
+    width: 65vw;
+  }
   .logo,
   .menu-link .uline,
   .social-media .uline {

@@ -5,12 +5,11 @@ import app from "../../files/app.png";
 import rnd from "../../files/rnd.png";
 import hr from "../../files/hr.png";
 import graphic from "../../files/graphic.png";
-<<<<<<< HEAD
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const Domains = ({ alt }) => {
   return (
-    <div className={alt ? "Domains alt" : "Domains"} id="Domains">
+    <div className={alt ? "Domains alt" : "Domains"}>
       <div className="container">
         {/* <h1 className="text-center domain-title "> domains</h1> */}
         <div className="row d-flex justify-content-center">
@@ -102,98 +101,3 @@ const Domains = ({ alt }) => {
 };
 
 export default Domains;
-=======
-import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-
-const Domains = ({alt}) => {
-    return (
-        <div className={alt ? "Domains alt" : "Domains"}>
-            <div className="container">
-             
-                {/* <h1 className="text-center domain-title "> domains</h1> */}
-                <div className="row d-flex justify-content-center">
-                    <div className="col-md-4  col-lg-4 col-sm-6 col-xs-3  d-flex justify-content-center">
-                        <div className="main-card">
-                            <div className="domain">
-                                <div className="domain-logo">
-                                    <img src={web}  alt="web-dev logo"></img>
-                                </div>
-                                <h4 >Web Dev</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
-                            </div>
-                            <div className="shadowOne"></div>
-                            <div className="shadowTwo"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-3 d-flex justify-content-center">
-                    <div className="main-card">
-                            <div className="domain">
-                                <div className="domain-logo">
-                                    <img src={app}  alt="app-dev logo"></img>
-                                </div>
-                                <h4 >App Dev</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
-                            </div>
-                            <div className="shadowOne"></div>
-                            <div className="shadowTwo"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
-                    <div className="main-card">
-                            <div className="domain">
-                                <div className="domain-logo">
-                                    <img src={rnd}  alt="rnd logo"></img>
-                                </div>
-                                <h4 className="opaque">R&D</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
-                            </div>
-                            <div className="shadowOne"></div>
-                            <div className="shadowTwo"></div>
-                        </div>
-                    </div>
-            
-                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
-                    <div className="main-card">
-                            <div className="domain">
-                                <div className="domain-logo">
-                                    <img src={graphic}  alt="graphic-design logo"></img>
-                                </div>
-                                <h4 className="opaque">Graphics</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
-                            </div>
-                            <div className="shadowOne"></div>
-                            <div className="shadowTwo"></div>
-                        </div>
-                    </div>
-                    <div className="col-md-4 col-lg-4 col-sm-6 col-xs-6 d-flex justify-content-center">
-                    <div className="main-card">
-                            <div className="domain">
-                                <div className="domain-logo">
-                                    <img src={hr}  alt="HR logo"></img>
-                                </div>
-                                <h4 className="opaque">HR</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
-                            </div>
-                            <div className="shadowOne"></div>
-                            <div className="shadowTwo"></div>
-                        </div>
-                    </div>
-                </div>           
-            </div>
-        </div>
-    );
-}
-
-export default Domains;
->>>>>>> 91376f0da12a948945eaae131e382c711be82556
