@@ -5,7 +5,7 @@ import web from '../../files/web.png'
 import arch from '../../files/arch.png'
 import mobWeb from '../../files/mob-web.png'
 import mobArch from '../../files/mob-arch.png'
-import { Link } from 'react-scroll'
+import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/NavBar'
 
 const Landing = () => {
@@ -63,7 +63,7 @@ const Landing = () => {
             </div>
           </div>
           <div>
-            <Link activeClass='active' to='About' duration={0} smooth={true}>
+            <Link to='/#About'>
               <div className='landing-down-arrow'>
                 <span></span>
                 <span></span>
