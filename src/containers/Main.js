@@ -1,31 +1,45 @@
+import React, { Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import "./Main.css";
-import Home from "./Home";
-import Team from "./Team/Team";
-import Projects from "./projects/Projects";
+import Preloader from "./Preloader/Preloader";
 import Footer from "./Footer/Footer";
+const Home = React.lazy(() => {
+  return new Promise((resolve) => setTimeout(resolve, 3 * 1000)).then(() =>
+    import("./Home")
+  );
+});
+const Team = React.lazy(() => {
+  return new Promise((resolve) => setTimeout(resolve, 3 * 1000)).then(() =>
+    import("./Team/Team")
+  );
+});
+const Projects = React.lazy(() => {
+  return new Promise((resolve) => setTimeout(resolve, 1 * 1000)).then(() =>
+    import("./projects/Projects")
+  );
+});
 
 function Main() {
-
   return (
     <div className="Main">
-      <Switch>
-        <Route exact path="/">
-          <Home />
-          <Footer alt/>
-        </Route>
-        <Route exact path="/team">
-          <Team />
-          <Footer />
-        </Route>
-        <Route exact path="/projects">
-          <Projects />
-          <Footer />
-        </Route>
-      </Switch>
+      <Suspense fallback={<Preloader />}>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+            <Footer alt />
+          </Route>
+          <Route exact path="/team">
+            <Team />
+            <Footer />
+          </Route>
+          <Route exact path="/projects">
+            <Projects />
+            <Footer />
+          </Route>
+        </Switch>
+      </Suspense>
     </div>
   );
 }
 
 export default Main;
-
