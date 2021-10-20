@@ -126,6 +126,12 @@
 .project-item-right {
   animation: fadeInRight 1.5s ease;
 }
+.project-item-left img,
+.project-item-right img{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
 
 .project-item-icons {
   display: flex;

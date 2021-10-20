@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
 import './landing.css'
 import logo from '../../files/logo.png'
-import web from '../../files/web.png'
-import arch from '../../files/arch.png'
-import mobWeb from '../../files/mob-web.png'
-import mobArch from '../../files/mob-arch.png'
-import { Link } from 'react-scroll'
+import web from '../../files/landing/web.png'
+import arch from '../../files/landing/arch.png'
+import mobWeb from '../../files/landing/mob-web.png'
+import mobArch from '../../files/landing/mob-arch.png'
+import { Link } from "react-router-dom";
 import Navbar from '../Navbar/NavBar'
 
 const Landing = () => {
@@ -40,7 +40,9 @@ const Landing = () => {
       <div className='landing-main'>
         <Navbar isHome={true} />
         <div className='landing-logo'>
-          <img src={logo} alt='logo' />
+          <Link to="/">
+            <img src={logo} alt='logo' />
+          </Link>
         </div>
         <div className='landing-box'>
           <div className='landing-content'>
@@ -63,7 +65,7 @@ const Landing = () => {
             </div>
           </div>
           <div>
-            <Link activeClass='active' to='About' duration={0} smooth={true}>
+            <Link to="/#About">
               <div className='landing-down-arrow'>
                 <span></span>
                 <span></span>

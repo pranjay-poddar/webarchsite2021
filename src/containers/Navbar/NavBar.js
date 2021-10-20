@@ -14,7 +14,9 @@ const Navbar = ({ isHome }) => {
         {/* 1st logo part  */}
         {!isHome && (
           <div className="logona">
-            <img src={logo} style={{ width: "50px" }} alt="logo" />
+            <Link to="/">
+              <img src={logo} style={{ width: "50px" }} alt="logo" />
+            </Link>
           </div>
         )}
 

@@ -4,36 +4,46 @@ import "./Testimonials.css";
 
 const slideData = [
   {
-    name: "Taylor Swift",
-    src: "https://images.unsplash.com/photo-1528045252873-2bf37023d58b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Parth Hingorani",
+    src: require("../../files/testimonials/parth.jpg").default,
+    batch: "(Batch-2019)",
+    text: "Here's the one thing that I want to say: If you're motivated enough, the opportunities are endless."
   },
   {
-    name: "Brock Wegner",
-    src: "https://images.unsplash.com/photo-1631761320198-4bc79af9029b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8dG93SlpGc2twR2d8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Punit Gupta",
+    src: require("../../files/testimonials/punit.jpg").default,
+    batch: "(Batch-2015)",
+    text: "Webarch is the perfect place to nurture your interests in Tech. It helped me develop my skills in frontend, backend and even Devops."
   },
   {
-    name: "Mark Bishop",
-    src: "https://images.unsplash.com/photo-1631701119265-33ca2b80d00d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Vaanya Gupta",
+    src: require("../../files/testimonials/vaanya.jpg").default,
+    batch: "(Batch-2018)",
+    text: "My four years here taught me so much and as we became seniors, we tried our best to give our juniors the same culture and legacy! It was the best, warmest and most professional club I ever worked at."
   },
   {
-    name: "Anna Oliinyk",
-    src: "https://images.unsplash.com/photo-1588676478262-3d48b5a0c60e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Rohan Anand",
+    src: require("../../files/testimonials/rohan.jpg").default,
+    batch: "(Batch-2018)",
+    text: "Webarch is an excellent place where I was able to cultivate my technical skills to have me ready for the future."
   },
   {
-    name: "Taylor Swift",
-    src: "https://images.unsplash.com/photo-1528045252873-2bf37023d58b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Aayush Chaurasia",
+    src: require("../../files/testimonials/ayus.jpg").default,
+    batch: "(Batch-2017)",
+    text: "A truly wonderful personal and professional experience. One place which motivates the members to learn technical skills in their areas of interest and practice their knowledge."
   },
   {
-    name: "Brock Wegner",
-    src: "https://images.unsplash.com/photo-1631761320198-4bc79af9029b?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDV8dG93SlpGc2twR2d8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Anshul Sahni",
+    src: require("../../files/testimonials/anshul.jpeg").default,
+    batch: "(Batch-2016)",
+    text: "The lessons learnt and teachings taken from Webarch are something which one cannot forget for his whole life no matter how far the person will go, once a Webarchian, always a Webarchian."
   },
   {
-    name: "Mark Bishop",
-    src: "https://images.unsplash.com/photo-1631701119265-33ca2b80d00d?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDEzfHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
-  },
-  {
-    name: "Anna Oliinyk",
-    src: "https://images.unsplash.com/photo-1588676478262-3d48b5a0c60e?ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI0fHRvd0paRnNrcEdnfHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    name: "Mohit Gupta",
+    src: require("../../files/testimonials/mohit.jpg").default,
+    batch: "(Batch-2019)",
+    text: "The only work place in SRM where you can become passionate about being a team player. You'll be guided by the best brains and at some point in time you shall pass on the knowledge."
   },
 ];
 const Card = ({ card }) => {
@@ -44,9 +54,9 @@ const Card = ({ card }) => {
       </div>
       <div className="card-body">
         <div className="name">
-          <h2>{card.name}</h2> <p>lorem ipsum</p>
+          <h2>{card.name}</h2> <p>{card.batch}</p>
         </div>
-        <div className="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci amet expedita iusto sequi sapiente Lorem ipsum dolor sit amet.</div>
+        <div className="quote">{card.text}</div>
       </div>
     </div>
   );

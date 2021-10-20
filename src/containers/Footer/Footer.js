@@ -1,5 +1,5 @@
 import classes from "./Footer.module.css";
-import footerImg from "../../files/footer.svg";
+import footerImg from "../../files/footer/footer.svg";
 import { Link } from "react-router-dom";
 import $ from "jquery";
 

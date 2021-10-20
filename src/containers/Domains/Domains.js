@@ -1,10 +1,10 @@
 import "./Domains.css";
 
-import web from "../../files/webDomain.png";
-import app from "../../files/app.png";
-import rnd from "../../files/rnd.png";
-import hr from "../../files/hr.png";
-import graphic from "../../files/graphic.png";
+import web from "../../files/domains/webDomain.png";
+import app from "../../files/domains/app.png";
+import rnd from "../../files/domains/rnd.png";
+import hr from "../../files/domains/hr.png";
+import graphic from "../../files/domains/graphic.png";
 import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,9 +22,7 @@ const Domains = ({alt}) => {
                                     <img src={web}  alt="web-dev logo"></img>
                                 </div>
                                 <h4 >Web Dev</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
+                                <p>Design and develop eye-catching websites</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -37,9 +35,7 @@ const Domains = ({alt}) => {
                                     <img src={app}  alt="app-dev logo"></img>
                                 </div>
                                 <h4 >App Dev</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
+                                <p>Create cross-platform mobile applications</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -52,9 +48,7 @@ const Domains = ({alt}) => {
                                     <img src={rnd}  alt="rnd logo"></img>
                                 </div>
                                 <h4 className="opaque">R&D</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
+                                <p>Dive into the world of machine learning and automation</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -68,9 +62,7 @@ const Domains = ({alt}) => {
                                     <img src={graphic}  alt="graphic-design logo"></img>
                                 </div>
                                 <h4 className="opaque">Graphics</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
+                                <p>Unleash your creativity by designing digital content</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -83,9 +75,7 @@ const Domains = ({alt}) => {
                                     <img src={hr}  alt="HR logo"></img>
                                 </div>
                                 <h4 className="opaque">HR</h4>
-                                <p>lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem 
-                                lorem lorem lorem lorem lorem 
-                                </p>
+                                <p>Showcase your resource management skills and strategies</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
