@@ -127,7 +127,7 @@
   animation: fadeInRight 1.5s ease;
 }
 .project-item-left img,
-.project-item-right img{
+.project-item-right img {
   width: 100%;
   height: auto;
   max-height: 100%;
@@ -218,13 +218,13 @@
     height: 200px;
     width: 300px;
   }
-  .project-item:nth-child(even) .row {
-    flex-direction: column-reverse;
-  }
 }
 
 /* Mobiles */
 @media screen and (max-width: 500px) {
+  .project-item .row {
+    flex-direction: column;
+  }
   .project-item:nth-child(even) .row {
     flex-direction: column-reverse;
   }
