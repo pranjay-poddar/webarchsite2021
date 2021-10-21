@@ -19,7 +19,7 @@
 .container-testimonials .card {
   position: relative;
   text-align: center;
-  height: 320px;
+  height: 330px;
   width: 350px;
   background-color: #3e4b72;
   border-radius: 78% 22% 81% 19% / 21% 80% 20% 79%;
@@ -30,8 +30,8 @@
 .container-testimonials .card::before {
   content: "";
   position: absolute;
-  height: 330px;
-  width: 330px;
+  height: 340px;
+  width: 340px;
   top: -12px;
   /* background-color: #6b3294; */
   background-color: var(--webarch-blue);
@@ -85,7 +85,12 @@
   color: rgba(255, 255, 255, 0.5);
 }
 .container-testimonials .card .card-body .quote {
+  position: relative;
+  top: -10px;
+  max-width: 90%;
+  margin: 0 auto;
   font-size: 1.4rem;
+  line-height: 1.8rem;
   color: rgba(255, 255, 255, 0.5);
 }
 .container-testimonials .flickity-button {
@@ -240,12 +245,34 @@
 /* media queries */
 
 @media (max-width: 600px) {
+  .container-testimonials .card img {
+    height: 70px;
+    width: 70px;
+  }
+  .container-testimonials .card .card-image::before {
+    height: 75px;
+    width: 75px;
+
+    left: 5px;
+  }
   .container-testimonials .card {
-    height: 300px;
+    height: 330px;
     width: 330px;
   }
   .container-testimonials .card::before {
-    height: 300px;
+    height: 320px;
     width: 330px;
+  }
+  .container-testimonials .card .card-body .name h2 {
+    font-size: 1.7rem;
+  }
+  .container-testimonials .card .card-body .name p {
+    font-size: 1.4rem;
+  }
+  .container-testimonials .card .card-body .quote {
+    top: -5px;
+    font-size: 1.35rem;
+    line-height: 1.7rem;
+    color: rgba(255, 255, 255, 0.5);
   }
 }
