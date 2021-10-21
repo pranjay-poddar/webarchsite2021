@@ -7,7 +7,6 @@
     flex-direction: column;
     color: white;
     padding-bottom: 10vh;
-    padding-top: 3.4rem;
 }
 
 .Domains {
@@ -149,6 +148,9 @@
 }
 
 @media (max-width:576px) {
+    .Domains {
+        padding-top: 0;
+    }
     .Domains .main-card {
         width: 26rem;
         align-items: center;
