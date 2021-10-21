@@ -1,0 +1,15 @@
+.Preloader{
+    overflow: hidden;
+}
+
+.Preloader img{
+    width: 25%;
+    height: auto;
+}
+
+@media (max-width: 768px){
+    .Preloader img{
+        width: 40%;
+        height: auto;
+    }
+}

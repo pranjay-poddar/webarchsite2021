@@ -22,7 +22,7 @@ const Domains = ({alt}) => {
                                     <img src={web}  alt="web-dev logo"></img>
                                 </div>
                                 <h4 >Web Dev</h4>
-                                <p>Design and develop eye-catching websites</p>
+                                <p>A good website leaves a lasting impression. Design and develop full stack, scalable, responsive websites</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -35,7 +35,7 @@ const Domains = ({alt}) => {
                                     <img src={app}  alt="app-dev logo"></img>
                                 </div>
                                 <h4 >App Dev</h4>
-                                <p>Create cross-platform mobile applications</p>
+                                <p>Create end-to-end mobile applications with cross platform support and robust functionality</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -48,7 +48,7 @@ const Domains = ({alt}) => {
                                     <img src={rnd}  alt="rnd logo"></img>
                                 </div>
                                 <h4 className="opaque">R&D</h4>
-                                <p>Dive into the world of machine learning and automation</p>
+                                <p>Dive into the world of automation and intelligence to master the art of machine learning as a service</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -62,7 +62,7 @@ const Domains = ({alt}) => {
                                     <img src={graphic}  alt="graphic-design logo"></img>
                                 </div>
                                 <h4 className="opaque">Graphics</h4>
-                                <p>Unleash your creativity by designing digital content</p>
+                                <p>A picture speaks a thousand words. Unleash your creativity by designing eye-catching digital content</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>
@@ -75,7 +75,7 @@ const Domains = ({alt}) => {
                                     <img src={hr}  alt="HR logo"></img>
                                 </div>
                                 <h4 className="opaque">HR</h4>
-                                <p>Showcase your resource management skills and strategies</p>
+                                <p>The backbone of any organization. Showcase your resource management skills and team strategies</p>
                             </div>
                             <div className="shadowOne"></div>
                             <div className="shadowTwo"></div>

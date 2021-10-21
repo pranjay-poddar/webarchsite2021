@@ -31,9 +31,9 @@ const Footer = ({alt}) => {
             <ul className={classes.contact}>
               <h3>Reach Us</h3>
               <li>
-                <a href="mailto:">
+                <a href="mailto:webarchclub@gmail.com">
                   <i className="fas fa-envelope"></i>
-                  webarchsrm@gmail.com
+                  webarchclub@gmail.com
                 </a>
               </li>
               <li>

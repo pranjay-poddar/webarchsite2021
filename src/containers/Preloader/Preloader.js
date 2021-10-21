@@ -1,9 +1,10 @@
 import React from "react";
+import "./Preloader.css";
 import image from "../../files/webload.gif";
 
 function Preloader() {
   return (
-    <div
+    <div className="Preloader"
       style={{
         backgroundColor: "#161625",
         
