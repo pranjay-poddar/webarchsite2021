@@ -48,6 +48,10 @@
   margin-bottom: 4rem;
 }
 
+.projects-list {
+  margin-top: 5rem;
+}
+
 /* Project Item */
 .project-item {
   margin-bottom: 180px;

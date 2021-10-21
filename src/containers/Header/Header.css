@@ -31,31 +31,26 @@
   margin-left: 10rem;
 }
 
-.hr-animation {
-  animation: 2s linear 1 forwards hrAnim;
-}
-
-@keyframes hrAnim {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-
 @media (max-width: 768px){
+  .Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .Header-text {
     font-size: 54px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
     letter-spacing: 0.2rem;
-    margin: 0 auto;
+  }
+  .Header-hr{
+    width: 40%;
+    margin: 0;
   }
   .Header-slash{
     display: none;
-  }
-  
-  .Header-hr {
-    margin: 0 auto;
   }
 }

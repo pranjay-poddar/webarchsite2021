@@ -63,11 +63,11 @@ const ContactUs = ({ alt }) => {
                                 </div>
                                 <br />
                                 <div className="contact-detail-effect">
-                                    <a href="mailto:contactwebarch@gmail.com">
+                                    <a href="mailto: webarchclub@gmail.com">
                                         <span>
                                             <GrMail />
                                         </span>
-                                        contactwebarch<br />
+                                        webarchclub<br />
                                     </a>
                                 </div>
                             </div>

@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import ProjectItem from "./ProjectItem";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar/NavBar";
+import Header from "../Header/Header";
 import { useLocation } from "react-router";
 
 const Projects = () => {
@@ -55,21 +56,22 @@ const Projects = () => {
     },
     {
       id: 3,
-      title: "Project 3",
+      title: "Webarch Forms",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate consequuntur iusto officiis, corrupti fugiat deleniti!",
+        "A web application that creates online forms in a quick and easy manner along with extensive customization tools.",
       image: "",
-      tech: ["React", "CSS", "Node.js", "MongoDB"],
+      tech: ["HTML", "CSS", "Node.js", "MongoDB"],
       githubLink: "https://github.com/",
       liveDemo: "",
-      contributors: ["Soumik Chaudhuri", "Tanishq Kumar"],
+      contributors: ["Mohammad Muazam", "Jayesh Jayanandan", "Pranjay Poddar", "Antara Gupta", "Sreyom Sresaan", ],
     },
   ];
   return (
     <section className="projects-section">
       <Navbar isHome={false}/>
+      <Header title="Projects" id="Projects" />
       <Container>
-        <h2 className="projects-title">PROJECTS</h2>
+        {/* <h2 className="projects-title">PROJECTS</h2> */}
         <div className="projects-list">
           {projects.map((project, idx) => (
             <ProjectItem id={project.id} project={project} key={idx}/>

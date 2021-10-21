@@ -55,7 +55,30 @@ border-radius: 50%;
   margin-bottom: 0px;
   font-weight: 100;
 }
-.Team p {
+/* HEADER STYLES */
+.Team .Header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Team .Header-text {
+  font-size: 54px;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+.Team .Header-hr{
+  width: 40%;
+  margin: 0;
+  display: none;
+}
+.Team .Header-slash{
+  display: none;
+}
+.Team p ~ .Header-text {
   font-size: 18px;
 }
 .Team .transition {

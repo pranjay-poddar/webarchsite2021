@@ -10,6 +10,12 @@ const slideData = [
     text: "Here's the one thing that I want to say: If you're motivated enough, the opportunities are endless.",
   },
   {
+    name: "Kartik Sawant",
+    src: require("../../files/testimonials/kartik.png").default,
+    batch: "(Batch-2021)",
+    text: "Webarch is the best place in SRM to grow and learn. It was an integral part of my college life. You'll get to work under talented seniors who pass on their valuable knowledge to you and you'll get to step in their shoes at some point and do the same.",
+  },
+  {
     name: "Punit Gupta",
     src: require("../../files/testimonials/punit.jpg").default,
     batch: "(Batch-2015)",

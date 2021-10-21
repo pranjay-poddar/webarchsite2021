@@ -4,6 +4,7 @@ import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 import { collection, query, getDocs } from "@firebase/firestore";
 import { useLocation } from "react-router";
+import Header from "../Header/Header";
 
 const Team = () => {
 
@@ -93,7 +94,8 @@ const Team = () => {
         <div className="Team">
             <Navbar isHome={false} />
             <div className="team-body">
-                <p className="team-page-heading">Meet The Team</p>
+                <Header title="Meet The Team" id="Team" />
+                {/* <p className="team-page-heading">Meet The Team</p> */}
                 <div className="hero">
                     <h1 className="tagline">
                         Bringing out the best in each other!
