@@ -14,7 +14,7 @@ const Team = React.lazy(() => {
   );
 });
 const Projects = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 1 * 1000)).then(() =>
+  return new Promise((resolve) => setTimeout(resolve, 3 * 1000)).then(() =>
     import("./projects/Projects")
   );
 });

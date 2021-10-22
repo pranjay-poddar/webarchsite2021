@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Preloader.css";
 import image from "../../files/webload.gif";
 
 function Preloader() {
+  const [clas, setClas] = useState("Preloader");
+  setTimeout(function () {
+    setClas("Preloader hidden");
+  }, 1500);
   return (
-    <div className="Preloader"
+    <div
+      className={clas}
       style={{
         backgroundColor: "#161625",
-        overflow:"hidden",
+        overflow: "hidden",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
