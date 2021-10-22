@@ -340,12 +340,14 @@
   transform: translate(50%);
   margin-top: 50px;
   cursor: pointer;
+  visibility: hidden;
 }
 
 .landing-down-arrow span {
   display: block;
   width: 20px;
   height: 20px;
+  opacity: 0;
   border-bottom: 5px solid cyan;
   border-right: 5px solid cyan;
   -webkit-animation: downAnimate 2s infinite;
