@@ -10,35 +10,34 @@ import { useEffect } from "react";
 import { useLocation } from "react-router";
 
 const Home = () => {
-
   const location = useLocation();
 
   useEffect(() => {
-    if(location.hash){
-      let elem = document.getElementById(location.hash.slice(1))
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
-          elem.scrollIntoView({behavior: "smooth"})
+        elem.scrollIntoView({ behavior: "smooth" });
       }
-    }else{
-      window.scrollTo({top:0,left:0, behavior: "smooth"})
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
-  }, [location])
+  }, [location]);
 
   return (
     <div className="Home">
       <Landing />
       <Header id="About" title="About" />
       <About />
-      <Header id="Domains" title="Domains" alt/>
-      <Domains alt/>
+      <Header id="Domains" title="Domains" alt />
+      <Domains alt />
       <Header id="Clients" title="Clients" />
       <Clients />
-      <Header id="Testimonials" title="Testimonials" alt/>
-      <Testimonials alt/>
+      <Header id="Testimonials" title="Testimonials" alt />
+      <Testimonials alt />
       <Header id="Contact" title="Contact Us" />
       <ContactUs />
     </div>
   );
 };
 
-export default Home
+export default Home;

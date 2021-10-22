@@ -6,7 +6,7 @@ function Preloader() {
   const [clas, setClas] = useState("Preloader");
   setTimeout(function () {
     setClas("Preloader hidden");
-  }, 1500);
+  }, 2000);
   return (
     <div
       className={clas}

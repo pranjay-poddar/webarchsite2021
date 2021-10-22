@@ -13,7 +13,7 @@
     background: var(--bg-plain);
   }
   to {
-    background: url('../../files/landing/background.gif');
+    background: url("../../files/landing/background.gif");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('../../files/landing/background.gif');
+  background: url("../../files/landing/background.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,7 +189,7 @@
     margin-top: 150px;
     opacity: 0;
   }
-  60%{
+  60% {
     opacity: 0;
   }
   80% {
@@ -206,7 +206,7 @@
     margin-top: 150px;
     opacity: 0;
   }
-  60%{
+  60% {
     opacity: 0;
   }
   80% {
@@ -329,7 +329,7 @@
       margin-top: 150px;
       opacity: 0;
     }
-    60%{
+    60% {
       opacity: 0;
     }
     80% {
@@ -346,7 +346,7 @@
       margin-top: 150px;
       opacity: 0;
     }
-    60%{
+    60% {
       opacity: 0;
     }
     80% {

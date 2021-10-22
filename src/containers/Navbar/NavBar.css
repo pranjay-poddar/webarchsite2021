@@ -54,7 +54,7 @@
   height: 8rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  background: rgba(22,22,37, 0.3);
+  background: rgba(22, 22, 37, 0.3);
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
@@ -140,7 +140,7 @@
 }
 
 /* responsive css style  */
-@media (min-width: 998px){
+@media (min-width: 998px) {
   .menu-link .uline .lina:hover > a {
     transform-origin: left;
     padding: 6px;
@@ -181,10 +181,10 @@
     }
   }
 
-  .navra .mobile-menu-link{
-    background: rgba(22,22,37, 0.3);
+  .navra .mobile-menu-link {
+    background: rgba(22, 22, 37, 0.3);
   }
-  .navba .mobile-menu-link{
+  .navba .mobile-menu-link {
     background: var(--bg-grad);
   }
 
