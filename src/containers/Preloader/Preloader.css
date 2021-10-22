@@ -13,4 +13,19 @@
         width: 40%;
         height: auto;
     }
+    .Preloader {
+        overflow: hidden;
+        height: 90vh;
+    }
+     ::-webkit-scrollbar-track {
+        background: transparent !important;
+    }
+    /* Handle */
+     ::-webkit-scrollbar-thumb {
+        background: transparent !important;
+    }
+    /* Handle on hover */
+     ::-webkit-scrollbar-thumb:hover {
+        background: transparent !important;
+    }
 }
