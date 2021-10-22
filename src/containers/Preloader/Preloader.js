@@ -7,7 +7,7 @@ function Preloader() {
     <div className="Preloader"
       style={{
         backgroundColor: "#161625",
-        
+        overflow:"hidden",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
