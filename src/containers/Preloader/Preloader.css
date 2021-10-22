@@ -1,14 +1,15 @@
-.Preloader{
+.Preloader {
     overflow: hidden;
+    height: 100vh;
 }
 
-.Preloader img{
+.Preloader img {
     width: 25%;
     height: auto;
 }
 
-@media (max-width: 768px){
-    .Preloader img{
+@media (max-width: 768px) {
+    .Preloader img {
         width: 40%;
         height: auto;
     }
