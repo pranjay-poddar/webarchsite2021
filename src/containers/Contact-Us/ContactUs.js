@@ -82,22 +82,27 @@ const ContactUs = ({ alt }) => {
     }
 
     const handleSubmit = (e) => {
+        $(e.target).find("#btn").attr("disabled", true);
+        $(e.target).find("#btn").text("Sending");
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: encode({ "form-name": "contact", formData })
         })
-        .then(res => res.json())
-        .then(
-            (_) => {
-                setDialogMessage("Task Failed successfully");
+        .then(res => {
+            console.log(res);
+            setDialogMessage("Task Failed successfully");
+            handleOpen();
+            $(e.target).find("#btn").attr("disabled", false);
+            $(e.target).find("#btn").text("Send");
+        })
+        .catch((error) => {
+                console.log(error)
+                setDialogMessage("Oops! Something Went Wrong");
                 handleOpen();
-            },
-            (_) => {
-                setDialogMessage("Failed Task successfully");
-                handleOpen();
-            }
-        )
+                $(e.target).find("#btn").attr("disabled", false);
+                $(e.target).find("#btn").text("Send");
+        });
 
         e.preventDefault();
     }
