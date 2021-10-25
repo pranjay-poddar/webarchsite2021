@@ -5,7 +5,7 @@ import web from '../../files/landing/web.png'
 import arch from '../../files/landing/arch.png'
 import mobWeb from '../../files/landing/mob-web.png'
 import mobArch from '../../files/landing/mob-arch.png'
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/NavBar'
 
 const Landing = () => {
@@ -14,7 +14,8 @@ const Landing = () => {
       document.querySelector('.landing-left-content') !== undefined &&
       document.querySelector('.landing-right-content') !== undefined &&
       document.querySelector('.landing-left-mmob-content') !== undefined &&
-      document.querySelector('.landing-right-mob-content') !== undefined
+      document.querySelector('.landing-right-mob-content') !== undefined &&
+      document.querySelector('.landing-down-arrow') !== undefined
     ) {
       setTimeout(function () {
         document.querySelector('.landing-left-content').style.visibility =
@@ -24,6 +25,8 @@ const Landing = () => {
         document.querySelector('.landing-left-mob-content').style.visibility =
           'visible'
         document.querySelector('.landing-right-mob-content').style.visibility =
+          'visible'
+        document.querySelector('.landing-down-arrow').style.visibility =
           'visible'
       }, 4000)
     }
@@ -40,7 +43,7 @@ const Landing = () => {
       <div className='landing-main'>
         <Navbar isHome={true} />
         <div className='landing-logo'>
-          <Link to="/">
+          <Link to='/'>
             <img src={logo} alt='logo' />
           </Link>
         </div>
@@ -65,7 +68,7 @@ const Landing = () => {
             </div>
           </div>
           <div>
-            <Link to="/#About">
+            <Link to='/#About'>
               <div className='landing-down-arrow'>
                 <span></span>
                 <span></span>
