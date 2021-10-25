@@ -1,7 +1,7 @@
-import Box from '@mui/material/Box';
-import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Slide, Button, TextField, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import { useState, forwardRef } from 'react';
+import $ from 'jquery';
 
 
 import { GrInstagram } from "react-icons/gr";
@@ -23,15 +23,133 @@ const useStyles = makeStyles({
             backgroundColor: '#026ba3',
             color: '#fff',
         },
+    },
+    dialogButton: {
+        backgroundColor: '#00e8ff',
+        color: '#00e8ff !important',
+        '&:hover': {
+            backgroundColor: '#026ba3',
+            color: '#fff',
+        },
+        fontSize: '1.3rem !important'
+    },
+    dialogTitle: {
+        backgroundColor: '#161625',
+        color: '#fff !important',
+        fontSize: '3rem !important',
+        textTransform: 'uppercase',
+        textAlign: 'center'
+    },
+    dialog: {
+        backgroundColor: '#161625',
+        color: '#fff !important',
+    },
+    dialogContentText: {
+        backgroundColor: '#161625',
+        color: '#fff !important',
+        fontSize: '2rem !important',
+        textAlign: 'center',
+        fontVariant: 'all-small-caps'
     }
 })
 
+const Transition = forwardRef(function Transition(props, ref) {
+    return <Slide direction="up" ref={ref} {...props} />;
+});
+
 const ContactUs = ({ alt }) => {
+
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    const [dialogOpen, setDialogOpen] = useState(false);
+    const [dialogMessage, setDialogMessage] = useState("");
+
+    const handleOpen = () => setDialogOpen(true);
+    const handleClose = () => {
+        setDialogOpen(false);
+        setDialogMessage("");
+    };
+
+    
+    const encode = (data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&");
+    }
+
+    const handleSubmit = (e) => {
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contact", formData })
+        })
+        .then(res => res.json())
+        .then(
+            (_) => {
+                setDialogMessage("Task Failed successfully");
+                handleOpen();
+            },
+            (_) => {
+                setDialogMessage("Failed Task successfully");
+                handleOpen();
+            }
+        )
+
+        e.preventDefault();
+    }
+
+    const handleChange = (e) => {
+        var inputName = $(e.target).attr('name');
+        switch (inputName) {
+            case 'name':
+                setFormData({
+                    ...formData,
+                    name: e.target.value
+                })
+                break;
+            case 'email':
+                setFormData({
+                    ...formData,
+                    email: e.target.value
+                })
+                break;
+            case 'message':
+                setFormData({
+                    ...formData,
+                    message: e.target.value
+                })
+                break;
+        
+            default:
+                break;
+        }
+    }
 
     const classes = useStyles()
 
     return (
         <div className={alt ? "contact-us d-flex flex-row align-items-center alt" : "contact-us d-flex flex-row align-items-center"}>
+            <Dialog
+                open={dialogOpen}
+                TransitionComponent={Transition}
+                keepMounted
+                onClose={handleClose}
+                aria-describedby="alert-dialog-slide-description"
+            >
+                <DialogTitle className={classes.dialogTitle}>{"Thank you for contacting Webarch"}</DialogTitle>
+                <DialogContent className={classes.dialog}>
+                    <DialogContentText className={classes.dialogContentText} id="alert-dialog-slide-description">
+                        {dialogMessage}
+                    </DialogContentText>
+                </DialogContent>
+                <DialogActions className={classes.dialog}>
+                    <Button className={classes.dialogButton} onClick={handleClose}>Close</Button>
+                </DialogActions>
+            </Dialog>
             <div className="contact w-100 row m-0 justify-content-center align-items-center">
                 <div className="contact-info contact-height col-10 col-md-6 m-0 p-0 d-flex flex-row justify-content-center align-items-center order-1">
                     <div className="contact-vertical"></div>
@@ -112,6 +230,7 @@ const ContactUs = ({ alt }) => {
                                     }}
                                     noValidate
                                     autoComplete="off"
+                                    onSubmit={handleSubmit}
                                 >
                                     <TextField
                                         sx={{
@@ -127,7 +246,10 @@ const ContactUs = ({ alt }) => {
                                         id="standard-basic"
                                         label="Name"
                                         variant="standard"
-                                        margin="normal" />
+                                        margin="normal"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange} />
                                     <TextField
                                         style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff" } }}
@@ -135,7 +257,11 @@ const ContactUs = ({ alt }) => {
                                         id="standard-basic"
                                         label="Email"
                                         variant="standard"
-                                        margin="normal" />
+                                        margin="normal"
+                                        name="email"
+                                        type="email"
+                                        value={formData.email}
+                                        onChange={handleChange} />
                                     <TextField
                                         style={{ width: '90%', borderBottom: '1px solid #c2c2c2' }}
                                         id="standard-textarea"
@@ -146,6 +272,9 @@ const ContactUs = ({ alt }) => {
                                         margin="normal"
                                         inputProps={{ style: { fontSize: 15, color: "#ffffff", lineHeight: '20px' } }}
                                         InputLabelProps={{ style: { fontSize: 15, color: "#c2c2c2", letterSpacing: '1px' } }}
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                     />
                                     <Button id="btn" className={classes.button}
                                         style={{
