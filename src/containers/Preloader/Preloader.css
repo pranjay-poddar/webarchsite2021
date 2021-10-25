@@ -1,20 +1,24 @@
 .Preloader {
-    overflow: hidden;
-    height: 100vh;
+	overflow: hidden;
+	height: 100vh;
 }
 
 .Preloader img {
-    width: 25%;
-    height: auto;
+	width: 25%;
+	height: auto;
 }
-
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s 2s, opacity 2s linear;
+}
 @media (max-width: 768px) {
-    .Preloader img {
-        width: 40%;
-        height: auto;
-    }
-    .Preloader {
-        overflow: hidden;
-        min-height: 90vh;
-    }
+	.Preloader img {
+		width: 40%;
+		height: auto;
+	}
+	.Preloader {
+		overflow: hidden;
+		min-height: 90vh;
+	}
 }

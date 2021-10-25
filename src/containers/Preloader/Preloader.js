@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Preloader.css";
 import image from "../../files/webload.gif";
 
 function Preloader() {
+  const [fadeClass, setFadeClass] = useState("Preloader");
+  setTimeout(function () {
+    setFadeClass("Preloader hidden");
+  }, 2000);
   return (
-    <div className="Preloader"
+    <div
+      className={fadeClass}
       style={{
         backgroundColor: "#161625",
-        
+        overflow: "hidden",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
