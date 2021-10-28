@@ -48,6 +48,10 @@
   margin-bottom: 4rem;
 }
 
+.projects-list {
+  margin-top: 5rem;
+}
+
 /* Project Item */
 .project-item {
   margin-bottom: 180px;
@@ -125,6 +129,12 @@
 }
 .project-item-right {
   animation: fadeInRight 1.5s ease;
+}
+.project-item-left img,
+.project-item-right img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
 }
 
 .project-item-icons {
@@ -212,13 +222,13 @@
     height: 200px;
     width: 300px;
   }
-  .project-item:nth-child(even) .row {
-    flex-direction: column-reverse;
-  }
 }
 
 /* Mobiles */
 @media screen and (max-width: 500px) {
+  .project-item .row {
+    flex-direction: column;
+  }
   .project-item:nth-child(even) .row {
     flex-direction: column-reverse;
   }

@@ -3,8 +3,23 @@ import Navbar from "../Navbar/NavBar";
 import { db } from "../../firebase";
 import { useEffect, useState } from "react";
 import { collection, query, getDocs } from "@firebase/firestore";
+import { useLocation } from "react-router";
+import Header from "../Header/Header";
 
 const Team = () => {
+
+    const location = useLocation();
+
+    useEffect(() => {
+        if(location.hash){
+        let elem = document.getElementById(location.hash.slice(1))
+        if (elem) {
+            elem.scrollIntoView({behavior: "smooth"})
+        }
+        }else{
+        window.scrollTo({top:0,left:0, behavior: "smooth"})
+        }
+    }, [location])
 
     const range = (start, end) => {
         return Array(Number(end) - Number(start) + 1).fill().map((_, idx) => String(Number(start) + idx))
@@ -79,7 +94,8 @@ const Team = () => {
         <div className="Team">
             <Navbar isHome={false} />
             <div className="team-body">
-                <p className="team-page-heading">Meet The Team</p>
+                <Header title="Meet The Team" id="Team" />
+                {/* <p className="team-page-heading">Meet The Team</p> */}
                 <div className="hero">
                     <h1 className="tagline">
                         Bringing out the best in each other!

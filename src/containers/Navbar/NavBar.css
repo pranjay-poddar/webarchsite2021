@@ -1,63 +1,26 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap"); */
 @font-face {
   font-family: "Raleway", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 }
-.Navbar-Home {
-  position: absolute;
-  width: 100%;
+* {
   margin: 0;
   padding: 0;
-  top: 0;
-  left: 0;
-  z-index: 5;
+  box-sizing: border-box;
+}
+.navra {
+  /* position: absolute; */
   opacity: 0;
   animation: 3s linear 3500ms forwards navAppear;
+  /* z-index: 5; */
 }
-.Navbar .appbar {
-  font-family: "Roboto Mono", monospace;
+.navba {
+  /* position: absolute; */
+  /* opacity: 0; */
+  /* animation: 3s linear 3500ms forwards navAppear; */
+  opacity: 1;
+  /* z-index: 5; */
 }
-.Navbar .p-tag {
-  font-family: "Roboto Mono", monospace;
-  font-size: 15px;
-}
-.Navbar .hoverable {
-  text-transform: capitalize;
-  color: #8892b0;
-}
-.Navbar .hoverable a {
-  text-decoration: none;
-  color: #8892b0;
-}
-.menuItem {
-  width: 20vw;
-  animation: 900ms linear forwards slideIn;
-}
-
-.navIt {
-  color: #00e8ff;
-  text-align: center;
-}
-
-.Navbar .hoverable:hover a {
-  color: #00e8ff;
-}
-.btn-head:hover {
-  border: 1px dashed #00e8ff;
-}
-.btn-head:active {
-  border: 1px dashed #00e8ff;
-}
-.Navbar .btn-head:active {
-  border: 1px dashed #00e8ff;
-}
-.menu {
-  width: "100%";
-}
-.Navbar .btn-head:focus {
-  border: 1px dashed #00e8ff;
-}
-
 @keyframes navAppear {
   0% {
     opacity: 0;
@@ -66,30 +29,269 @@
     opacity: 1;
   }
 }
+.hama {
+  text-decoration: none;
+  font-family: "Roboto Mono", monospace;
+}
 
-@keyframes appear {
-  0% {
-    opacity: 0;
+.lina {
+  list-style: none;
+  cursor: pointer;
+  /* font-size: 500px; */
+  /* animation: 900ms linear forwards slideIn; */
+  font-family: "Roboto Mono", monospace;
+  padding-right: 20px;
+}
+.anim {
+  animation: 900ms linear forwards slideIn;
+}
+/* 
+ 
+/* navbar style start  */
+
+.main-nav {
+  width: 100%;
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+  background: rgba(22,22,37, 0.3);
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+}
+
+.logona {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+}
+
+.menu-link {
+  grid-column: 4/4;
+}
+
+.menu-link .uline {
+  height: 8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media .uline {
+  height: 8rem;
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social-media .uline .lina {
+  text-align: right;
+}
+
+.social-media .uline .lina:first-child {
+  grid-column: 3/3;
+}
+
+/* ----------- Grid part ends ----------------- */
+
+.menu-link .uline .lina {
+  font-size: 1.4rem;
+}
+
+.menu-link .uline .lina a {
+  text-transform: capitalize;
+  color: #8892b0;
+  transition: 0.5s;
+}
+
+.social-media .uline .lina {
+  font-size: 1.8rem;
+}
+
+.social-media .hamburger-menu {
+  display: none;
+}
+.uline {
+  width: 50vw;
+}
+/* hero section   */
+
+/* responsive css style  */
+@media (min-width: 1080px) and (max-width: 1280px) {
+  .uline {
+    width: 65vw;
   }
-  100% {
-    opacity: 1;
+}
+@media (max-width: 1080px) {
+  .main-nav {
+    height: 8rem;
+    grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+  }
+  .uline {
+    width: 65vw;
+  }
+  .logo,
+  .menu-link .uline,
+  .social-media .uline {
+    height: 8rem;
   }
 }
 
-@keyframes slideIn {
-  0% {
-    transform: translateX(10%);
-  }
-  100% {
-    transform: translateX(0%);
+/* responsive css style  */
+@media (min-width: 998px){
+  .menu-link .uline .lina:hover > a {
+    transform-origin: left;
+    padding: 6px;
+    border: 1px dashed #00e8ff;
+    border-radius: 2px;
+    color: #00e8ff;
+    /* text-decoration: underline; */
+    transition: 0.5s;
   }
 }
 
-@keyframes shrink {
-  0% {
-    width: 95%;
+@media (max-width: 999px) {
+  .main-nav {
+    height: 7rem;
+    grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
   }
-  100% {
-    width: 90%;
+
+  .menu-link {
+    display: none;
+  }
+
+  .logo,
+  .social-media .uline {
+    height: 7rem;
+  }
+
+  .mobile-menu-link {
+    grid-column: 2/4;
+    position: relative;
+    z-index: 99;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateX(60%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .navra .mobile-menu-link{
+    background: rgba(22,22,37, 0.3);
+  }
+  .navba .mobile-menu-link{
+    background: var(--bg-grad);
+  }
+
+  .mobile-menu-link {
+    height: 25rem;
+    display: grid;
+    grid-column: 2/5;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all 2s linear;
+    transform-origin: top;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+
+  .mobile-menu-link .uline {
+    height: 20rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mobile-menu-link .uline .lina:first-child {
+    transition-delay: 0.2s;
+  }
+
+  .social-media {
+    grid-row: 1/2;
+    grid-column: 3/5;
+    justify-items: end;
+    align-items: center;
+    transition: all 2s linear;
+  }
+
+  .social-media .social-media-desktop {
+    height: 0;
+    display: none;
+  }
+
+  .social-media {
+    height: 7rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 798px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media .uline {
+    height: 6rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .main-nav {
+    height: 6rem;
+    grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+  }
+
+  .logo,
+  .social-media .uline {
+    height: 6rem;
+  }
+
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .social-media {
+    height: 6rem;
+    display: flex;
+    justify-self: end;
+    align-items: center;
+  }
+
+  .social-media .hamburger-menu {
+    display: block;
+    font-size: 2.5rem;
+  }
+
+  /* hero section  */
+
+  .hero-section h1 {
+    font-size: 3.8rem;
   }
 }
