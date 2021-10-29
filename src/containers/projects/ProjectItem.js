@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { Row, Col } from "react-bootstrap";
-// import GithubIcon from "../../files/githubicon.svg";
+import GithubIcon from "../../files/githubicon.svg";
 import LinkIcon from "../../files/linkicon.svg";
 
 const ProjectItem = ({ project }) => {
@@ -11,7 +11,7 @@ const ProjectItem = ({ project }) => {
     description,
     image,
     tech,
-    // githubLink,
+    githubLink,
     liveDemo,
     contributors,
   } = project;
@@ -46,9 +46,9 @@ const ProjectItem = ({ project }) => {
                 ))}
               </div>
               <div className="project-item-icons flex-end">
-                {/* <a href={githubLink} target="__blank">
+                {(githubLink !== "") && (<a href={githubLink} target="__blank">
                   <img alt="icon" src={GithubIcon} className="mr-1" />
-                </a> */}
+                </a>)}
                 {(liveDemo !== "") && (<a href={liveDemo} target="__blank">
                   <img alt="icon" src={LinkIcon} />
                 </a>)}
@@ -78,9 +78,9 @@ const ProjectItem = ({ project }) => {
                 ))}
               </div>
               <div className="project-item-icons">
-                {/* <a href={githubLink} target="__blank">
+                {(githubLink !== "") && (<a href={githubLink} target="__blank">
                   <img alt="icon" src={GithubIcon} className="mr-1" />
-                </a> */}
+                </a>)}
                 {(liveDemo !== "") && (<a href={liveDemo} target="__blank">
                   <img alt="icon" src={LinkIcon} />
                 </a>)}

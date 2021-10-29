@@ -14,7 +14,8 @@ const Landing = () => {
       document.querySelector(".landing-left-content") !== undefined &&
       document.querySelector(".landing-right-content") !== undefined &&
       document.querySelector(".landing-left-mmob-content") !== undefined &&
-      document.querySelector(".landing-right-mob-content") !== undefined
+      document.querySelector(".landing-right-mob-content") !== undefined &&
+      document.querySelector(".landing-down-arrow") !== undefined
     ) {
       setTimeout(function () {
         document.querySelector(".landing-left-content").style.visibility =
@@ -24,6 +25,8 @@ const Landing = () => {
         document.querySelector(".landing-left-mob-content").style.visibility =
           "visible";
         document.querySelector(".landing-right-mob-content").style.visibility =
+          "visible";
+        document.querySelector(".landing-down-arrow").style.visibility =
           "visible";
       }, 4000);
     }
