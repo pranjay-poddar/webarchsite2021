@@ -34,9 +34,9 @@ const useStyles = makeStyles({
         fontSize: '1.3rem !important'
     },
     dialogTitle: {
-        backgroundColor: '#00e8ff',
-        color: '#161625 !important',
-        fontSize: '2.2rem !important',
+        backgroundColor: '#161625',
+        color: '#fff !important',
+        fontSize: '3rem !important',
         textTransform: 'uppercase',
         textAlign: 'center'
     },
@@ -47,11 +47,9 @@ const useStyles = makeStyles({
     dialogContentText: {
         backgroundColor: '#161625',
         color: '#fff !important',
-        fontSize: '2.2rem !important',
+        fontSize: '2rem !important',
         textAlign: 'center',
-        fontVariant: 'all-small-caps',
-        paddingTop: '20px',
-        height: '40px'
+        fontVariant: 'all-small-caps'
     }
 })
 
@@ -68,13 +66,11 @@ const ContactUs = ({ alt }) => {
     });
 
     const [dialogOpen, setDialogOpen] = useState(false);
-    const [dialogTitleText, setDialogTitleText] = useState("");
     const [dialogMessage, setDialogMessage] = useState("");
 
     const handleOpen = () => setDialogOpen(true);
     const handleClose = () => {
         setDialogOpen(false);
-        setDialogTitleText("");
         setDialogMessage("");
     };
 
@@ -95,16 +91,14 @@ const ContactUs = ({ alt }) => {
         })
             .then(res => {
                 console.log(res);
-                setDialogTitleText("Thank You For Contacting Webarch!");
-                setDialogMessage("Message Sent Successfully");
+                setDialogMessage("Task Failed successfully");
                 handleOpen();
                 $(e.target).find("#btn").attr("disabled", false);
                 $(e.target).find("#btn").text("Send");
             })
             .catch((error) => {
                 console.log(error)
-                setDialogTitleText("Oops! Something Went Wrong");
-                setDialogMessage("Couldn't Send Message. Please Try Again");
+                setDialogMessage("Oops! Something Went Wrong");
                 handleOpen();
                 $(e.target).find("#btn").attr("disabled", false);
                 $(e.target).find("#btn").text("Send");
@@ -151,9 +145,7 @@ const ContactUs = ({ alt }) => {
                 onClose={handleClose}
                 aria-describedby="alert-dialog-slide-description"
             >
-                <DialogTitle className={classes.dialogTitle}>
-                    {dialogTitleText}
-                </DialogTitle>
+                <DialogTitle className={classes.dialogTitle}>{"Thank you for contacting Webarch"}</DialogTitle>
                 <DialogContent className={classes.dialog}>
                     <DialogContentText className={classes.dialogContentText} id="alert-dialog-slide-description">
                         {dialogMessage}
@@ -233,7 +225,7 @@ const ContactUs = ({ alt }) => {
                         <div className="contact-corner-borders contact-corner-borders--right"></div>
                         <div className="contact-form-container">
                             <div className="contact-form-title">
-                                <span id="form-title">Ping Us</span>
+                                <span>Ping Us</span>
                             </div>
                             <div className="contact-form-content">
                                 <Box

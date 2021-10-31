@@ -1,0 +1,218 @@
+.footerDiv {
+    background: var(--bg-plain);
+    color: white;
+    font-size: 1.8rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
+    padding: 0 2rem;
+    position: relative;
+}
+.footerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+.illustration {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.illustration img{
+    width: 75%;
+}
+
+.exploreContainer {
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.explore {
+    margin-right: 5rem;
+}
+
+.explore li {
+    list-style: none;
+    margin: 1rem 0;
+}
+.explore li a{
+    color: #fff;
+}
+
+.contact li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact li a i {
+    margin-right: 1rem;
+    color: var(--webarch-blue);
+}
+
+.msgContainer {
+    width: 100%;
+    display: flex;
+    padding: 1.2rem 0;
+    justify-content: center;
+}
+
+.msgContainer p {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.msgContainer p i {
+    color: red;
+}
+
+.iconsContainer {
+    /* margin-top: 2rem; */
+    margin-left: 1rem;
+}
+
+.iconsContainer h3 {
+    text-align: center;
+}
+
+.socialLinks {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.1rem;
+}
+
+.socialLinks li {
+    list-style: none;
+    margin-right:2.5rem ;
+}
+
+.socialLinks li a {
+    text-decoration: none;
+}
+
+.socialLinks li a i {
+    color: #fff;
+    transition: all .5s ease;
+}
+
+.socialLinks .insta:hover i{
+    color: #DD2A7B;
+    transform: scale(1.5);
+}
+.socialLinks .linkedin:hover i{
+    color: #0077b5;
+    transform: scale(1.5);
+}
+.socialLinks .discord:hover i{
+    color: #5865F2;
+    transform: scale(1.5);
+}
+.socialLinks .github:hover i{
+    color: #6e5494;
+    transform: scale(1.5);
+}
+
+
+
+@media (max-width:1370px) {
+    .footerContainer {
+        grid-template-columns: 1fr 2fr;
+    }
+    .illustration {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width:1230px) {
+    .exploreContainer {
+        padding-right: 5rem;
+    }
+    .illustration {
+        margin-top: 8rem;
+    }
+}
+
+@media (max-width:1155px){
+    .footerDiv {
+        font-size: 1.7rem;
+    }
+    .contact {
+        padding: 0;
+    }
+}
+
+@media (max-width:1005px) {
+    .footerDiv {
+        font-size: 2rem;
+    }
+    .iconsContainer {
+        margin-left: 3rem;
+    }
+    .socialLinks{
+        flex-direction: column;
+    }
+    .socialLinks li {
+        margin-top: 0.5rem;
+    }
+    .illustration {
+        margin-top: 8rem;
+    }
+    .explore {
+        display: none;
+    }
+    .footerContainer {
+        grid-template-columns: 1fr 1.5fr;
+    }
+}
+
+@media (max-width:780px) {
+    .illustration {
+        display: none;
+    }
+    .exploreContainer {
+        justify-content: center;
+    }
+    .footerContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:550px) {
+    h3 {
+        font-size: 2rem;
+    }
+    .contact li a {
+        font-size: 1.7rem;
+    }
+    .exploreContainer {
+        padding-right: 0;
+    }
+    .contact {
+        padding-left: 0;
+    }
+    .msgContainer p {
+        font-size: 1.6rem;
+    }
+} 
+
+@media (max-width:450px) {
+    h3 {
+        font-size: 1.8rem;
+    }
+    .contact li a {
+        font-size: 1.5rem;
+    }
+    .msgContainer p {
+        font-size: 1.4rem;
+    }
+} 
