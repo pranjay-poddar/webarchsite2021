@@ -51,7 +51,7 @@ const useStyles = makeStyles({
         textAlign: 'center',
         fontVariant: 'all-small-caps',
         paddingTop: '20px',
-        height: '40px'
+        height: 'auto'
     }
 })
 
@@ -95,16 +95,22 @@ const ContactUs = ({ alt }) => {
         })
             .then(res => {
                 console.log(res);
-                setDialogTitleText("Thank You For Contacting Webarch!");
-                setDialogMessage("Message Sent Successfully");
-                handleOpen();
+                if(res.status === 200){
+                    setDialogTitleText("Thank You For Contacting Webarch!");
+                    setDialogMessage("Your message has been sent successfully");
+                    handleOpen();
+                }else{
+                    setDialogTitleText("Oops! Something Went Wrong");
+                    setDialogMessage("We encountered an error, Please try after some time");
+                    handleOpen();
+                }
                 $(e.target).find("#btn").attr("disabled", false);
                 $(e.target).find("#btn").text("Send");
             })
             .catch((error) => {
                 console.log(error)
                 setDialogTitleText("Oops! Something Went Wrong");
-                setDialogMessage("Couldn't Send Message. Please Try Again");
+                setDialogMessage("We encountered an error. Please try after some time");
                 handleOpen();
                 $(e.target).find("#btn").attr("disabled", false);
                 $(e.target).find("#btn").text("Send");

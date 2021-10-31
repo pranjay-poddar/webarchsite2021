@@ -39,7 +39,7 @@ const Footer = ({alt}) => {
               <li>
                 <a href="tele:9549954599">
                   <i className="fas fa-phone-alt"></i>
-                  Divij Gupta
+                  +91 9549954599
                 </a>
               </li>
             </ul>
