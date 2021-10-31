@@ -1,14 +1,14 @@
 import { Row, Col } from 'react-grid-system';
 import './Clients.css';
-import aarush from "../../files/clients/aarush.png";
-import ep from "../../files/clients/ep.png";
-import in20 from "../../files/clients/in20.png";
-import ita from "../../files/clients/ita.png";
-import milan from "../../files/clients/milan.png";
-import rudra from "../../files/clients/rudra.png";
-import siic from "../../files/clients/siic.png";
-import srm from "../../files/clients/srm.png";
-import tft from "../../files/clients/tft.png";
+import aarush from "../../files/clients/aarush.webp";
+import ep from "../../files/clients/ep.webp";
+import in20 from "../../files/clients/in20.webp";
+import ita from "../../files/clients/ita.webp";
+import milan from "../../files/clients/milan.webp";
+import rudra from "../../files/clients/rudra.webp";
+import siic from "../../files/clients/siic.webp";
+import srm from "../../files/clients/srm.webp";
+import tft from "../../files/clients/tft.webp";
 
 
 const Clients = ({alt}) => {

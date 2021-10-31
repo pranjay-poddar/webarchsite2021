@@ -4,17 +4,17 @@ import "./Main.css";
 import Preloader from "./Preloader/Preloader";
 import Footer from "./Footer/Footer";
 const Home = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 3 * 1000)).then(() =>
+  return new Promise((resolve) => setTimeout(resolve, 3.5 * 1000)).then(() =>
     import("./Home")
   );
 });
 const Team = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 3 * 1000)).then(() =>
+  return new Promise((resolve) => setTimeout(resolve, 3.5 * 1000)).then(() =>
     import("./Team/Team")
   );
 });
 const Projects = React.lazy(() => {
-  return new Promise((resolve) => setTimeout(resolve, 1 * 1000)).then(() =>
+  return new Promise((resolve) => setTimeout(resolve, 3.5 * 1000)).then(() =>
     import("./projects/Projects")
   );
 });

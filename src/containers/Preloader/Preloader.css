@@ -9,7 +9,7 @@
 	height: auto;
 }
 .hiddenPreloader {
-	animation: 2s linear 2s 1 forwards preloaderHide;;
+	animation: 1s linear 2.5s 1 forwards preloaderHide;
 }
 
 @keyframes preloaderHide {
