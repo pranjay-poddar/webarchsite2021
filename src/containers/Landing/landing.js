@@ -33,43 +33,113 @@ const Landing = () => {
   }
 
   useEffect(() => {
-    nameReveal()
-  }, [])
+    if (
+      localStorage.getItem('isAnimated') === null ||
+      localStorage.getItem('isAnimated') === undefined
+    ) {
+      localStorage.setItem('isAnimated', false)
+      nameReveal()
+    } else if (localStorage.getItem('isAnimated') === false) {
+      localStorage.setItem('isAnimated', true)
+    } else {
+      localStorage.setItem('isAnimated', true)
+    }
+
+    console.log(localStorage.getItem('isAnimated'))
+  }, [localStorage.getItem('isAnimated')])
+
+  let animated = localStorage.getItem('isAnimated')
 
   return (
-    <div className='landing'>
+    <div
+      className={
+        !animated
+          ? 'landing landing-animation'
+          : 'landing final-landing-animation'
+      }
+    >
       <div className='landing-gif'></div>
-      <div className='landing-layer'></div>
+      <div
+        className={
+          !animated
+            ? 'landing-layer landing-layer-animation'
+            : 'landing-layer final-landing-layer-animation'
+        }
+      ></div>
       <div className='landing-main'>
         <Navbar isHome={true} />
-        <div className='landing-logo'>
+        <div
+          className={
+            !animated
+              ? 'landing-logo landing-logo-animation'
+              : 'landing-logo final-landing-logo-animation'
+          }
+        >
           <Link to='/'>
             <img src={logo} alt='logo' />
           </Link>
         </div>
         <div className='landing-box'>
           <div className='landing-content'>
-            <div className='landing-left-content'>
+            <div
+              className={
+                !animated
+                  ? 'landing-left-content landing-left-content-animation'
+                  : 'landing-left-content final-landing-left-content-animation'
+              }
+            >
               <img src={web} alt='web' />
             </div>
-            <div className='landing-right-content'>
+            <div
+              className={
+                !animated
+                  ? 'landing-right-content landing-right-content-animation'
+                  : 'landing-right-content final-landing-right-content-animation'
+              }
+            >
               <img src={arch} alt='arch' />
             </div>
-            <div className='landing-left-mob-content'>
+            <div
+              className={
+                !animated
+                  ? 'landing-left-mob-content landing-left-mob-content-animation'
+                  : 'landing-left-mob-content final-landing-left-mob-content'
+              }
+            >
               <img src={mobWeb} alt='web' />
             </div>
-            <div className='landing-right-mob-content'>
+            <div
+              className={
+                !animated
+                  ? 'landing-right-mob-content landing-right-mob-content-animation'
+                  : 'landing-right-mob-content final-landing-right-mob-content'
+              }
+            >
               <img src={mobArch} alt='arch' />
             </div>
           </div>
           <div>
             <div>
-              <h1 className='landing-tag'>Architects of the Web</h1>
+              <h1
+                className={
+                  !animated
+                    ? 'landing-tag landing-tag-animation'
+                    : 'landing-tag final-landing-tag-animation'
+                }
+              >
+                Architects of the Web
+              </h1>
             </div>
           </div>
           <div>
             <Link to='/#About'>
-              <div className='landing-down-arrow'>
+              <div
+                className={
+                  !animated
+                    ? 'landing-down-arrow'
+                    : 'landing-down-arrow display-arrow'
+                }
+              >
                 <span></span>
                 <span></span>
                 <span></span>
