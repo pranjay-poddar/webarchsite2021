@@ -13,6 +13,8 @@ function Preloader() {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
+        width: "100vw",
+        height: "100vh"
       }}
     >
       <img className="hiddenPreloader" src={image} alt="webarch" />
