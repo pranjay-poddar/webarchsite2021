@@ -46,6 +46,7 @@ const Landing = () => {
     }
 
     console.log(localStorage.getItem('isAnimated'))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [localStorage.getItem('isAnimated')])
 
   let animated = localStorage.getItem('isAnimated')

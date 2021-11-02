@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from 'react'
+import React, { Suspense } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './Main.css'
 import Preloader from './Preloader/Preloader'

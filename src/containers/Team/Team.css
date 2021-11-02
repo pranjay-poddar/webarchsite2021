@@ -20,7 +20,16 @@
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
-
+/* SMOOTH LOADER */
+.Team .smooth-img {
+  transition: opacity 1s;
+}
+.Team .img-visible {
+  opacity: 1;
+}
+.Team .img-hidden {
+  opacity: 0;
+}
 .Team .team-body {
   font-family: 'Lato', sans-serif;
   text-align: center;

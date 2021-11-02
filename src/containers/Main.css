@@ -1,9 +1,19 @@
-.Main{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    position: relative;
-    background: var(--bg-grad);
+.Main {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	position: relative;
+	background: var(--bg-grad);
+}
+
+.smooth-img {
+	transition: opacity 1s;
+}
+.img-visible {
+	opacity: 1;
+}
+.img-hidden {
+	opacity: 0;
 }

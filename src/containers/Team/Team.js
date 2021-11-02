@@ -9,6 +9,7 @@ import Header from "../Header/Header";
 const Team = () => {
 
     const location = useLocation();
+    const [imageLoaded, setImageLoaded] = useState(false);
 
     useEffect(() => {
         if(location.hash){
@@ -59,8 +60,18 @@ const Team = () => {
                 {" "}
                 
 
-                <div className="team-img">
-                    <img alt="team" className="responsive-img" src={m.photo} />
+                <div className="team-img smooth-img-wrapper">
+                    <img 
+                    alt={m.name} 
+                    className={`responsive-img smooth-img img-${imageLoaded ? 'visible' : 'hidden'}`} 
+                    src={m.photo} 
+                    onLoad={()=> setImageLoaded(true)}
+                    />
+                    {!imageLoaded && (
+                        <div className="smooth-preloader">
+                            <span className="smooth-loader"></span>
+                        </div>
+                    )}
                 </div>
                 <h3 className="transition">
                     {m.name} <em>{m.role}</em>

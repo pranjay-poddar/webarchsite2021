@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./Projects.css";
 import { Row, Col } from "react-bootstrap";
 import GithubIcon from "../../files/githubicon.svg";
@@ -16,18 +16,26 @@ const ProjectItem = ({ project }) => {
     contributors,
   } = project;
 
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const renderItem = (idx) => {
     if (idx % 2 === 1) {
       image = image !== "" ? image : "https://s3-ap-south-1.amazonaws.com/static.awfis.com/wp-content/uploads/2017/07/07184649/ProjectManagement.jpg";
       return (
         <>
-          <Col className="project-item-left">
+          <Col className="project-item-left smooth-img-wrapper">
             {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src={image}
-              className="project-image"
+              className={`project-image smooth-img img-${imageLoaded ? 'visible' : 'hidden'}`}
+              onLoad={()=> setImageLoaded(true)}
               alt="project"
             />
+            {!imageLoaded && (
+                <div className="smooth-preloader">
+                    <span className="smooth-loader"></span>
+                </div>
+            )}
           </Col>
           <Col className="project-item-right">
             <div className="project-details">
@@ -91,10 +99,16 @@ const ProjectItem = ({ project }) => {
             {/* <a href={liveDemo} className="project-link"></a> */}
             <img
               src={image}
-              className="project-image"
+              className={`project-image smooth-img img-${imageLoaded ? 'visible' : 'hidden'}`}
+              onLoad={()=> setImageLoaded(true)}
               link="true"
               alt="project"
             />
+            {!imageLoaded && (
+                <div className="smooth-preloader">
+                    <span className="smooth-loader"></span>
+                </div>
+            )}
           </Col>
         </>
       );

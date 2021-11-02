@@ -53,10 +53,20 @@ const slideData = [
   },
 ];
 const Card = ({ card }) => {
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className="card">
-      <div className="card-image">
-        <img src={card.src} alt="" />
+      <div className="card-image smooth-img-wrapper">
+        <img 
+        src={card.src} 
+        alt="Testimonials"
+        className={`smooth-img img-${imageLoaded ? 'visible' : 'hidden'}`}
+        onLoad={()=> setImageLoaded(true)} />
+        {!imageLoaded && (
+            <div className="smooth-preloader">
+                <span className="smooth-loader"></span>
+            </div>
+        )}
       </div>
       <div className="card-body">
         <div className="name">
