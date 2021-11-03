@@ -8,19 +8,18 @@ import Header from "../Header/Header";
 import { useLocation } from "react-router";
 
 const Projects = () => {
-
   const location = useLocation();
 
   useEffect(() => {
-    if(location.hash){
-      let elem = document.getElementById(location.hash.slice(1))
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
-          elem.scrollIntoView({behavior: "smooth"})
+        elem.scrollIntoView({ behavior: "smooth" });
       }
-    }else{
-      window.scrollTo({top:0,left:0, behavior: "smooth"})
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
-  }, [location])
+  }, [location]);
 
   const projects = [
     {
@@ -32,11 +31,7 @@ const Projects = () => {
       tech: ["HTML", "CSS", "Node.js", "MongoDB"],
       githubLink: "",
       liveDemo: "https://webarch-shortener.herokuapp.com",
-      contributors: [
-        "Soumik Chaudhuri",
-        "Tanishq Kumar",
-        "Ananya Negi",
-      ],
+      contributors: ["Soumik Chaudhuri", "Tanishq Kumar", "Ananya Negi"],
     },
     {
       id: 2,
@@ -44,15 +39,10 @@ const Projects = () => {
       description:
         "A mobile application that serves as a one stop solution for all SRMites. Whether it's calculating your GPA or accessing study material, this app has got you covered.",
       image: require("../../files/projects/srm_essentials.webp").default,
-      tech: ["Flutter","Firebase",],
+      tech: ["Flutter", "Firebase"],
       githubLink: "",
       liveDemo: "",
-      contributors: [
-        "Abhigyan Singh",
-        "Payel Paul",
-        "Kevin Jeenu",
-        "Pradeep",
-      ],
+      contributors: ["Abhigyan Singh", "Payel Paul", "Kevin Jeenu", "Pradeep"],
     },
     {
       id: 3,
@@ -63,7 +53,12 @@ const Projects = () => {
       tech: ["MongoDB", "Express", "React", "Node.js"],
       githubLink: "https://github.com/mmuazam98/InWeb",
       liveDemo: "https://collegemadesimpler.netlify.app/",
-      contributors: ["Pranjay Poddar", "Mohammad Muazam", "Chirag Bhatia", "Palak Aggarwal",],
+      contributors: [
+        "Pranjay Poddar",
+        "Mohammad Muazam",
+        "Chirag Bhatia",
+        "Palak Aggarwal",
+      ],
     },
     {
       id: 4,
@@ -74,18 +69,24 @@ const Projects = () => {
       tech: ["HTML", "CSS", "Node.js", "MongoDB"],
       githubLink: "",
       liveDemo: "",
-      contributors: ["Mohammad Muazam", "Jayesh Jayanandan", "Pranjay Poddar", "Antara Gupta", "Sreyom Sresaan", ],
+      contributors: [
+        "Mohammad Muazam",
+        "Jayesh Jayanandan",
+        "Pranjay Poddar",
+        "Antara Gupta",
+        "Sreyom Sresaan",
+      ],
     },
   ];
   return (
     <section className="projects-section">
-      <Navbar isHome={false}/>
+      <Navbar isHome={false} />
       <Header title="Projects" id="Projects" />
       <Container>
         {/* <h2 className="projects-title">PROJECTS</h2> */}
         <div className="projects-list">
           {projects.map((project, idx) => (
-            <ProjectItem id={project.id} project={project} key={idx}/>
+            <ProjectItem id={project.id} project={project} key={idx} />
           ))}
         </div>
       </Container>
