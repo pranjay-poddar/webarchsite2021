@@ -4,9 +4,11 @@ import Main from "./Main";
 
 function App() {
   return (
-    <Router>
-      <Main />
-    </Router>
+    <div className="App">
+      <Router>
+        <Main />
+      </Router>
+    </div>
   );
 }
 
