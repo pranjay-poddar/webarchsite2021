@@ -54,11 +54,7 @@
   height: 8rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
-  background: rgba(22,22,37, 0.3);
   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-}
-
 .logona {
   display: grid;
   /* background-color: #3b5998; */
