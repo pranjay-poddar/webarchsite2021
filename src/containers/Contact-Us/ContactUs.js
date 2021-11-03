@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     },
     dialogButton: {
         backgroundColor: '#00e8ff',
-        color: '#00e8ff !important',
+        color: '#000 !important',
         '&:hover': {
             backgroundColor: '#026ba3',
             color: '#fff',
