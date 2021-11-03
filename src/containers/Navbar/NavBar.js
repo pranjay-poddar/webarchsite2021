@@ -16,7 +16,7 @@ const Navbar = ({ isHome }) => {
         {!isHome && (
           <div className='logona'>
             <Link to='/'>
-              <img src="https://tyracatr.sirv.com/Images/background.gif" style={{ width: '50px' }} alt='logo' />
+              <img src="https://tyracatr.sirv.com/Images/logo.png" style={{ width: '50px' }} alt='logo' />
             </Link>
           </div>
         )}
