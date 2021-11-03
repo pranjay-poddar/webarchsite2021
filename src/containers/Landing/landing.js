@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react'
 import './landing.css'
-import logo from '../../files/logo.png'
-import mobWeb from '../../files/landing/mob-web.png'
-import mobArch from '../../files/landing/mob-arch.png'
 import { Link } from 'react-router-dom'
 import Navbar from '../Navbar/NavBar'
 
@@ -75,7 +72,7 @@ const Landing = () => {
           }
         >
           <Link to='/'>
-            <img src={logo} alt='logo' />
+            <img src="https://tyracatr.sirv.com/Images/logo.png" alt='logo' />
           </Link>
         </div>
         <div className='landing-box'>
@@ -105,7 +102,7 @@ const Landing = () => {
                   : 'landing-left-mob-content final-landing-left-mob-content'
               }
             >
-              <img src={mobWeb} alt='web' />
+              <img src="https://tyracatr.sirv.com/Images/mob-web.png" alt='web' />
             </div>
             <div
               className={
@@ -114,7 +111,7 @@ const Landing = () => {
                   : 'landing-right-mob-content final-landing-right-mob-content'
               }
             >
-              <img src={mobArch} alt='arch' />
+              <img src="https://tyracatr.sirv.com/Images/mob-arch.png" alt='arch' />
             </div>
           </div>
           <div>
