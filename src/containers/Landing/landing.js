@@ -34,22 +34,22 @@ const Landing = () => {
 
   useEffect(() => {
     if (
-      localStorage.getItem('isAnimated') === null ||
-      localStorage.getItem('isAnimated') === undefined
+      sessionStorage.getItem('isAnimated') === null ||
+      sessionStorage.getItem('isAnimated') === undefined
     ) {
-      localStorage.setItem('isAnimated', false)
+      sessionStorage.setItem('isAnimated', false)
       nameReveal()
-    } else if (localStorage.getItem('isAnimated') === false) {
-      localStorage.setItem('isAnimated', true)
+    } else if (sessionStorage.getItem('isAnimated') === false) {
+      sessionStorage.setItem('isAnimated', true)
     } else {
-      localStorage.setItem('isAnimated', true)
+      sessionStorage.setItem('isAnimated', true)
     }
 
-    console.log(localStorage.getItem('isAnimated'))
+    console.log(sessionStorage.getItem('isAnimated'))
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [localStorage.getItem('isAnimated')])
+  }, [sessionStorage.getItem('isAnimated')])
 
-  let animated = localStorage.getItem('isAnimated')
+  let animated = sessionStorage.getItem('isAnimated')
 
   return (
     <div

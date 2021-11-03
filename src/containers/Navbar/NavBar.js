@@ -1,23 +1,23 @@
-import React, { useState } from "react";
-import "./NavBar.css";
+import React, { useState } from 'react'
+import './NavBar.css'
 
-import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "../../files/logo.png";
+import { GiHamburgerMenu } from 'react-icons/gi'
+import logo from '../../files/logo.png'
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 // import { Link as NavLink } from "react-scroll";
 const Navbar = ({ isHome }) => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+  const [showMediaIcons, setShowMediaIcons] = useState(false)
 
-  let animated = localStorage.getItem("isAnimated");
+  let animated = sessionStorage.getItem('isAnimated')
   return (
-    <div className={isHome ? (!animated ? "navra" : "navba") : "navba"}>
-      <nav className="main-nav">
+    <div className={isHome ? (!animated ? 'navra' : 'navba') : 'navba'}>
+      <nav className='main-nav'>
         {/* 1st logo part  */}
         {!isHome && (
-          <div className="logona">
-            <Link to="/">
-              <img src={logo} style={{ width: "50px" }} alt="logo" />
+          <div className='logona'>
+            <Link to='/'>
+              <img src={logo} style={{ width: '50px' }} alt='logo' />
             </Link>
           </div>
         )}
@@ -25,72 +25,72 @@ const Navbar = ({ isHome }) => {
         {/* 2nd menu part  */}
         <div
           className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+            showMediaIcons ? 'menu-link mobile-menu-link' : 'menu-link'
           }
         >
-          <ul className="uline">
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+          <ul className='uline'>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/#About"
+                to='/#About'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>01. </span>About us
+                <span style={{ color: '#00E8FF' }}>01. </span>About us
               </Link>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/#Domains"
+                to='/#Domains'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>02. </span>Domains
+                <span style={{ color: '#00E8FF' }}>02. </span>Domains
               </Link>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/projects"
+                to='/projects'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>03. </span>Projects
+                <span style={{ color: '#00E8FF' }}>03. </span>Projects
               </Link>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/#Clients"
+                to='/#Clients'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>04. </span>Clients
+                <span style={{ color: '#00E8FF' }}>04. </span>Clients
               </Link>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/team"
+                to='/team'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>05. </span>Team
+                <span style={{ color: '#00E8FF' }}>05. </span>Team
               </Link>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
+            <li className={showMediaIcons ? 'lina anim' : 'lina'}>
               <Link
-                to="/#Contact"
+                to='/#Contact'
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>06. </span>Contact
+                <span style={{ color: '#00E8FF' }}>06. </span>Contact
               </Link>
             </li>
           </ul>
         </div>
 
         {/* 3rd social media links */}
-        <div className="social-media">
+        <div className='social-media'>
           {/* hamburget menu start  */}
-          <div className="hamburger-menu">
+          <div className='hamburger-menu'>
             <button
-              className="hama"
+              className='hama'
               style={{
-                background: "transparent",
-                color: "#00e8ff",
-                border: "none",
-                boxShadow: "none",
+                background: 'transparent',
+                color: '#00e8ff',
+                border: 'none',
+                boxShadow: 'none',
               }}
               onClick={() => setShowMediaIcons(!showMediaIcons)}
             >
@@ -106,7 +106,7 @@ const Navbar = ({ isHome }) => {
         <h1>Thapa Technical</h1>
       </section> */}
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
