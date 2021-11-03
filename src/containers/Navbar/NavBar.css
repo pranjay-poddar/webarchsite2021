@@ -48,7 +48,9 @@
 /* 
  
 /* navbar style start  */
-
+.logona {
+  padding-left: 100px;
+}
 .main-nav {
   width: 100%;
   height: 8rem;
@@ -133,10 +135,14 @@
   .social-media .uline {
     height: 8rem;
   }
+  .logona {
+    padding-left: 60px;
+    padding-top: 15px;
+  }
 }
 
 /* responsive css style  */
-@media (min-width: 998px){
+@media (min-width: 998px) {
   .menu-link .uline .lina:hover > a {
     transform-origin: left;
     padding: 6px;
@@ -153,7 +159,10 @@
     height: 7rem;
     grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
   }
-
+  .logona {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
   .menu-link {
     display: none;
   }
@@ -177,10 +186,10 @@
     }
   }
 
-  .navra .mobile-menu-link{
-    background: rgba(22,22,37, 0.3);
+  .navra .mobile-menu-link {
+    background: rgba(22, 22, 37, 0.3);
   }
-  .navba .mobile-menu-link{
+  .navba .mobile-menu-link {
     background: var(--bg-grad);
   }
 
