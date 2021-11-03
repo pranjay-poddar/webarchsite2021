@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react'
 import './landing.css'
 import logo from '../../files/logo.png'
-import web from '../../files/landing/web.png'
-import arch from '../../files/landing/arch.png'
 import mobWeb from '../../files/landing/mob-web.png'
 import mobArch from '../../files/landing/mob-arch.png'
 import { Link } from 'react-router-dom'
@@ -89,7 +87,7 @@ const Landing = () => {
                   : 'landing-left-content final-landing-left-content-animation'
               }
             >
-              <img src={web} alt='web' />
+              <img src="https://tyracatr.sirv.com/Images/web.png" alt='web' />
             </div>
             <div
               className={
@@ -98,7 +96,7 @@ const Landing = () => {
                   : 'landing-right-content final-landing-right-content-animation'
               }
             >
-              <img src={arch} alt='arch' />
+              <img src="https://tyracatr.sirv.com/Images/arch.png" alt='arch' />
             </div>
             <div
               className={
