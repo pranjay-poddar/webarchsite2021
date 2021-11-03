@@ -1,26 +1,17 @@
 import React, { useState } from "react";
-import "./NavBar.css";
+import "./NewNav.css";
 
 import { GiHamburgerMenu } from "react-icons/gi";
-import logo from "../../files/logo.png";
+// import image1 from "./Artboard1.png";
 
 import { Link } from "react-router-dom";
-// import { Link as NavLink } from "react-scroll";
-const Navbar = ({ isHome }) => {
+import { Link as NavLink } from "react-scroll";
+const Navbar = () => {
   const [showMediaIcons, setShowMediaIcons] = useState(false);
-
-  let animated = localStorage.getItem("isAnimated");
   return (
-    <div className={isHome ? (!animated ? "navra" : "navba") : "navba"}>
+    <div className="navra">
       <nav className="main-nav">
         {/* 1st logo part  */}
-        {!isHome && (
-          <div className="logona">
-            <Link to="/">
-              <img src={logo} style={{ width: "50px" }} alt="logo" />
-            </Link>
-          </div>
-        )}
 
         {/* 2nd menu part  */}
         <div
@@ -29,54 +20,63 @@ const Navbar = ({ isHome }) => {
           }
         >
           <ul className="uline">
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/#About"
+            <li className="lina">
+              <NavLink
+                to="Home"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>01. </span>About us
-              </Link>
+                Home
+              </NavLink>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/#Domains"
+            <li className="lina">
+              <NavLink
+                to="Domain"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>02. </span>Domains
-              </Link>
+                Domains
+              </NavLink>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/projects"
+            <li className="lina">
+              <NavLink
+                to="About"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>03. </span>Projects
-              </Link>
+                About Us
+              </NavLink>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/#Clients"
+            <li className="lina">
+              <NavLink
+                to="Phase"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>04. </span>Clients
-              </Link>
+                Phases
+              </NavLink>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/team"
+            <li className="lina">
+              <NavLink
+                to="FAQs"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>05. </span>Team
-              </Link>
+                FAQs
+              </NavLink>
             </li>
-            <li className={showMediaIcons ? "lina anim" : "lina"}>
-              <Link
-                to="/#Contact"
+            <li className="lina">
+              <NavLink
+                to="Reach"
                 onClick={() => setShowMediaIcons(!showMediaIcons)}
               >
-                <span style={{ color: "#00E8FF" }}>06. </span>Contact
-              </Link>
+                Reach
+              </NavLink>
             </li>
+            {showMediaIcons && (
+              <Link
+                to="/login"
+                class="gs btn btn-1 "
+                onClick={() => setShowMediaIcons(!showMediaIcons)}
+              >
+                Get Started
+              </Link>
+            )}
           </ul>
         </div>
 
@@ -88,7 +88,7 @@ const Navbar = ({ isHome }) => {
               className="hama"
               style={{
                 background: "transparent",
-                color: "#00e8ff",
+                color: "#e93e7d",
                 border: "none",
                 boxShadow: "none",
               }}
