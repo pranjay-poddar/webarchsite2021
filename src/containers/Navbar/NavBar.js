@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import './NavBar.css'
 
 import { GiHamburgerMenu } from 'react-icons/gi'
-import logo from '../../files/logo.png'
 
 import { Link } from 'react-router-dom'
 // import { Link as NavLink } from "react-scroll";
@@ -17,7 +16,7 @@ const Navbar = ({ isHome }) => {
         {!isHome && (
           <div className='logona'>
             <Link to='/'>
-              <img src={logo} style={{ width: '50px' }} alt='logo' />
+              <img src="https://tyracatr.sirv.com/Images/background.gif" style={{ width: '50px' }} alt='logo' />
             </Link>
           </div>
         )}
