@@ -1,6 +1,5 @@
 import React from "react";
 import "./Preloader.css";
-import image from "../../files/webload.gif";
 
 function Preloader() {
   return (
@@ -17,7 +16,7 @@ function Preloader() {
         height: "100%"
       }}
     >
-      <img className="hiddenPreloader" src={image} alt="webarch" />
+      <img className="hiddenPreloader" src="https://tyracatr.sirv.com/Images/webload.gif" alt="webarch" />
     </div>
   );
 }
