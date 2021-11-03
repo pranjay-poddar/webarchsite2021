@@ -1,0 +1,31 @@
+.Preloader {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+.Preloader img {
+	width: 25%;
+	height: auto;
+}
+.hiddenPreloader {
+	animation: 1s linear 2.5s 1 forwards preloaderHide;
+}
+
+@keyframes preloaderHide {
+	0%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+@media (max-width: 768px) {
+	.Preloader img {
+		width: 40%;
+		height: auto;
+	}
+	.Preloader {
+		overflow: hidden;
+	}
+}
